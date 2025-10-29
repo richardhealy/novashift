@@ -75,6 +75,8 @@
 	--swiper-right-gradient: 270deg, #0f172a 0%, rgba(15, 23, 42, 0) 100%;
 	--home-service-card-gradient:
 		216deg, rgba(13, 99, 236, 0) 61.44%, rgba(13, 99, 236, 0.2) 116.95%, #fff;
+	--differentiators-card-gradient:
+		180deg, rgba(255, 255, 255, 0) 0%, #fff 90.28%;
 
 	/* Animations */
 	--animate-fadeIn: fadeIn 0.3s linear;
