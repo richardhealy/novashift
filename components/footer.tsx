@@ -104,7 +104,7 @@ export default function Footer() {
 								<li>
 									<Link
 										className='text-sm leading-[1.6] text-blue-100/70 hover:text-white'
-										href={ROUTES.POLICY}
+										href={ROUTES.PRIVACY}
 									>
 										Privacy Policy
 									</Link>
