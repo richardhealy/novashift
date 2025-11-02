@@ -1,13 +1,13 @@
-import { ROUTES } from "./routes.config"
+import { ROUTES } from "./routes"
 
-export type SubmenuItem = {
-	label: string
-	href: string
-}
 export type MenuItem = {
 	label: string
 	href: string
 	submenu?: SubmenuItem[]
+}
+export type SubmenuItem = {
+	label: string
+	href: string
 }
 
 export const SERVICES_SUBMENU_ITEMS: SubmenuItem[] = [
@@ -23,7 +23,7 @@ export const SERVICES_SUBMENU_ITEMS: SubmenuItem[] = [
 		label: "Workflow Automations",
 		href: ROUTES.AUTOMATION,
 	},
-]
+] as const
 
 export const MENU_LINKS: MenuItem[] = [
 	{
@@ -51,7 +51,7 @@ export const MENU_LINKS: MenuItem[] = [
 		label: "Contact Us",
 		href: ROUTES.CONTACT_US,
 	},
-]
+] as const
 
 export const FOOTER_COMPANY_MENU_LINKS: MenuItem[] = [
 	{
@@ -66,4 +66,4 @@ export const FOOTER_COMPANY_MENU_LINKS: MenuItem[] = [
 		label: "Contact Us",
 		href: ROUTES.CONTACT_US,
 	},
-]
+] as const

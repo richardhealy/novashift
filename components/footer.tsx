@@ -3,8 +3,8 @@ import Link from "next/link"
 import {
 	FOOTER_COMPANY_MENU_LINKS,
 	SERVICES_SUBMENU_ITEMS,
-} from "@/config/navigation-config"
-import { ROUTES } from "@/config/routes.config"
+} from "@/config/navigation"
+import { ROUTES } from "@/config/routes"
 
 export default function Footer() {
 	return (

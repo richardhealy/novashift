@@ -1,6 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation"
-import type { MenuItem } from "@/config/navigation-config"
+import type { MenuItem } from "@/config/navigation"
 import { cn } from "@/lib/utils"
 
 interface DesktopMenuProps {

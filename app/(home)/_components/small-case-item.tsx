@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { TypographyH4 } from "@/components/ui/typography"
-import { ROUTES } from "@/config/routes.config"
+import { ROUTES } from "@/config/routes"
 import type { CaseStudies } from "@/types/case-studies.type"
 
 export default function SmallCaseItem({ data }: { data: CaseStudies }) {

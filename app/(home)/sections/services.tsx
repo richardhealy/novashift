@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { TypographyH3, TypographyH5 } from "@/components/ui/typography"
-import { ROUTES } from "@/config/routes.config"
+import { ROUTES } from "@/config/routes"
 
 interface ServiceItem {
 	imageUrl: string

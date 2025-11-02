@@ -18,4 +18,3 @@
 
 # Terms Page
     - Hero
-    - Scroll animations

@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH3 } from "@/components/ui/typography"
-import { ROUTES } from "@/config/routes.config"
+import { ROUTES } from "@/config/routes"
 
 export default function TransformSection() {
 	return (

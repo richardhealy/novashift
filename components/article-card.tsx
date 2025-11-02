@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ROUTES } from "@/config/routes.config"
+import { ROUTES } from "@/config/routes"
 import type { Article } from "@/types/article.type"
 import { TypographyH6 } from "./ui/typography"
 

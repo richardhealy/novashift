@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ROUTES } from "@/config/routes.config"
+import { ROUTES } from "@/config/routes"
 import ButtonIcon from "./ui/button-icon"
 import { TypographyH3 } from "./ui/typography"
 

@@ -2,8 +2,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import type { MenuItem } from "@/config/navigation-config"
-import { ROUTES } from "@/config/routes.config"
+import type { MenuItem } from "@/config/navigation"
+import { ROUTES } from "@/config/routes"
 
 /** Props for the mobile menu component */
 interface MobileMenuProps {

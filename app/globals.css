@@ -80,6 +80,9 @@
 	--differentiators-card-gradient:
 		180deg, rgba(255, 255, 255, 0) 0%, #fff 90.28%;
 
+	/* Shadows */
+	--shadow-contact-form: 0 0 24px 0 rgba(0, 0, 0, 0.06);
+
 	/* Animations */
 	--animate-fadeIn: fadeIn 0.3s linear;
 
@@ -182,16 +185,13 @@
 		@apply relative flex w-full flex-col;
 	}
 	.input-label {
-		@apply text-primary group-[.error]:text-error group-[.success]:text-success mb-2 block text-sm font-medium;
+		@apply text-neutral-black leading-[1.6] tracking-[0.12px] mb-1.5 block text-xs font-medium;
 	}
 	.input-field {
-		@apply group-[.error]:border-error group-[.success]:border-success hover:border-primary focus:border-primary flex w-full rounded border border-gray-200 px-3 py-2 text-sm transition outline-none disabled:cursor-not-allowed disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-400;
+		@apply group-[.error]:border-red-400 group-[.error]:focus:border-red-400 group-[.error]:hover:border-red-400  hover:border-blue-400 focus:border-blue-400 flex w-full rounded-[10px] border border-neutral-300 px-3 py-[13px] text-sm text-neutral-black tracking-[0.14px] placeholder:text-neutral-600 font-medium transition outline-none disabled:cursor-not-allowed disabled:border-neutral-500 disabled:bg-neutral-200 resize-none;
 	}
 	.input-error-message {
-		@apply mt-1 hidden text-xs text-red-600 group-[.error]:block;
-	}
-	.input-success-message {
-		@apply mt-1 hidden text-xs text-green-600 group-[.success]:block;
+		@apply mt-1 hidden text-xs text-red-400 font-medium group-[.error]:block;
 	}
 
 	/* Select */

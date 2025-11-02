@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH3, TypographyH6 } from "@/components/ui/typography"
-import { ROUTES } from "@/config/routes.config"
+import { ROUTES } from "@/config/routes"
 import { cn } from "@/lib/utils"
 
 export default function OfferSection() {
