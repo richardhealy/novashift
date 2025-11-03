@@ -13,7 +13,7 @@ export default function HeroSection() {
 						<p className='mt-4 text-center text-xl text-blue-500 font-medium tracking-[0.2px] md:text-left'>
 							Transformative Intelligence, Tailored to Your Business
 						</p>
-						<p className='text-neutral-700 mt-8 text-center text-xl font-medium tracking-[0.2px] md:text-left'>
+						<p className='leading-normal text-neutral-700 mt-8 text-center text-xl font-medium tracking-[0.2px] md:text-left'>
 							Transform your business with strategic AI implementation that
 							drives measurable results
 						</p>

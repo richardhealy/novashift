@@ -10,7 +10,7 @@ export default function HeroSection() {
 						<TypographyH1 className='text-center leading-[1.4] md:text-left md:leading-[1.2]!'>
 							Dedicated Development Team
 						</TypographyH1>
-						<p className='text-neutral-700 mt-8 text-center text-xl font-medium tracking-[0.2px] md:text-left'>
+						<p className='leading-normal text-neutral-700 mt-8 text-center text-xl font-medium tracking-[0.2px] md:text-left'>
 							Scalable Solutions Built by AI Specialists
 						</p>
 					</div>
