@@ -1,4 +1,5 @@
 import CasesSection from "./sections/cases"
+import HeroSection from "./sections/hero"
 import LatestInsightsSection from "./sections/insights"
 import PartnersSection from "./sections/partners"
 import ServicesSection from "./sections/services"
@@ -9,8 +10,7 @@ import WhoWeAre from "./sections/who-we-are"
 export default function Home() {
 	return (
 		<>
-			{/* <HeroSection /> */}
-			<div className='h-[400px] w-full bg-neutral-900'></div>
+			<HeroSection />
 			<StatisticSection />
 			<WhoWeAre />
 			<ServicesSection />

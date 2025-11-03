@@ -1,10 +1,9 @@
 # Global
     - Header smooth scroll to the anchor
     - add meta tags
+    - create submenu component
 
 # Home Page
-    - Hero Section
-    - Statistic Section layout fix
     - Fix responsiveness 320px 
 
 # Terms Page

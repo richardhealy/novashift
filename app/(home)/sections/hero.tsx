@@ -4,10 +4,10 @@ import { TypographyH1 } from "@/components/ui/typography"
 
 export default function HeroSection() {
 	return (
-		<section className='relative z-0 pt-[229px] pb-[189px]'>
+		<section className='relative z-0 bg-[#F9F9FB] -mt-[58px] overflow-hidden md:mt-[-92px]'>
 			<div className='container'>
-				<div className='grid gap-8 md:grid-cols-2 md:items-center'>
-					<div>
+				<div className='relative flex flex-col pt-[130px] pb-[406px] md:flex-row md:pt-[230px] md:pb-[189px]'>
+					<div className='md:max-w-[575px]'>
 						<TypographyH1 className='text-center md:text-left'>
 							AI Automation That Transforms How Business Works
 						</TypographyH1>
@@ -22,15 +22,15 @@ export default function HeroSection() {
 							</Button>
 						</div>
 					</div>
-					{/* <div className="flex items-center justify-center">
+					<div className='absolute shrink-0 max-w-[522px] mx-auto bottom-0 -left-16 -right-16 md:left-[unset] md:-right-20 md:max-w-[450px] mx:m-0 lg:max-w-[700px] lg:-right-20 lg:h-auto xl:-right-36 xl:max-w-[902px]'>
 						<Image
-							src="/home/hero-image.png"
-							width={488}
-							height={488}
-							alt="hero image"
-							className="h-auto w-full max-w-full lg:max-w-[540px]"
+							className='aspect-902/745'
+							src={"/home/hero-image.png"}
+							alt='hero image'
+							width={902}
+							height={745}
 						/>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</section>

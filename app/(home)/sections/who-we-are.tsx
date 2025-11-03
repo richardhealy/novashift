@@ -7,7 +7,7 @@ export default function WhoWeAreSection() {
 				<p className='text-center text-xl leading-normal font-bold tracking-[2px] text-white uppercase md:text-left'>
 					Who we are
 				</p>
-				<TypographyH3 className='mt-6 text-center leading-[1.4] font-normal tracking-[0.28px] text-white md:text-left'>
+				<TypographyH3 className='mt-6 text-center leading-[1.4] font-normal tracking-[0.28px] text-white md:text-left wrap-break-word'>
 					We help businesses <b>unlock AI's potential—through</b> tailored
 					strategy, development, and automation that drive measurable results
 				</TypographyH3>
