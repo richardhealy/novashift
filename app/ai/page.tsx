@@ -1,139 +1,122 @@
-"use client"
+// components/BlogFilters.tsx
+"use client" // Since we're using hooks, mark as client component
+
+import type React from "react"
 import { useState } from "react"
 
-// Данные статей
-const articlesData = [
-	{
-		id: 1,
-		category: "Automation",
-		title: "The Rise of Artificial Intelligence: Transforming the Future",
-		description:
-			"Artificial intelligence (AI) is no longer just a concept from science fiction—it's a rapidly evolving technology that's reshaping industries, redefining work, and revolutionizing the way we live. From voice assistants to self-driving cars, AI is everywhere, and its impact is only growing stronger.",
-		image:
-			"https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
-		featured: true,
-	},
-	{
-		id: 2,
-		category: "Strategy",
-		title: "The Future of AI in Business",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1655721529220-34d43c321b94?w=600&h=400&fit=crop",
-		featured: false,
-	},
-	{
-		id: 3,
-		category: "Strategy",
-		title: "Building Your First AI Strategy",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop",
-		featured: false,
-	},
-	{
-		id: 4,
-		category: "Automation",
-		title: "5 Ways AI Can Streamline Your",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&h=400&fit=crop",
-		featured: false,
-	},
-	{
-		id: 12,
-		category: "Automation",
-		title: "5 Ways AI Can Streamline Your",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&h=400&fit=crop",
-		featured: true,
-	},
-	{
-		id: 5,
-		category: "NLP Solutions",
-		title: "Understanding Natural Language Processing",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1676573409210-66c3b7e17c25?w=600&h=400&fit=crop",
-		featured: false,
-	},
-	{
-		id: 6,
-		category: "Computer Vision",
-		title: "Computer Vision Applications in 2025",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop",
-		featured: false,
-	},
-	{
-		id: 7,
-		category: "AI Consulting",
-		title: "How to Choose an AI Consultant",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
-		featured: false,
-	},
-	{
-		id: 8,
-		category: "Machine Learning",
-		title: "Machine Learning Basics for Beginners",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image:
-			"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop",
-		featured: false,
-	},
-]
+interface BlogPost {
+	id: number
+	title: string
+	excerpt: string
+	category:
+		| "Strategy"
+		| "NLP solutions"
+		| "Computer Vision"
+		| "AI Consulting"
+		| "Machine Learning"
+		| "Automation"
+	imageUrl: string
+	featured?: boolean
+}
 
 const categories = [
 	"All",
 	"Strategy",
-	"NLP Solutions",
+	"NLP solutions",
 	"Computer Vision",
 	"AI Consulting",
 	"Machine Learning",
 	"Automation",
 ] as const
 
-export default function AIBlogPage() {
-	const [activeCategory, setActiveCategory] = useState("All")
+type Category = (typeof categories)[number]
 
-	// Фильтрация статей
-	const filteredArticles =
-		activeCategory === "All"
-			? articlesData
-			: articlesData.filter((article) => article.category === activeCategory)
+const mockPosts: BlogPost[] = [
+	// Featured post
+	{
+		id: 1,
+		title: "The Rise of Artificial Intelligence: Transforming the Future",
+		excerpt:
+			"Rapidly evolving technologies are reshaping industries, redefining work, and a revolutionizing the world. From voice assistants to self-driving cars, AI is growing stronger.",
+		category: "Automation",
+		imageUrl: "/path/to/featured-image.jpg",
+		featured: true,
+	},
+	// Other posts
+	{
+		id: 2,
+		title: "The Future of AI in Business",
+		excerpt:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		category: "Strategy",
+		imageUrl: "/path/to/image1.jpg",
+	},
+	{
+		id: 3,
+		title: "Building Your First AI Strategy",
+		excerpt:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		category: "AI Consulting",
+		imageUrl: "/path/to/image2.jpg",
+	},
+	{
+		id: 4,
+		title: "5 Ways AI Can Streamline Your",
+		excerpt:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		category: "Machine Learning",
+		imageUrl: "/path/to/image3.jpg",
+	},
+	// Add more mock posts as needed for testing
+	{
+		id: 5,
+		title: "NLP Innovations in 2025",
+		excerpt: "Exploring the latest in natural language processing.",
+		category: "NLP solutions",
+		imageUrl: "/path/to/image4.jpg",
+	},
+	{
+		id: 6,
+		title: "Computer Vision for Retail",
+		excerpt: "How CV is changing retail experiences.",
+		category: "Computer Vision",
+		imageUrl: "/path/to/image5.jpg",
+	},
+]
 
-	// Большая featured статья
-	const featuredArticle = filteredArticles.find((article) => article.featured)
+const BlogFilters: React.FC = () => {
+	const [selectedCategory, setSelectedCategory] = useState<Category>("All")
+	const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>(mockPosts)
 
-	// Остальные статьи для сетки
-	const gridArticles = filteredArticles.filter((article) => !article.featured)
+	const handleFilterChange = (category: Category) => {
+		setSelectedCategory(category)
+		if (category === "All") {
+			setFilteredPosts(mockPosts)
+		} else {
+			setFilteredPosts(mockPosts.filter((post) => post.category === category))
+		}
+	}
+
+	const featuredPost = filteredPosts.find((post) => post.featured)
+	const otherPosts = filteredPosts.filter((post) => !post.featured).slice(0, 9) // Show first 3 for the grid
 
 	return (
-		<div className='min-h-screen bg-gray-50'>
-			<div className='mx-auto max-w-7xl px-4 py-12'>
-				{/* Фильтры категорий */}
-				<div className='mb-12 flex flex-wrap gap-3'>
+		<div className='min-h-screen bg-gray-50 py-8'>
+			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+				<h1 className='text-3xl font-bold text-gray-900 mb-6'>
+					Featured AI Blog Posts
+				</h1>
+
+				{/* Filter Buttons */}
+				<div className='flex flex-wrap gap-4 mb-8'>
 					{categories.map((category) => (
 						<button
-							type='button'
 							key={category}
-							onClick={() => setActiveCategory(category)}
-							className={`rounded-full px-6 py-2.5 font-medium transition-all duration-300 ${
-								activeCategory === category
-									? "bg-blue-500 text-white shadow-lg shadow-blue-500/30"
-									: "border border-gray-200 bg-white text-gray-700 hover:bg-gray-100"
+							onClick={() => handleFilterChange(category)}
+							className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+								selectedCategory === category
+									? "bg-blue-600 text-white"
+									: "bg-white text-gray-500 hover:bg-gray-100"
 							}`}
 						>
 							{category}
@@ -141,80 +124,78 @@ export default function AIBlogPage() {
 					))}
 				</div>
 
-				{/* Большая featured статья */}
-				{featuredArticle && (
-					<div className='mb-16'>
-						<div className='overflow-hidden rounded-3xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl'>
-							<div className='grid gap-0 md:grid-cols-2'>
-								<div className='relative h-96 md:h-auto'>
-									<img
-										src={featuredArticle.image}
-										alt={featuredArticle.title}
-										className='absolute inset-0 h-full w-full object-cover'
-									/>
-								</div>
-								<div className='flex flex-col justify-center p-8 md:p-12'>
-									<div className='mb-4 text-sm font-semibold tracking-wider text-blue-500 uppercase'>
-										{featuredArticle.category}
-									</div>
-									<h1 className='mb-4 text-3xl leading-tight font-bold text-gray-900 md:text-4xl'>
-										{featuredArticle.title}
-									</h1>
-									<p className='mb-6 leading-relaxed text-gray-600'>
-										{featuredArticle.description}
-									</p>
-									<button className='flex items-center gap-2 font-semibold text-blue-500 transition-all hover:gap-3'>
-										Read More
-									</button>
-								</div>
+				{/* Featured Post */}
+				{featuredPost && (
+					<div className='grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8'>
+						<article className='lg:col-span-2 bg-white rounded-lg overflow-hidden shadow-md'>
+							<img
+								src={featuredPost.imageUrl}
+								alt={featuredPost.title}
+								className='w-full h-64 object-cover'
+							/>
+							<div className='p-6'>
+								<span className='inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mb-2'>
+									{featuredPost.category}
+								</span>
+								<h2 className='text-2xl font-bold text-gray-900 mb-2'>
+									{featuredPost.title}
+								</h2>
+								<p className='text-gray-600 mb-4'>{featuredPost.excerpt}</p>
+								<a
+									href='#'
+									className='text-blue-600 hover:text-blue-800 font-medium'
+								>
+									Read More →
+								</a>
 							</div>
-						</div>
+						</article>
 					</div>
 				)}
 
-				{/* Сообщение если нет статей */}
-				{filteredArticles.length === 0 && (
-					<div className='py-16 text-center'>
-						<p className='text-lg text-gray-500'>
-							No articles found in this category
-						</p>
-					</div>
-				)}
-
-				{/* Сетка статей */}
-				{gridArticles.length > 0 && (
-					<div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
-						{gridArticles.map((article) => (
-							<div
-								key={article.id}
-								className='overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl'
-							>
-								<div className='relative h-64 overflow-hidden'>
-									<img
-										src={article.image}
-										alt={article.title}
-										className='h-full w-full object-cover transition-transform duration-500 hover:scale-110'
-									/>
-								</div>
-								<div className='p-6'>
-									<div className='mb-3 text-xs font-semibold tracking-wider text-blue-500 uppercase'>
-										{article.category}
-									</div>
-									<h3 className='mb-3 text-xl leading-snug font-bold text-gray-900'>
-										{article.title}
-									</h3>
-									<p className='mb-4 text-sm leading-relaxed text-gray-600'>
-										{article.description}
-									</p>
-									<button className='flex items-center gap-2 text-sm font-semibold text-blue-500 transition-all hover:gap-3'>
-										Read More
-									</button>
-								</div>
+				{/* Grid of Other Posts */}
+				<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+					{otherPosts.map((post) => (
+						<article
+							key={post.id}
+							className='bg-white rounded-lg overflow-hidden shadow-md'
+						>
+							<img
+								src={post.imageUrl}
+								alt={post.title}
+								className='w-full h-48 object-cover'
+							/>
+							<div className='p-4'>
+								<span className='inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full mb-2'>
+									{post.category}
+								</span>
+								<h3 className='text-lg font-semibold text-gray-900 mb-2 line-clamp-2'>
+									{post.title}
+								</h3>
+								<p className='text-gray-600 text-sm mb-4 line-clamp-2'>
+									{post.excerpt}
+								</p>
+								<a
+									href='#'
+									className='text-blue-600 hover:text-blue-800 font-medium text-sm'
+								>
+									Read More →
+								</a>
 							</div>
-						))}
+						</article>
+					))}
+				</div>
+
+				{/* Pagination or Load More - Optional */}
+				{filteredPosts.length > 3 && (
+					<div className='text-center mt-8'>
+						<button className='bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors'>
+							Load More
+						</button>
 					</div>
 				)}
 			</div>
 		</div>
 	)
 }
+
+export default BlogFilters

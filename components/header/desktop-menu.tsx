@@ -3,6 +3,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import type { MenuItem } from "@/config/navigation"
 import { cn } from "@/lib/utils"
+import DesktopSubmenu from "./desktop-submenu"
 
 interface DesktopMenuProps {
 	items: MenuItem[]
@@ -50,18 +51,9 @@ export default function DesktopMenu({ items }: DesktopMenuProps) {
 										/>
 									</svg>
 								</button>
-								<ul className='submenu' aria-label={`${item.label} submenu`}>
-									{item.submenu.map((subItem) => (
-										<li key={subItem.href}>
-											<Link className='submenu-link' href={subItem.href}>
-												{subItem.label}
-											</Link>
-										</li>
-									))}
-								</ul>
+								<DesktopSubmenu submenu={item.submenu} />
 							</div>
 						) : (
-							// Regular menu item (no submenu)
 							<Link
 								href={item.href}
 								className={cn("menu-link", pathname === item.href && "current")}
