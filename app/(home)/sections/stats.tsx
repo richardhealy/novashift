@@ -4,7 +4,7 @@ import type { StatisticItem } from "@/types/statistic"
 import DesktopAccordion from "../_components/desktop-accordion"
 import MobileAccordion from "../_components/mobile-accordion"
 
-const data: StatisticItem[] = [
+const statsItems: StatisticItem[] = [
 	{
 		title: "50+",
 		text: "AI Projects Delivered",
@@ -41,9 +41,9 @@ export default function StatisticSection() {
 	return (
 		<section className='p-0'>
 			{isDesktop ? (
-				<DesktopAccordion items={data} />
+				<DesktopAccordion items={statsItems} />
 			) : (
-				<MobileAccordion items={data} />
+				<MobileAccordion items={statsItems} />
 			)}
 		</section>
 	)

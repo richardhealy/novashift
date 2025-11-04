@@ -1,23 +1,23 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ROUTES } from "@/config/routes"
-import type { Article } from "@/types/article.type"
+import type { BlogPost } from "@/types/blog-post"
 import { TypographyH6 } from "./ui/typography"
 
-interface ArticleCardProps {
-	article: Article
+interface PostCardProps {
+	post: BlogPost
 }
 
-export default function ArticleCard({ article }: ArticleCardProps) {
+export default function PostCard({ post }: PostCardProps) {
 	return (
-		<Link href={`${ROUTES.ARTICLE}/${article.id}`} className='group'>
+		<Link href={`${ROUTES.POST}/${post.id}`} className='group'>
 			<article className='flex gap-10 w-full justify-between md:flex-col-reverse md:gap-6 md:justify-end md:h-full'>
 				<div className='flex flex-col md:flex-1 '>
 					<TypographyH6 className='group-hover:text-blue-500'>
-						{article.title}
+						{post.title}
 					</TypographyH6>
 					<p className='line-clamp-3 my-2.5 text-sm tracking-[0.14px] md:text-base md:mb-6'>
-						{article.desription}
+						{post.text}
 					</p>
 
 					<button
@@ -45,8 +45,8 @@ export default function ArticleCard({ article }: ArticleCardProps) {
 				<div className='w-40 h-[175px] rounded-2xl overflow-hidden md:w-full md:h-auto shrink-0'>
 					<Image
 						className='w-40 h-[175px] rounded-2xl object-cover md:w-full md:h-auto group-hover:scale-105 transition-transform duration-500'
-						src={article.imageUrl}
-						alt={article.title}
+						src={post.imageUrl}
+						alt={post.title}
 						width={390}
 						height={335}
 					/>

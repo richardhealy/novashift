@@ -9,7 +9,7 @@ interface DifferentiatorsItem {
 	imageClasses: string
 }
 
-const data: DifferentiatorsItem[] = [
+const differentiatorItems: DifferentiatorsItem[] = [
 	{
 		id: "string1",
 		imageUrl: "/about/diff-1.png",
@@ -42,7 +42,7 @@ export default function DifferentiatorsSection() {
 				</TypographyH3>
 
 				<div className='mt-[60px] grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
-					{data.map((item) => (
+					{differentiatorItems.map((item) => (
 						<div
 							key={item.id}
 							className='relative flex flex-col overflow-hidden rounded-2xl border border-neutral-500 after:absolute after:bg-linear-(--differentiators-card-gradient) after:inset-0 after:-z-10 p-6 pt-[212px] z-0'

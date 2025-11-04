@@ -7,13 +7,13 @@ import { Autoplay } from "swiper/modules"
 import { TypographyH5 } from "@/components/ui/typography"
 import useMediaQuery from "@/hooks/useMediaQuery"
 
-interface PartnerLogo {
+interface LogoSlide {
 	id: string
 	src: string
 	alt: string
 }
 
-const data: PartnerLogo[] = [
+const slides: LogoSlide[] = [
 	{
 		id: "agasdgasgd",
 		src: "/home/partner-logo-1.png",
@@ -87,7 +87,7 @@ export default function PartnersSection() {
 								},
 							}}
 						>
-							{data.map((slide) => (
+							{slides.map((slide) => (
 								<SwiperSlide key={slide.id}>
 									<div className='px-3 py-[30px] md:p-[50px]'>
 										<Image
@@ -103,7 +103,7 @@ export default function PartnersSection() {
 						</Swiper>
 					) : (
 						<div className='flex items-center flex-wrap justify-center'>
-							{data.map((slide) => (
+							{slides.map((slide) => (
 								<div className='px-3 py-[30px] md:p-[50px]' key={slide.id}>
 									<Image
 										className='w-auto md:w-full object-cover'

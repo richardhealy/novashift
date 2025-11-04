@@ -11,7 +11,7 @@ interface ServiceItem {
 	imageClasses: string
 }
 
-const data: ServiceItem[] = [
+const serviceItems: ServiceItem[] = [
 	{
 		imageUrl: "/home/service-1.png",
 		title: "AI Strategy & Consulting",
@@ -51,7 +51,7 @@ export default function ServicesSection() {
 				</div>
 
 				<div className='mt-[60px] grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-					{data.map((item) => (
+					{serviceItems.map((item) => (
 						<div
 							key={item.href}
 							className='relative flex flex-col overflow-hidden rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) sm:last:col-span-2 lg:flex lg:flex-row lg:last:col-span-1'

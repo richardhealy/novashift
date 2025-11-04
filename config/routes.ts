@@ -8,7 +8,7 @@ export const ROUTES = {
 	AI_STRATEGY: "/ai-strategy",
 	TEAM: "/team",
 	AUTOMATION: "/automation",
-	ARTICLE: "/article",
+	POST: "/post",
 	PRIVACY: "/privacy",
 	TERMS: "/terms",
 } as const

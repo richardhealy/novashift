@@ -1,28 +1,29 @@
-import ArticleCard from "@/components/article-card"
+import ArticleCard from "@/components/post-card"
 import { Button } from "@/components/ui/button"
 import { TypographyH2 } from "@/components/ui/typography"
-import type { Article } from "@/types/article.type"
+import type { BlogPost } from "@/types/blog-post"
 
-const data: Article[] = [
+const posts: BlogPost[] = [
 	{
 		id: "34b57h453h",
 		imageUrl: "/home/article-1.png",
 		title: "The Future of AI in Business",
-		desription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+		category: "AI Consulting",
 	},
 	{
 		id: "6464h36",
 		imageUrl: "/home/article-2.png",
 		title: "Building Your First AI Strategy",
-		desription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		category: "Automation",
 	},
 	{
 		id: "reshsg45",
 		imageUrl: "/home/article-3.png",
 		title: "5 Ways AI Can Streamline Your",
-		desription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+		category: "Machine Learning",
 	},
 ]
 
@@ -42,8 +43,8 @@ export default function LatestInsightsSection() {
 				</div>
 
 				<div className='grid gap-6 mt-[60px] md:grid-cols-2 lg:grid-cols-3'>
-					{data.map((article) => (
-						<ArticleCard key={article.id} article={article} />
+					{posts.map((post) => (
+						<ArticleCard key={post.id} post={post} />
 					))}
 				</div>
 			</div>

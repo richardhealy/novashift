@@ -3,7 +3,7 @@ import type { CaseStudiesItem } from "@/types/case-studies.type"
 import LargeCaseItem from "../_components/large-case-item"
 import SmallCaseItem from "../_components/small-case-item"
 
-const dataLargeCase: CaseStudiesItem = {
+const largeCasePost: CaseStudiesItem = {
 	id: "235623623626",
 	title: "Poker Brain – AI-Powered Poker Training System",
 	description:
@@ -11,7 +11,7 @@ const dataLargeCase: CaseStudiesItem = {
 	imageUrl: "/home/large-case.png",
 }
 
-const dataSmallCases: CaseStudiesItem[] = [
+const smallCasePosts: CaseStudiesItem[] = [
 	{
 		id: "2356231246",
 		title: "AI Video Automation System",
@@ -45,11 +45,11 @@ export default function CasesSection() {
 				</div>
 
 				<div className='mt-[60px] grid gap-6 md:grid-cols-2'>
-					<LargeCaseItem data={dataLargeCase} />
+					<LargeCaseItem post={largeCasePost} />
 
 					<div className='grid gap-4'>
-						{dataSmallCases.map((item) => (
-							<SmallCaseItem key={item.id} data={item} />
+						{smallCasePosts.map((post) => (
+							<SmallCaseItem key={post.id} post={post} />
 						))}
 					</div>
 				</div>

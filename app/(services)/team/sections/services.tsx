@@ -9,7 +9,7 @@ interface ServiceItem {
 	imageClasses: string
 }
 
-const data: ServiceItem[] = [
+const serviceItems: ServiceItem[] = [
 	{
 		id: "string1",
 		imageUrl: "/team/service-1.png",
@@ -48,7 +48,7 @@ export default function ServicesSection() {
 		<section className='py-10 md:py-[100px]'>
 			<div className='container max-w-[1368px]'>
 				<div className='grid gap-6 md:grid-cols-2 lg:grid-cols-4'>
-					{data.map((item) => (
+					{serviceItems.map((item) => (
 						<div
 							key={item.id}
 							className='relative flex flex-col overflow-hidden rounded-2xl border border-neutral-500 p-6 pt-[280px] pb-12 z-0'
