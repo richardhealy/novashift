@@ -25,7 +25,7 @@ export async function getAllPosts(
 			(a, b) =>
 				new Date(b.publishedAt || b.updatedAt).getTime() -
 				new Date(a.publishedAt || a.updatedAt).getTime(),
-		) // Sort by most recent published/updated
+		)
 }
 
 // 2. Get a single post by ID or slug

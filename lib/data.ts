@@ -1,17 +1,15 @@
+import fs from "fs/promises"
+import path from "path"
 import type { BlogData } from "@/types/blog"
 
-const baseUrl =
-	process.env.NEXT_PUBLIC_SITE_URL ||
-	(process.env.VERCEL_URL
-		? `https://${process.env.VERCEL_URL}`
-		: "http://localhost:3000")
-
-const DATA_URL = `${baseUrl}/get-blog.json`
-
 export async function getBlogData(): Promise<BlogData> {
-	const response = await fetch(DATA_URL, { cache: "force-cache" })
-	if (!response.ok) {
-		throw new Error(`Failed to fetch blog data: ${response.statusText}`)
+	try {
+		// JSON лежит в /public/get-blog.json
+		const filePath = path.join(process.cwd(), "public", "get-blog.json")
+		const fileContents = await fs.readFile(filePath, "utf-8")
+		return JSON.parse(fileContents)
+	} catch (error) {
+		console.error("Error reading blog data:", error)
+		throw new Error("Failed to load blog data.")
 	}
-	return response.json()
 }
