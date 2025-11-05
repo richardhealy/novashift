@@ -52,6 +52,7 @@ export default function DesktopAccordion({ items }: DesktopAccordionProps) {
 							width={543}
 							height={543}
 						/>
+
 						<div
 							className={cn(
 								"text-left transition-all duration-300 space-y-2.5",
