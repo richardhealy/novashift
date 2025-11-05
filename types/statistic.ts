@@ -1,4 +1,4 @@
-export type StatisticItem = {
+export interface StatisticItem {
 	title: string
 	text: string
 	imageURL: string

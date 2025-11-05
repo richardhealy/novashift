@@ -1,3 +1,4 @@
+import { getAllPosts } from "@/actions/blog"
 import CasesSection from "./sections/cases"
 import HeroSection from "./sections/hero"
 import LatestInsightsSection from "./sections/insights"
@@ -7,7 +8,8 @@ import StatisticSection from "./sections/stats"
 import TransformSection from "./sections/transform"
 import WhoWeAre from "./sections/who-we-are"
 
-export default function Home() {
+export default async function Home() {
+	const posts = await getAllPosts()
 	return (
 		<>
 			<HeroSection />
@@ -17,7 +19,7 @@ export default function Home() {
 			<TransformSection />
 			<CasesSection />
 			<PartnersSection />
-			<LatestInsightsSection />
+			<LatestInsightsSection posts={posts} />
 		</>
 	)
 }

@@ -1,5 +1,5 @@
 // Home Page Case Item
-export type CaseStudiesItem = {
+export interface CaseStudiesItem {
 	id: string
 	title: string
 	description: string
@@ -7,7 +7,7 @@ export type CaseStudiesItem = {
 }
 
 // Cases Page Accordion Items
-export type CaseAccordionItem = {
+export interface CaseAccordionItem {
 	id: string
 	title: string
 	text: string | { content: string; key?: string }[]

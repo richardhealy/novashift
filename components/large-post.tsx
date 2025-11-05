@@ -4,11 +4,11 @@ import { ROUTES } from "@/config/routes"
 import type { Post } from "@/types/blog"
 import { TypographyH6 } from "./ui/typography"
 
-interface PostCardProps {
+interface LargePostProps {
 	post: Post
 }
 
-export default function PostCard({ post }: PostCardProps) {
+export default function LargePost({ post }: LargePostProps) {
 	return (
 		<Link href={`${ROUTES.POST}/${post.id}`} className='group'>
 			<article className='flex gap-10 w-full justify-between md:flex-col-reverse md:gap-6 md:justify-end md:h-full'>

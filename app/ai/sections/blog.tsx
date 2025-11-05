@@ -1,30 +1,35 @@
 "use client"
 
+import { useMemo } from "react"
+import LargePost from "@/components/large-post"
 import PostCard from "@/components/post-card"
-import { TypographyH1, TypographyH5 } from "@/components/ui/typography"
-import { categories } from "@/config/post-categories"
+import { TypographyH5 } from "@/components/ui/typography"
 import { useBlogFilters } from "@/hooks/useBlogFilters"
-import type { BlogPost } from "@/types/blog-post"
+import type { Category, Post } from "@/types/blog"
 import FilterButtons from "../_components/filter-buttons"
 
 interface BlogSectionProps {
-	posts: BlogPost[]
+	posts: Post[]
+	categories: Category[]
 }
 
-export default function BlogSection({ posts }: BlogSectionProps) {
+export default function BlogSection({ posts, categories }: BlogSectionProps) {
 	const { selectedCategory, filteredPosts, handleFilterChange } =
 		useBlogFilters({
 			initialPosts: posts,
+			categories,
 		})
+
+	const randomFeaturedPost = useMemo(() => {
+		if (filteredPosts.length === 0) return null
+
+		const randomIndex = Math.floor(Math.random() * filteredPosts.length)
+		return filteredPosts[randomIndex]
+	}, [filteredPosts])
+
 	return (
 		<section>
 			<div className='container'>
-				<div className='pt-[86px] md:pt-12'>
-					<TypographyH1 className='text-center leading-[1.4] md:leading-[1.2]!'>
-						Featured AI Blog Posts
-					</TypographyH1>
-				</div>
-
 				{/* Filter Buttons */}
 				<div className='mt-8'>
 					<FilterButtons
@@ -33,6 +38,11 @@ export default function BlogSection({ posts }: BlogSectionProps) {
 						onCategoryChange={handleFilterChange}
 					/>
 				</div>
+
+				{/* Large Post: Random featured post */}
+				{randomFeaturedPost && (
+					<LargePost key={randomFeaturedPost.id} post={randomFeaturedPost} />
+				)}
 
 				{/* Grid of Other Posts */}
 				<div className='pb-[100px] pt-5 md:pt-[100px] grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
@@ -57,11 +67,6 @@ export default function BlogSection({ posts }: BlogSectionProps) {
 							<TypographyH5 className='text-lg font-semibold text-gray-900 mb-2'>
 								No posts found
 							</TypographyH5>
-							<p className='text-sm'>
-								{selectedCategory === "All"
-									? "There are no posts available at the moment. Check back soon!"
-									: `No posts match the "${selectedCategory}" category. Try another filter.`}
-							</p>
 						</div>
 					)}
 				</div>

@@ -1,33 +1,15 @@
-import ArticleCard from "@/components/post-card"
+import PostCard from "@/components/post-card"
 import { Button } from "@/components/ui/button"
 import { TypographyH2 } from "@/components/ui/typography"
-import type { BlogPost } from "@/types/blog-post"
+import type { Post } from "@/types/blog"
 
-const posts: BlogPost[] = [
-	{
-		id: "34b57h453h",
-		imageUrl: "/home/article-1.png",
-		title: "The Future of AI in Business",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-		category: "AI Consulting",
-	},
-	{
-		id: "6464h36",
-		imageUrl: "/home/article-2.png",
-		title: "Building Your First AI Strategy",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-		category: "Automation",
-	},
-	{
-		id: "reshsg45",
-		imageUrl: "/home/article-3.png",
-		title: "5 Ways AI Can Streamline Your",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-		category: "Machine Learning",
-	},
-]
+interface LatestInsightsSectionProps {
+	posts: Post[]
+}
 
-export default function LatestInsightsSection() {
+export default function LatestInsightsSection({
+	posts,
+}: LatestInsightsSectionProps) {
 	return (
 		<section className='py-20 md:py-[100px]'>
 			<div className='container'>
@@ -43,8 +25,8 @@ export default function LatestInsightsSection() {
 				</div>
 
 				<div className='grid gap-6 mt-[60px] md:grid-cols-2 lg:grid-cols-3'>
-					{posts.map((post) => (
-						<ArticleCard key={post.id} post={post} />
+					{posts.slice(0, 3).map((post) => (
+						<PostCard key={post.id} post={post} />
 					))}
 				</div>
 			</div>

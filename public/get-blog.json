@@ -1,0 +1,714 @@
+{
+	"posts": [
+		{
+			"id": "post-001",
+			"title": "How AI Chatbots Can Transform Your Customer Service Operations",
+			"slug": "ai-chatbots-transform-customer-service",
+			"excerpt": "Discover how implementing AI-powered chatbots can reduce response times by 80% and handle unlimited customer inquiries 24/7.",
+			"content": "In today's fast-paced digital landscape, customers expect instant responses. Traditional customer service models struggle to meet these demands, but AI chatbots offer a revolutionary solution.Our AI chatbot implementations have helped businesses reduce customer service costs by up to 60% while improving satisfaction scores. These intelligent systems can handle routine inquiries, qualify leads, schedule appointments, and seamlessly escalate complex issues to human agents when needed.The technology has matured significantly. Modern chatbots understand context, detect sentiment, and can engage in natural conversations across multiple languages.",
+			"featuredImage": {
+				"url": "/ai/article-image-1.png",
+				"alt": "AI chatbot interface showing customer interactions",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-001",
+				"name": "Dr. Maya Patel",
+				"email": "maya.patel@aiagency.com",
+				"avatar": "https://images.example.com/avatars/maya-patel.jpg",
+				"bio": "AI Solutions Architect specializing in conversational AI and NLP"
+			},
+			"categories": [
+				{
+					"id": "cat-001",
+					"name": "AI Solutions",
+					"slug": "ai-solutions"
+				},
+				{
+					"id": "cat-002",
+					"name": "Customer Service",
+					"slug": "customer-service"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-001",
+					"name": "Chatbots",
+					"slug": "chatbots"
+				},
+				{
+					"id": "tag-002",
+					"name": "Customer Experience",
+					"slug": "customer-experience"
+				},
+				{
+					"id": "tag-003",
+					"name": "NLP",
+					"slug": "nlp"
+				}
+			],
+			"status": "published",
+			"publishedAt": "2025-10-15T09:00:00Z",
+			"updatedAt": "2025-10-20T14:30:00Z",
+			"createdAt": "2025-10-10T11:00:00Z",
+			"views": 2847,
+			"likes": 156,
+			"commentsCount": 34,
+			"readTime": 7,
+			"seo": {
+				"metaTitle": "AI Chatbots for Customer Service | Transform Support Operations",
+				"metaDescription": "Learn how AI chatbots can reduce customer service costs by 60% while improving satisfaction. 24/7 support, instant responses, and intelligent automation.",
+				"keywords": [
+					"ai chatbot",
+					"customer service ai",
+					"conversational ai",
+					"chatbot implementation",
+					"automated support"
+				]
+			}
+		},
+		{
+			"id": "post-002",
+			"title": "Case Study: How We Automated 40 Hours of Weekly Tasks for a Legal Firm",
+			"slug": "case-study-legal-firm-automation",
+			"excerpt": "See how our AI automation solution saved a mid-sized legal firm 40+ hours per week in document processing and client intake.",
+			"content": "When Thompson & Associates approached us, their team was drowning in manual document review and client intake forms. Each new case required 3-4 hours of administrative work before attorneys could even begin substantive legal work.We implemented a custom AI solution that automated document classification, extracted key information from legal documents using OCR and NLP, and streamlined their client intake process with an intelligent form system.Results after 3 months: 40 hours per week saved, 95% accuracy in document classification, and client onboarding time reduced from 4 hours to 20 minutes. The ROI was achieved in just 6 weeks.The system now processes contracts, identifies key clauses, flags potential issues, and prepares preliminary summaries for attorney review.",
+			"featuredImage": {
+				"url": "/ai/article-image-2.png",
+				"alt": "Automated document processing workflow",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-002",
+				"name": "James Chen",
+				"email": "james.chen@aiagency.com",
+				"avatar": "https://images.example.com/avatars/james-chen.jpg",
+				"bio": "AI Implementation Lead with 12+ years in enterprise automation"
+			},
+			"categories": [
+				{
+					"id": "cat-003",
+					"name": "Case Studies",
+					"slug": "case-studies"
+				},
+				{
+					"id": "cat-004",
+					"name": "Automation",
+					"slug": "automation"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-004",
+					"name": "Document Processing",
+					"slug": "document-processing"
+				},
+				{
+					"id": "tag-005",
+					"name": "Legal Tech",
+					"slug": "legal-tech"
+				},
+				{
+					"id": "tag-006",
+					"name": "ROI",
+					"slug": "roi"
+				},
+				{
+					"id": "tag-007",
+					"name": "Process Automation",
+					"slug": "process-automation"
+				}
+			],
+			"status": "published",
+			"publishedAt": "2025-10-28T10:30:00Z",
+			"updatedAt": "2025-10-28T10:30:00Z",
+			"createdAt": "2025-10-25T09:15:00Z",
+			"views": 3124,
+			"likes": 203,
+			"commentsCount": 45,
+			"readTime": 9,
+			"seo": {
+				"metaTitle": "Legal Firm AI Automation Case Study | 40 Hours Saved Weekly",
+				"metaDescription": "Real results: How AI automation saved a legal firm 40+ hours per week in document processing. See the implementation process and ROI breakdown.",
+				"keywords": [
+					"legal automation",
+					"ai case study",
+					"document processing",
+					"legal tech",
+					"automation roi"
+				]
+			}
+		},
+		{
+			"id": "post-003",
+			"title": "The Complete Guide to AI-Powered Sales Lead Qualification",
+			"slug": "ai-powered-sales-lead-qualification-guide",
+			"excerpt": "Learn how AI can analyze and qualify leads in real-time, helping your sales team focus on high-value opportunities.",
+			"content": "Sales teams waste up to 50% of their time on unqualified leads. AI-powered lead qualification changes this by analyzing prospect behavior, engagement patterns, and firmographic data to predict buying intent with remarkable accuracy.Our lead scoring models combine website behavior tracking, email engagement, social media signals, and CRM data to create a comprehensive qualification score. The system learns from your historical data to understand what makes a lead likely to convert.Implementation typically takes 2-4 weeks and includes integration with your existing CRM, custom scoring model training, and automated lead routing to the right sales representatives.Clients typically see a 35% increase in conversion rates and 60% reduction in time spent on unqualified leads within the first quarter.",
+			"featuredImage": {
+				"url": "/ai/article-image-3.png",
+				"alt": "AI lead scoring dashboard",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-001",
+				"name": "Dr. Maya Patel",
+				"email": "maya.patel@aiagency.com",
+				"avatar": "https://images.example.com/avatars/maya-patel.jpg",
+				"bio": "AI Solutions Architect specializing in conversational AI and NLP"
+			},
+			"categories": [
+				{
+					"id": "cat-001",
+					"name": "AI Solutions",
+					"slug": "ai-solutions"
+				},
+				{
+					"id": "cat-005",
+					"name": "Sales & Marketing",
+					"slug": "sales-marketing"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-008",
+					"name": "Lead Generation",
+					"slug": "lead-generation"
+				},
+				{
+					"id": "tag-009",
+					"name": "Sales AI",
+					"slug": "sales-ai"
+				},
+				{
+					"id": "tag-010",
+					"name": "Machine Learning",
+					"slug": "machine-learning"
+				},
+				{
+					"id": "tag-011",
+					"name": "CRM Integration",
+					"slug": "crm-integration"
+				}
+			],
+			"status": "published",
+			"publishedAt": "2025-11-01T08:00:00Z",
+			"updatedAt": "2025-11-02T16:45:00Z",
+			"createdAt": "2025-10-28T13:20:00Z",
+			"views": 1876,
+			"likes": 142,
+			"commentsCount": 28,
+			"readTime": 11,
+			"seo": {
+				"metaTitle": "AI Lead Qualification Guide | Boost Sales Conversion by 35%",
+				"metaDescription": "Complete guide to implementing AI-powered lead qualification. Learn how machine learning can predict buying intent and prioritize high-value prospects.",
+				"keywords": [
+					"lead qualification",
+					"sales ai",
+					"lead scoring",
+					"predictive analytics",
+					"sales automation"
+				]
+			}
+		},
+		{
+			"id": "post-004",
+			"title": "Why Your Business Needs Intelligent Document Processing in 2025",
+			"slug": "intelligent-document-processing-2025",
+			"excerpt": "Manual document processing is costing your business more than you think. Here's how IDP can transform your operations.",
+			"content": "Intelligent Document Processing (IDP) combines OCR, NLP, and machine learning to automatically extract, classify, and process information from documents at scale.Whether you're dealing with invoices, contracts, forms, or unstructured emails, IDP can reduce processing time by 90% while improving accuracy to 98%+.Unlike traditional OCR, modern IDP understands context, handles multiple formats, learns from corrections, and integrates seamlessly with your existing systems.Industries seeing the biggest impact include finance, healthcare, insurance, legal, and logistics. The technology has reached a maturity point where implementation is faster and more affordable than ever.",
+			"featuredImage": {
+				"url": "/ai/article-image-4.png",
+				"alt": "Intelligent document processing workflow",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-003",
+				"name": "Sarah Okafor",
+				"email": "sarah.okafor@aiagency.com",
+				"avatar": "https://images.example.com/avatars/sarah-okafor.jpg",
+				"bio": "Machine Learning Engineer focused on computer vision and document AI"
+			},
+			"categories": [
+				{
+					"id": "cat-004",
+					"name": "Automation",
+					"slug": "automation"
+				},
+				{
+					"id": "cat-006",
+					"name": "Document AI",
+					"slug": "document-ai"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-004",
+					"name": "Document Processing",
+					"slug": "document-processing"
+				},
+				{
+					"id": "tag-012",
+					"name": "OCR",
+					"slug": "ocr"
+				},
+				{
+					"id": "tag-013",
+					"name": "IDP",
+					"slug": "idp"
+				},
+				{
+					"id": "tag-003",
+					"name": "NLP",
+					"slug": "nlp"
+				}
+			],
+			"status": "published",
+			"publishedAt": "2025-11-03T11:00:00Z",
+			"updatedAt": "2025-11-03T11:00:00Z",
+			"createdAt": "2025-11-01T10:30:00Z",
+			"views": 1654,
+			"likes": 98,
+			"commentsCount": 19,
+			"readTime": 8,
+			"seo": {
+				"metaTitle": "Intelligent Document Processing Guide 2025 | IDP Solutions",
+				"metaDescription": "Discover how Intelligent Document Processing can reduce processing time by 90%. Complete guide to IDP implementation, benefits, and use cases.",
+				"keywords": [
+					"intelligent document processing",
+					"idp",
+					"document automation",
+					"ocr",
+					"document ai"
+				]
+			}
+		},
+		{
+			"id": "post-005",
+			"title": "Building Custom AI Models vs. Using Off-the-Shelf Solutions: What's Right for Your Business?",
+			"slug": "custom-ai-vs-off-shelf-solutions",
+			"excerpt": "A practical guide to help you decide whether to invest in custom AI development or leverage existing AI platforms.",
+			"content": "One of the most common questions we hear is: 'Should we build a custom AI model or use an existing solution?' The answer depends on several factors including your use case, data availability, budget, and timeline.Off-the-shelf AI solutions are perfect for common use cases like chatbots, sentiment analysis, or basic document processing. They're faster to deploy, more cost-effective initially, and require less technical expertise to maintain.Custom AI models make sense when you have unique requirements, proprietary data that provides competitive advantage, specific performance needs, or when you're processing sensitive data that can't leave your infrastructure.We've worked with companies at both ends of the spectrum. A retail client saved $200K by using existing computer vision APIs, while a healthcare client needed a custom HIPAA-compliant model for specialized medical imaging analysis.This article breaks down the decision framework we use with clients to determine the best approach.",
+			"featuredImage": {
+				"url": "/ai/article-image-5.png",
+				"alt": "Decision framework diagram",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-002",
+				"name": "James Chen",
+				"email": "james.chen@aiagency.com",
+				"avatar": "https://images.example.com/avatars/james-chen.jpg",
+				"bio": "AI Implementation Lead with 12+ years in enterprise automation"
+			},
+			"categories": [
+				{
+					"id": "cat-007",
+					"name": "Strategy",
+					"slug": "strategy"
+				},
+				{
+					"id": "cat-001",
+					"name": "AI Solutions",
+					"slug": "ai-solutions"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-010",
+					"name": "Machine Learning",
+					"slug": "machine-learning"
+				},
+				{
+					"id": "tag-014",
+					"name": "AI Strategy",
+					"slug": "ai-strategy"
+				},
+				{
+					"id": "tag-015",
+					"name": "Custom AI",
+					"slug": "custom-ai"
+				}
+			],
+			"status": "published",
+			"publishedAt": "2025-11-04T14:00:00Z",
+			"updatedAt": "2025-11-04T15:20:00Z",
+			"createdAt": "2025-11-03T09:00:00Z",
+			"views": 2341,
+			"likes": 187,
+			"commentsCount": 52,
+			"readTime": 10,
+			"seo": {
+				"metaTitle": "Custom AI vs Off-the-Shelf Solutions | Decision Guide",
+				"metaDescription": "Should you build custom AI or use existing solutions? Complete decision framework to help choose the right approach for your business needs and budget.",
+				"keywords": [
+					"custom ai",
+					"ai solutions",
+					"ai strategy",
+					"build vs buy",
+					"machine learning"
+				]
+			}
+		},
+		{
+			"id": "post-006",
+			"title": "5 AI Automation Quick Wins Every Business Can Implement This Quarter",
+			"slug": "5-ai-automation-quick-wins",
+			"excerpt": "Start your AI journey with these high-impact, low-complexity automation projects that deliver ROI in weeks, not months.",
+			"content": "You don't need a massive budget or a team of data scientists to benefit from AI. Here are five proven automation projects that deliver fast results:1. Email Classification and Routing: Automatically categorize and route incoming emails to the right team members. Implementation: 1-2 weeks, typical ROI: 8-12 hours saved per week.2. Meeting Notes and Action Items: AI transcription and summarization of meetings with automatic action item extraction. Implementation: 1 week, typical ROI: 5-10 hours saved per week.3. Social Media Response Prioritization: Score incoming social messages by urgency and sentiment to ensure critical issues get immediate attention. Implementation: 2 weeks, typical ROI: 30% faster response time.4. Invoice Processing: Automatically extract data from invoices and populate accounting systems. Implementation: 2-3 weeks, typical ROI: 15-20 hours saved per week.5. FAQ Chatbot: Deploy an AI chatbot to handle common customer questions. Implementation: 2-3 weeks, typical ROI: 60-80% reduction in routine inquiries.Each of these projects can be implemented for $5,000-$15,000 and typically pay for themselves within 2-3 months.",
+			"featuredImage": {
+				"url": "/ai/article-image-6.png",
+				"alt": "AI automation workflow examples",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-001",
+				"name": "Dr. Maya Patel",
+				"email": "maya.patel@aiagency.com",
+				"avatar": "https://images.example.com/avatars/maya-patel.jpg",
+				"bio": "AI Solutions Architect specializing in conversational AI and NLP"
+			},
+			"categories": [
+				{
+					"id": "cat-004",
+					"name": "Automation",
+					"slug": "automation"
+				},
+				{
+					"id": "cat-007",
+					"name": "Strategy",
+					"slug": "strategy"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-007",
+					"name": "Process Automation",
+					"slug": "process-automation"
+				},
+				{
+					"id": "tag-016",
+					"name": "Quick Wins",
+					"slug": "quick-wins"
+				},
+				{
+					"id": "tag-006",
+					"name": "ROI",
+					"slug": "roi"
+				}
+			],
+			"status": "published",
+			"publishedAt": "2025-11-05T09:00:00Z",
+			"updatedAt": "2025-11-05T09:00:00Z",
+			"createdAt": "2025-11-04T16:00:00Z",
+			"views": 987,
+			"likes": 76,
+			"commentsCount": 15,
+			"readTime": 6,
+			"seo": {
+				"metaTitle": "5 AI Automation Quick Wins for Business | Fast ROI Projects",
+				"metaDescription": "Implement these 5 high-impact AI automation projects this quarter. Each delivers ROI in 2-3 months with budgets under $15K.",
+				"keywords": [
+					"ai automation",
+					"quick wins",
+					"business automation",
+					"ai implementation",
+					"automation roi"
+				]
+			}
+		},
+		{
+			"id": "post-007",
+			"title": "Understanding AI Implementation Costs: A Transparent Pricing Guide",
+			"slug": "ai-implementation-costs-pricing-guide",
+			"excerpt": "Demystifying AI project costs with real numbers, timeline expectations, and factors that impact your investment.",
+			"content": "One of the biggest barriers to AI adoption is uncertainty about costs. This guide provides transparent pricing information based on hundreds of implementations.Chatbot Implementation: $8K-$25K for initial deployment, $500-$2K monthly maintenance. Timeline: 3-6 weeks.Document Processing: $15K-$50K for custom IDP solution, $1K-$5K monthly processing costs. Timeline: 6-10 weeks.Predictive Analytics: $25K-$100K for custom models, $2K-$10K monthly for hosting and updates. Timeline: 8-16 weeks.Computer Vision: $30K-$150K depending on complexity, $3K-$15K monthly. Timeline: 10-20 weeks.Cost factors include data preparation (often 40% of budget), custom development vs. platform usage, integration complexity, and ongoing training/maintenance.Most projects achieve positive ROI within 6-12 months. We always start with a discovery phase ($3K-$8K) to provide accurate estimates for your specific use case.",
+			"featuredImage": {
+				"url": "/ai/article-image-7.png",
+				"alt": "AI implementation cost breakdown",
+				"width": 1200,
+				"height": 630
+			},
+			"author": {
+				"id": "author-002",
+				"name": "James Chen",
+				"email": "james.chen@aiagency.com",
+				"avatar": "https://images.example.com/avatars/james-chen.jpg",
+				"bio": "AI Implementation Lead with 12+ years in enterprise automation"
+			},
+			"categories": [
+				{
+					"id": "cat-007",
+					"name": "Strategy",
+					"slug": "strategy"
+				},
+				{
+					"id": "cat-008",
+					"name": "Pricing",
+					"slug": "pricing"
+				}
+			],
+			"tags": [
+				{
+					"id": "tag-014",
+					"name": "AI Strategy",
+					"slug": "ai-strategy"
+				},
+				{
+					"id": "tag-017",
+					"name": "Pricing",
+					"slug": "pricing"
+				},
+				{
+					"id": "tag-006",
+					"name": "ROI",
+					"slug": "roi"
+				}
+			],
+			"status": "draft",
+			"publishedAt": null,
+			"updatedAt": "2025-11-05T13:45:00Z",
+			"createdAt": "2025-11-05T10:00:00Z",
+			"views": 0,
+			"likes": 0,
+			"commentsCount": 0,
+			"readTime": 8,
+			"seo": {
+				"metaTitle": "AI Implementation Costs 2025 | Transparent Pricing Guide",
+				"metaDescription": "Real AI project costs revealed. Understand pricing for chatbots, document processing, predictive analytics, and more with transparent budget breakdowns.",
+				"keywords": [
+					"ai costs",
+					"ai pricing",
+					"ai implementation",
+					"ai budget",
+					"ai project costs"
+				]
+			}
+		}
+	],
+	"authors": [
+		{
+			"id": "author-001",
+			"name": "Dr. Maya Patel",
+			"email": "maya.patel@aiagency.com",
+			"username": "mayapatel",
+			"avatar": "https://images.example.com/avatars/maya-patel.jpg",
+			"bio": "AI Solutions Architect specializing in conversational AI and NLP",
+			"role": "admin",
+			"social": {
+				"twitter": "https://twitter.com/mayapatelai",
+				"github": "https://github.com/mayapatel",
+				"linkedin": "https://linkedin.com/in/drmayapatel"
+			},
+			"postsCount": 28,
+			"joinedAt": "2023-01-15T10:00:00Z"
+		},
+		{
+			"id": "author-002",
+			"name": "James Chen",
+			"email": "james.chen@aiagency.com",
+			"username": "jameschen",
+			"avatar": "https://images.example.com/avatars/james-chen.jpg",
+			"bio": "AI Implementation Lead with 12+ years in enterprise automation",
+			"role": "editor",
+			"social": {
+				"twitter": "https://twitter.com/jameschenai",
+				"github": "https://github.com/jameschen",
+				"linkedin": "https://linkedin.com/in/jameschen"
+			},
+			"postsCount": 35,
+			"joinedAt": "2022-08-20T14:30:00Z"
+		},
+		{
+			"id": "author-003",
+			"name": "Sarah Okafor",
+			"email": "sarah.okafor@aiagency.com",
+			"username": "sarahokafor",
+			"avatar": "https://images.example.com/avatars/sarah-okafor.jpg",
+			"bio": "Machine Learning Engineer focused on computer vision and document AI",
+			"role": "author",
+			"social": {
+				"twitter": "https://twitter.com/sarahokaforml",
+				"github": "https://github.com/sarahokafor",
+				"linkedin": "https://linkedin.com/in/sarahokafor"
+			},
+			"postsCount": 19,
+			"joinedAt": "2023-11-10T09:15:00Z"
+		}
+	],
+	"categories": [
+		{
+			"id": "cat-009",
+			"name": "All",
+			"slug": "all",
+			"description": "All blog posts across all categories",
+			"postsCount": 6
+		},
+		{
+			"id": "cat-001",
+			"name": "AI Solutions",
+			"slug": "ai-solutions",
+			"description": "Exploring different AI solutions and their business applications",
+			"postsCount": 42
+		},
+		{
+			"id": "cat-002",
+			"name": "Customer Service",
+			"slug": "customer-service",
+			"description": "AI-powered customer service and support innovations",
+			"postsCount": 18
+		},
+		{
+			"id": "cat-003",
+			"name": "Case Studies",
+			"slug": "case-studies",
+			"description": "Real-world AI implementation success stories",
+			"postsCount": 15
+		},
+		{
+			"id": "cat-004",
+			"name": "Automation",
+			"slug": "automation",
+			"description": "Business process automation with AI",
+			"postsCount": 38
+		},
+		{
+			"id": "cat-005",
+			"name": "Sales & Marketing",
+			"slug": "sales-marketing",
+			"description": "AI applications in sales and marketing",
+			"postsCount": 22
+		},
+		{
+			"id": "cat-006",
+			"name": "Document AI",
+			"slug": "document-ai",
+			"description": "Intelligent document processing and analysis",
+			"postsCount": 12
+		},
+		{
+			"id": "cat-007",
+			"name": "Strategy",
+			"slug": "strategy",
+			"description": "AI strategy, planning, and implementation guidance",
+			"postsCount": 25
+		},
+		{
+			"id": "cat-008",
+			"name": "Pricing",
+			"slug": "pricing",
+			"description": "Understanding AI project costs and pricing models",
+			"postsCount": 6
+		}
+	],
+	"tags": [
+		{
+			"id": "tag-001",
+			"name": "Chatbots",
+			"slug": "chatbots",
+			"postsCount": 24
+		},
+		{
+			"id": "tag-002",
+			"name": "Customer Experience",
+			"slug": "customer-experience",
+			"postsCount": 31
+		},
+		{
+			"id": "tag-003",
+			"name": "NLP",
+			"slug": "nlp",
+			"postsCount": 28
+		},
+		{
+			"id": "tag-004",
+			"name": "Document Processing",
+			"slug": "document-processing",
+			"postsCount": 19
+		},
+		{
+			"id": "tag-005",
+			"name": "Legal Tech",
+			"slug": "legal-tech",
+			"postsCount": 8
+		},
+		{
+			"id": "tag-006",
+			"name": "ROI",
+			"slug": "roi",
+			"postsCount": 33
+		},
+		{
+			"id": "tag-007",
+			"name": "Process Automation",
+			"slug": "process-automation",
+			"postsCount": 41
+		},
+		{
+			"id": "tag-008",
+			"name": "Lead Generation",
+			"slug": "lead-generation",
+			"postsCount": 15
+		},
+		{
+			"id": "tag-009",
+			"name": "Sales AI",
+			"slug": "sales-ai",
+			"postsCount": 17
+		},
+		{
+			"id": "tag-010",
+			"name": "Machine Learning",
+			"slug": "machine-learning",
+			"postsCount": 45
+		},
+		{
+			"id": "tag-011",
+			"name": "CRM Integration",
+			"slug": "crm-integration",
+			"postsCount": 12
+		},
+		{
+			"id": "tag-012",
+			"name": "OCR",
+			"slug": "ocr",
+			"postsCount": 14
+		},
+		{
+			"id": "tag-013",
+			"name": "IDP",
+			"slug": "idp",
+			"postsCount": 11
+		},
+		{
+			"id": "tag-014",
+			"name": "AI Strategy",
+			"slug": "ai-strategy",
+			"postsCount": 29
+		},
+		{
+			"id": "tag-015",
+			"name": "Custom AI",
+			"slug": "custom-ai",
+			"postsCount": 16
+		},
+		{
+			"id": "tag-016",
+			"name": "Quick Wins",
+			"slug": "quick-wins",
+			"postsCount": 9
+		},
+		{
+			"id": "tag-017",
+			"name": "Pricing",
+			"slug": "pricing",
+			"postsCount": 7
+		}
+	]
+}
