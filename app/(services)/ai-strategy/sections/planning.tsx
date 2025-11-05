@@ -24,7 +24,7 @@ export default function PlanningSection() {
 				<ul className='mt-8 grid gap-4 md:grid-cols-2'>
 					<li className='flex items-start gap-2.5'>
 						<Image
-							src={"/icons/check-line.svg"}
+							src={"/images/icons/check-line.svg"}
 							width={20}
 							height={20}
 							alt='check icon'
@@ -36,7 +36,7 @@ export default function PlanningSection() {
 					</li>
 					<li className='flex items-start gap-2.5'>
 						<Image
-							src={"/icons/check-line.svg"}
+							src={"/images/icons/check-line.svg"}
 							width={20}
 							height={20}
 							alt='check icon'
@@ -48,7 +48,7 @@ export default function PlanningSection() {
 					</li>
 					<li className='flex items-start gap-2.5'>
 						<Image
-							src={"/icons/check-line.svg"}
+							src={"/images/icons/check-line.svg"}
 							width={20}
 							height={20}
 							alt='check icon'
@@ -60,7 +60,7 @@ export default function PlanningSection() {
 					</li>
 					<li className='flex items-start gap-2.5'>
 						<Image
-							src={"/icons/check-line.svg"}
+							src={"/images/icons/check-line.svg"}
 							width={20}
 							height={20}
 							alt='check icon'

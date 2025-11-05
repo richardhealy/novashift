@@ -52,7 +52,7 @@ export default function MobileMenu({
 						<Image
 							className='w-[120px] md:w-[194px]'
 							loading='eager'
-							src='/global/logo.png'
+							src='/images/global/logo.png'
 							alt='logo'
 							width={194}
 							height={60}

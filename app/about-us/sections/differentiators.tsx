@@ -12,21 +12,21 @@ interface DifferentiatorsItem {
 const differentiatorItems: DifferentiatorsItem[] = [
 	{
 		id: "string1",
-		imageUrl: "/about/diff-1.png",
+		imageUrl: "/images/about/diff-1.png",
 		title: "Deep collaboration",
 		text: "We work as an extension of your team, understanding your unique challenges and goals.",
 		imageClasses: "absolute -right-10 top-0 -z-10 w-[260px] h-auto md:right-0",
 	},
 	{
 		id: "string2",
-		imageUrl: "/about/diff-2.png",
+		imageUrl: "/images/about/diff-2.png",
 		title: "Fast prototyping",
 		text: "Rapid iteration and testing to validate concepts before full-scale implementation.",
 		imageClasses: "absolute -right-10 top-0 -z-10 w-[300px] h-auto md:right-0",
 	},
 	{
 		id: "string3",
-		imageUrl: "/about/diff-3.png",
+		imageUrl: "/images/about/diff-3.png",
 		title: "End-to-end support",
 		text: "From strategy and development to deployment and ongoing optimization.",
 		imageClasses: "absolute -right-10 top-0 -z-10 w-[300px] h-auto md:right-0",

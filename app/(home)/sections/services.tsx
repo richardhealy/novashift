@@ -13,7 +13,7 @@ interface ServiceItem {
 
 const serviceItems: ServiceItem[] = [
 	{
-		imageUrl: "/home/service-1.png",
+		imageUrl: "/images/home/service-1.png",
 		title: "AI Strategy & Consulting",
 		list: ["AI-readiness Audit", "AI Opportunity Mapping"],
 		href: ROUTES.AI_STRATEGY,
@@ -21,7 +21,7 @@ const serviceItems: ServiceItem[] = [
 			"-ml-10 -mt-4 w-[280px] lg:w-[220px] lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-20 lg:m-0 lg:h-[220px] block ",
 	},
 	{
-		imageUrl: "/home/service-2.png",
+		imageUrl: "/images/home/service-2.png",
 		title: "Dedicated Development Team",
 		list: ["Custom AI Development", "MVP Builds"],
 		href: ROUTES.TEAM,
@@ -29,7 +29,7 @@ const serviceItems: ServiceItem[] = [
 			"-ml-4 -mb-6 -mt-4 w-[290px] lg:w-[240px] lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-[-102px] lg:m-0 lg:h-[240px] block z-10",
 	},
 	{
-		imageUrl: "/home/service-3.png",
+		imageUrl: "/images/home/service-3.png",
 		title: "Workflow Automations",
 		list: ["AI-powered automations", "SaaS stack integrations"],
 		href: ROUTES.AUTOMATION,

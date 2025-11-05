@@ -7,7 +7,7 @@
 			"excerpt": "Discover how implementing AI-powered chatbots can reduce response times by 80% and handle unlimited customer inquiries 24/7.",
 			"content": "In today's fast-paced digital landscape, customers expect instant responses. Traditional customer service models struggle to meet these demands, but AI chatbots offer a revolutionary solution.Our AI chatbot implementations have helped businesses reduce customer service costs by up to 60% while improving satisfaction scores. These intelligent systems can handle routine inquiries, qualify leads, schedule appointments, and seamlessly escalate complex issues to human agents when needed.The technology has matured significantly. Modern chatbots understand context, detect sentiment, and can engage in natural conversations across multiple languages.",
 			"featuredImage": {
-				"url": "/ai/article-image-1.png",
+				"url": "/images/ai/article-image-1.png",
 				"alt": "AI chatbot interface showing customer interactions",
 				"width": 1200,
 				"height": 630
@@ -75,7 +75,7 @@
 			"excerpt": "See how our AI automation solution saved a mid-sized legal firm 40+ hours per week in document processing and client intake.",
 			"content": "When Thompson & Associates approached us, their team was drowning in manual document review and client intake forms. Each new case required 3-4 hours of administrative work before attorneys could even begin substantive legal work.We implemented a custom AI solution that automated document classification, extracted key information from legal documents using OCR and NLP, and streamlined their client intake process with an intelligent form system.Results after 3 months: 40 hours per week saved, 95% accuracy in document classification, and client onboarding time reduced from 4 hours to 20 minutes. The ROI was achieved in just 6 weeks.The system now processes contracts, identifies key clauses, flags potential issues, and prepares preliminary summaries for attorney review.",
 			"featuredImage": {
-				"url": "/ai/article-image-2.png",
+				"url": "/images/ai/article-image-2.png",
 				"alt": "Automated document processing workflow",
 				"width": 1200,
 				"height": 630
@@ -148,7 +148,7 @@
 			"excerpt": "Learn how AI can analyze and qualify leads in real-time, helping your sales team focus on high-value opportunities.",
 			"content": "Sales teams waste up to 50% of their time on unqualified leads. AI-powered lead qualification changes this by analyzing prospect behavior, engagement patterns, and firmographic data to predict buying intent with remarkable accuracy.Our lead scoring models combine website behavior tracking, email engagement, social media signals, and CRM data to create a comprehensive qualification score. The system learns from your historical data to understand what makes a lead likely to convert.Implementation typically takes 2-4 weeks and includes integration with your existing CRM, custom scoring model training, and automated lead routing to the right sales representatives.Clients typically see a 35% increase in conversion rates and 60% reduction in time spent on unqualified leads within the first quarter.",
 			"featuredImage": {
-				"url": "/ai/article-image-3.png",
+				"url": "/images/ai/article-image-3.png",
 				"alt": "AI lead scoring dashboard",
 				"width": 1200,
 				"height": 630
@@ -221,7 +221,7 @@
 			"excerpt": "Manual document processing is costing your business more than you think. Here's how IDP can transform your operations.",
 			"content": "Intelligent Document Processing (IDP) combines OCR, NLP, and machine learning to automatically extract, classify, and process information from documents at scale.Whether you're dealing with invoices, contracts, forms, or unstructured emails, IDP can reduce processing time by 90% while improving accuracy to 98%+.Unlike traditional OCR, modern IDP understands context, handles multiple formats, learns from corrections, and integrates seamlessly with your existing systems.Industries seeing the biggest impact include finance, healthcare, insurance, legal, and logistics. The technology has reached a maturity point where implementation is faster and more affordable than ever.",
 			"featuredImage": {
-				"url": "/ai/article-image-4.png",
+				"url": "/images/ai/article-image-4.png",
 				"alt": "Intelligent document processing workflow",
 				"width": 1200,
 				"height": 630
@@ -294,7 +294,7 @@
 			"excerpt": "A practical guide to help you decide whether to invest in custom AI development or leverage existing AI platforms.",
 			"content": "One of the most common questions we hear is: 'Should we build a custom AI model or use an existing solution?' The answer depends on several factors including your use case, data availability, budget, and timeline.Off-the-shelf AI solutions are perfect for common use cases like chatbots, sentiment analysis, or basic document processing. They're faster to deploy, more cost-effective initially, and require less technical expertise to maintain.Custom AI models make sense when you have unique requirements, proprietary data that provides competitive advantage, specific performance needs, or when you're processing sensitive data that can't leave your infrastructure.We've worked with companies at both ends of the spectrum. A retail client saved $200K by using existing computer vision APIs, while a healthcare client needed a custom HIPAA-compliant model for specialized medical imaging analysis.This article breaks down the decision framework we use with clients to determine the best approach.",
 			"featuredImage": {
-				"url": "/ai/article-image-5.png",
+				"url": "/images/ai/article-image-5.png",
 				"alt": "Decision framework diagram",
 				"width": 1200,
 				"height": 630
@@ -362,7 +362,7 @@
 			"excerpt": "Start your AI journey with these high-impact, low-complexity automation projects that deliver ROI in weeks, not months.",
 			"content": "You don't need a massive budget or a team of data scientists to benefit from AI. Here are five proven automation projects that deliver fast results:1. Email Classification and Routing: Automatically categorize and route incoming emails to the right team members. Implementation: 1-2 weeks, typical ROI: 8-12 hours saved per week.2. Meeting Notes and Action Items: AI transcription and summarization of meetings with automatic action item extraction. Implementation: 1 week, typical ROI: 5-10 hours saved per week.3. Social Media Response Prioritization: Score incoming social messages by urgency and sentiment to ensure critical issues get immediate attention. Implementation: 2 weeks, typical ROI: 30% faster response time.4. Invoice Processing: Automatically extract data from invoices and populate accounting systems. Implementation: 2-3 weeks, typical ROI: 15-20 hours saved per week.5. FAQ Chatbot: Deploy an AI chatbot to handle common customer questions. Implementation: 2-3 weeks, typical ROI: 60-80% reduction in routine inquiries.Each of these projects can be implemented for $5,000-$15,000 and typically pay for themselves within 2-3 months.",
 			"featuredImage": {
-				"url": "/ai/article-image-6.png",
+				"url": "/images/ai/article-image-6.png",
 				"alt": "AI automation workflow examples",
 				"width": 1200,
 				"height": 630
@@ -430,7 +430,7 @@
 			"excerpt": "Demystifying AI project costs with real numbers, timeline expectations, and factors that impact your investment.",
 			"content": "One of the biggest barriers to AI adoption is uncertainty about costs. This guide provides transparent pricing information based on hundreds of implementations.Chatbot Implementation: $8K-$25K for initial deployment, $500-$2K monthly maintenance. Timeline: 3-6 weeks.Document Processing: $15K-$50K for custom IDP solution, $1K-$5K monthly processing costs. Timeline: 6-10 weeks.Predictive Analytics: $25K-$100K for custom models, $2K-$10K monthly for hosting and updates. Timeline: 8-16 weeks.Computer Vision: $30K-$150K depending on complexity, $3K-$15K monthly. Timeline: 10-20 weeks.Cost factors include data preparation (often 40% of budget), custom development vs. platform usage, integration complexity, and ongoing training/maintenance.Most projects achieve positive ROI within 6-12 months. We always start with a discovery phase ($3K-$8K) to provide accurate estimates for your specific use case.",
 			"featuredImage": {
-				"url": "/ai/article-image-7.png",
+				"url": "/images/ai/article-image-7.png",
 				"alt": "AI implementation cost breakdown",
 				"width": 1200,
 				"height": 630

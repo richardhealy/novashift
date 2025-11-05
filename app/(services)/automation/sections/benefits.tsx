@@ -17,7 +17,7 @@ export default function BenefitsSection() {
 							<div className='size-[450px] absolute -top-28 right-[-153px] after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:top-[50px] lg:right-[-103px]'>
 								<Image
 									className='w-full h-full -z-10'
-									src={"/automation/benefit-1.png"}
+									src={"/images/automation/benefit-1.png"}
 									alt='strategy image'
 									width={450}
 									height={450}
@@ -74,7 +74,7 @@ export default function BenefitsSection() {
 							<div className='w-[477px] h-[509px] absolute -top-16 -right-40 after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:right-[-230px] lg:top-3'>
 								<Image
 									className='w-full h-full -z-10'
-									src={"/automation/benefit-2.png"}
+									src={"/images/automation/benefit-2.png"}
 									alt='strategy image'
 									width={477}
 									height={509}

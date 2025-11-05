@@ -14,7 +14,7 @@ export default function Footer() {
 					<div className='flex flex-col items-center md:w-full md:max-w-[403px] md:items-start'>
 						<Link href={ROUTES.HOME}>
 							<Image
-								src='/global/logo-white.png'
+								src='/images/global/logo-white.png'
 								alt='footer logo'
 								width={170}
 								height={54}

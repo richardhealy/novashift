@@ -1,2 +1,0 @@
-# Global
-    - add meta tags

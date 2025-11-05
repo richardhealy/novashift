@@ -40,7 +40,7 @@ export default function OfferSection() {
 						<div className='grid -mt-14 md:-mt-12 z-0'>
 							<Image
 								className='max-w-[230px] block mx-auto md:max-w-[477px] md:h-[509px] md:absolute md:right-[-230px] md:top-0 md:-z-10'
-								src={"/ai-strategy/strategy-1.png"}
+								src={"/images/ai-strategy/strategy-1.png"}
 								alt='strategy image'
 								width={464}
 								height={488}
@@ -127,7 +127,7 @@ export default function OfferSection() {
 						<div className='grid -mt-7 md:-mt-12 z-0'>
 							<Image
 								className='max-w-[212px] block mx-auto md:max-w-[464px] md:h-[488px] md:absolute md:right-[-206px] md:top-[100px] md:-z-10'
-								src={"/ai-strategy/strategy-2.png"}
+								src={"/images/ai-strategy/strategy-2.png"}
 								alt='strategy image'
 								width={464}
 								height={488}

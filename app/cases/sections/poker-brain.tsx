@@ -25,7 +25,7 @@ const data: CaseAccordionProps = {
 			text: "Our client received a complete product blueprint: a 10-page technical specification, a scalable architecture, and a 5-phase roadmap with projected costs ranging from $103,000 to $148,500. The outcome provided full development clarity—ready for implementation and confident stakeholder alignment.",
 		},
 	],
-	imageUrl: "/cases/accordion-1.png",
+	imageUrl: "/images/cases/accordion-1.png",
 	imageClass: "",
 }
 export default function PokerBrainSection() {

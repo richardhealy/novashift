@@ -8,7 +8,7 @@ const largeCasePost: CaseStudiesItem = {
 	title: "Poker Brain – AI-Powered Poker Training System",
 	description:
 		"An AI-driven poker coach designed from concept to roadmap, turning strategy insights into a build-ready product plan.",
-	imageUrl: "/home/large-case.png",
+	imageUrl: "/images/home/large-case.png",
 }
 
 const smallCasePosts: CaseStudiesItem[] = [
@@ -17,21 +17,21 @@ const smallCasePosts: CaseStudiesItem[] = [
 		title: "AI Video Automation System",
 		description:
 			"A fully automated video production system that creates ready-to-publish marketing videos in hours using integrated AI tools.",
-		imageUrl: "/home/small-case-1.png",
+		imageUrl: "/images/home/small-case-1.png",
 	},
 	{
 		id: "235346246",
 		title: "Development Automation Platform",
 		description:
 			"An intelligent automation system that connects Asana and GitHub, enabling AI-driven code generation, task management, and end-to-end development workflows.",
-		imageUrl: "/home/small-case-2.png",
+		imageUrl: "/images/home/small-case-2.png",
 	},
 	{
 		id: "7681246",
 		title: "AI-Powered Social Media Platform",
 		description:
 			"A full-stack platform that transforms brand assets into AI-generated, scheduled social posts—automating content creation, design, and publishing across Instagram and Facebook.",
-		imageUrl: "/home/small-case-3.png",
+		imageUrl: "/images/home/small-case-3.png",
 	},
 ]
 

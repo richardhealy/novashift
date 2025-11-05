@@ -16,38 +16,38 @@ interface LogoSlide {
 const slides: LogoSlide[] = [
 	{
 		id: "agasdgasgd",
-		src: "/home/partner-logo-1.png",
+		src: "/images/home/partner-logo-1.png",
 		alt: "partner logo",
 	},
 	{
 		id: "asdgasdehrgadg",
-		src: "/home/partner-logo-2.png",
+		src: "/images/home/partner-logo-2.png",
 		alt: "partner logo",
 	},
 	{
 		id: "b4rthn4rnt",
-		src: "/home/partner-logo-3.png",
+		src: "/images/home/partner-logo-3.png",
 		alt: "partner logo",
 	},
 	{
 		id: "asdgasdhagnn",
-		src: "/home/partner-logo-4.png",
+		src: "/images/home/partner-logo-4.png",
 		alt: "partner logo",
 	},
 
 	{
 		id: "wegwegweh",
-		src: "/home/partner-logo-2.png",
+		src: "/images/home/partner-logo-2.png",
 		alt: "partner logo",
 	},
 	{
 		id: "sdfcr4ht4rn5",
-		src: "/home/partner-logo-3.png",
+		src: "/images/home/partner-logo-3.png",
 		alt: "partner logo",
 	},
 	{
 		id: "sadgbmrjtbirtbb",
-		src: "/home/partner-logo-1.png",
+		src: "/images/home/partner-logo-1.png",
 		alt: "partner logo",
 	},
 ]

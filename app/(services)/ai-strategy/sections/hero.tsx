@@ -22,7 +22,7 @@ export default function HeroSection() {
 					<div className='absolute shrink-0 max-w-[484px] mx-auto bottom-[-50px] left-[-50px] right-[-50px] md:left-[unset] md:-right-[200px] md:max-w-[450px] mx:m-0 lg:max-w-[700px] lg:-right-20 lg:bottom-[-200px] lg:h-auto xl:-right-40 xl:max-w-[864px]'>
 						<Image
 							className='aspect-square'
-							src={"/ai-strategy/hero-image.png"}
+							src={"/images/ai-strategy/hero-image.png"}
 							alt='hero image'
 							width={864}
 							height={864}

@@ -8,7 +8,7 @@ export default function TransformSection() {
 	return (
 		<section className='relative z-0 overflow-hidden bg-blue-500 py-[60px] md:py-[100px]'>
 			<Image
-				src='/home/transform.png'
+				src='/images/home/transform.png'
 				alt='image'
 				width={650}
 				height={650}

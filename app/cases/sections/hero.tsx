@@ -20,7 +20,7 @@ export default function HeroSection() {
 					<div className='absolute shrink-0 max-w-[530px] mx-auto -left-[68px] bottom-0 -right-[68px] md:left-[unset] mx:m-0 md:max-w-[400px] lg:max-w-[500px] md:-right-20 md:-bottom-10 lg:h-auto xl:top-0 xl:-right-[110px] xl:max-w-[808px]'>
 						<Image
 							className='aspect-530/453'
-							src={"/cases/hero-image.png"}
+							src={"/images/cases/hero-image.png"}
 							alt='hero image'
 							width={808}
 							height={690}

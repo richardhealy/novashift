@@ -7,7 +7,7 @@ export default function TeamSection() {
 			<div className='bg-blue-500 grid md:grid-cols-2 md:items-center'>
 				<div className='md:relative z-0 w-full h-full'>
 					<Image
-						src={"/team/team-image.png"}
+						src={"/images/team/team-image.png"}
 						alt='team image'
 						width={720}
 						height={740}

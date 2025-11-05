@@ -8,7 +8,7 @@ export default function NotFound() {
 			<div className='container'>
 				<div className='mx-auto pt-32 pb-[200px] flex flex-col items-center justify-center gap-8 2xl:md:py-[262px]'>
 					<Image
-						src='/global/404.png'
+						src='/images/global/404.png'
 						alt='page not found'
 						width={534}
 						height={251}

@@ -18,7 +18,7 @@ export default function HeroSection() {
 					<div className='absolute shrink-0 max-w-[452px] mx-auto -left-[30px] bottom-0 -right-[30px] md:left-[unset] mx:m-0 md:max-w-[400px] lg:max-w-[500px] md:-right-6 md:-bottom-10 lg:h-auto xl:-top-6 xl:-right-14 xl:max-w-[778px]'>
 						<Image
 							className='aspect-389/379'
-							src={"/automation/hero-image.png"}
+							src={"/images/automation/hero-image.png"}
 							alt='hero image'
 							width={778}
 							height={758}

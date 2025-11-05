@@ -7,7 +7,7 @@ export default function SupportSection() {
 			<div className='grid md:grid-cols-2 md:items-center'>
 				<div className='md:relative z-0 w-full h-full'>
 					<Image
-						src={"/automation/support.png"}
+						src={"/images/automation/support.png"}
 						alt='team image'
 						width={720}
 						height={740}
