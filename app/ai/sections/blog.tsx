@@ -2,6 +2,7 @@
 
 import { useMemo } from "react"
 import LargePost from "@/components/large-post"
+import LargePostCard from "@/components/large-post"
 import PostCard from "@/components/post-card"
 import { TypographyH5 } from "@/components/ui/typography"
 import { useBlogFilters } from "@/hooks/useBlogFilters"
@@ -23,7 +24,7 @@ export default function BlogSection({ posts, categories }: BlogSectionProps) {
 	const randomFeaturedPost = useMemo(() => {
 		if (filteredPosts.length === 0) return null
 
-		const randomIndex = Math.floor(Math.random() * filteredPosts.length)
+		const randomIndex = 0
 		return filteredPosts[randomIndex]
 	}, [filteredPosts])
 
@@ -41,7 +42,12 @@ export default function BlogSection({ posts, categories }: BlogSectionProps) {
 
 				{/* Large Post: Random featured post */}
 				{randomFeaturedPost && (
-					<LargePost key={randomFeaturedPost.id} post={randomFeaturedPost} />
+					<div className='mt-8 md:mt-[60px]'>
+						<LargePostCard
+							key={randomFeaturedPost.id}
+							post={randomFeaturedPost}
+						/>
+					</div>
 				)}
 
 				{/* Grid of Other Posts */}

@@ -1,7 +1,7 @@
-import PostCard from "@/components/post-card"
 import { Button } from "@/components/ui/button"
 import { TypographyH2 } from "@/components/ui/typography"
 import type { Post } from "@/types/blog"
+import InsightItem from "../_components/insight-item"
 
 interface LatestInsightsSectionProps {
 	posts: Post[]
@@ -26,7 +26,7 @@ export default function LatestInsightsSection({
 
 				<div className='grid gap-6 mt-[60px] md:grid-cols-2 lg:grid-cols-3'>
 					{posts.slice(0, 3).map((post) => (
-						<PostCard key={post.id} post={post} />
+						<InsightItem key={post.id} post={post} />
 					))}
 				</div>
 			</div>
