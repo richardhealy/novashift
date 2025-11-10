@@ -16,38 +16,42 @@ interface LogoSlide {
 const slides: LogoSlide[] = [
 	{
 		id: "agasdgasgd",
-		src: "/images/home/partner-logo-1.png",
+		src: "/images/home/partner-logo-1.svg",
 		alt: "partner logo",
 	},
 	{
 		id: "asdgasdehrgadg",
-		src: "/images/home/partner-logo-2.png",
+		src: "/images/home/partner-logo-2.svg",
 		alt: "partner logo",
 	},
 	{
 		id: "b4rthn4rnt",
-		src: "/images/home/partner-logo-3.png",
+		src: "/images/home/partner-logo-3.svg",
 		alt: "partner logo",
 	},
 	{
 		id: "asdgasdhagnn",
-		src: "/images/home/partner-logo-4.png",
-		alt: "partner logo",
-	},
-
-	{
-		id: "wegwegweh",
-		src: "/images/home/partner-logo-2.png",
+		src: "/images/home/partner-logo-4.svg",
 		alt: "partner logo",
 	},
 	{
-		id: "sdfcr4ht4rn5",
-		src: "/images/home/partner-logo-3.png",
+		id: "agas23dgasgd",
+		src: "/images/home/partner-logo-1.svg",
 		alt: "partner logo",
 	},
 	{
-		id: "sadgbmrjtbirtbb",
-		src: "/images/home/partner-logo-1.png",
+		id: "asdgasderdehrgadg",
+		src: "/images/home/partner-logo-2.svg",
+		alt: "partner logo",
+	},
+	{
+		id: "b4rthn364rnt",
+		src: "/images/home/partner-logo-3.svg",
+		alt: "partner logo",
+	},
+	{
+		id: "asdgasdfghhagnn",
+		src: "/images/home/partner-logo-4.svg",
 		alt: "partner logo",
 	},
 ]
@@ -67,6 +71,7 @@ export default function PartnersSection() {
 							modules={[Autoplay]}
 							loop={true}
 							speed={2000}
+							spaceBetween={60}
 							autoplay={{
 								delay: 0,
 
@@ -76,22 +81,22 @@ export default function PartnersSection() {
 								768: {
 									slidesPerView: 3,
 								},
-								1200: {
+								992: {
 									slidesPerView: 4,
 								},
-								1366: {
+								1336: {
 									slidesPerView: 5,
 								},
-								1536: {
-									slidesPerView: 6,
+								1548: {
+									slidesPerView: 7,
 								},
 							}}
 						>
 							{slides.map((slide) => (
 								<SwiperSlide key={slide.id}>
-									<div className='px-3 py-[30px] md:p-[50px]'>
+									<div className='flex items-center justify-center h-[50px] py-14'>
 										<Image
-											className='w-auto md:w-full object-cover'
+											className='w-auto h-auto md:w-full object-cover'
 											src={slide.src}
 											alt={slide.alt}
 											width={200}
@@ -103,8 +108,8 @@ export default function PartnersSection() {
 						</Swiper>
 					) : (
 						<div className='flex items-center flex-wrap justify-center'>
-							{slides.map((slide) => (
-								<div className='px-3 py-[30px] md:p-[50px]' key={slide.id}>
+							{slides.slice(0, 4).map((slide) => (
+								<div className='px-3 py-[20px] md:p-[30px]' key={slide.id}>
 									<Image
 										className='w-auto md:w-full object-cover'
 										src={slide.src}

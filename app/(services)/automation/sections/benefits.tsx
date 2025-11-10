@@ -55,13 +55,12 @@ export default function BenefitsSection() {
 								>
 									<div className='overflow-hidden'>
 										<p>
-											Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Sequi, voluptatem. Excepturi alias repellat repudiandae.
-											Pariatur eaque nobis doloremque praesentium minima ex illo
-											soluta sapiente, quo esse voluptas, nemo vero explicabo ad
-											aliquid quod ipsam suscipit animi natus nisi, est
-											accusantium. Commodi aut ullam ex omnis odit culpa.
-											Aspernatur, quidem voluptatem!
+											Today's low-code and no-code platforms offer unprecedented
+											opportunities to transform operations—but only when
+											implemented with strategic foresight. Our automation
+											architects leverage Zapier, Make.com, and n8n to create
+											intelligent workflows that integrate seamlessly with
+											leading AI models and your essential SaaS tools.
 										</p>
 									</div>
 								</div>

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import { TypographyH5 } from "@/components/ui/typography"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import { cn } from "@/lib/utils"
@@ -20,28 +20,6 @@ export default function ScrollableMenu() {
 	const [activeIndex, setActiveIndex] = useState<number>(0)
 
 	const isClickScrolling = useRef(false)
-
-	useEffect(() => {
-		const offset = 100 // 100px offset from top for better highlighting
-		const handleScroll = () => {
-			// Skip processing if the scroll was triggered by a click to avoid false active index changes
-			if (isClickScrolling.current) return
-			const scrollPosition = window.scrollY + offset
-			for (let i = SECTIONS.length - 1; i >= 0; i--) {
-				const element = document.getElementById(SECTIONS[i].id)
-				if (!element) continue
-				const elementTop = element.offsetTop
-				if (scrollPosition >= elementTop) {
-					setActiveIndex(i)
-					break
-				}
-			}
-		}
-		// Initial check to set the active index on component mount
-		handleScroll()
-		window.addEventListener("scroll", handleScroll, { passive: true })
-		return () => window.removeEventListener("scroll", handleScroll)
-	}, [])
 
 	const handleLinkClick = (idx: number) => {
 		// Set flag to indicate scroll is happening due to a click

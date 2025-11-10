@@ -24,10 +24,7 @@ export default function CasesPage() {
 			<HeroSection />
 			<PokerBrainSection />
 			<MarketingVideoSection />
-			<Cta
-				title='Prefer to skip the form and book time directly?'
-				firstBtnText='Get Free Consultation'
-			/>
+			<Cta title='Interested in a chat?' firstBtnText='Book A Call' />
 		</>
 	)
 }

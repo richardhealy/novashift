@@ -11,7 +11,7 @@ interface LargePostCardProps {
 export default function LargePostCard({ post }: LargePostCardProps) {
 	return (
 		<Link href={`${ROUTES.POST}/${post.id}`} className='group'>
-			<article className='grid gap-6 md:grid-cols-2 md:items-center md:gap-8'>
+			<article className='grid gap-6 md:grid-cols-2 md:gap-8'>
 				<div className='aspect-square rounded-2xl overflow-hidden md:w-full md:h-auto shrink-0 md:aspect-auto'>
 					<Image
 						className='aspect-square rounded-2xl object-cover md:w-full md:h-auto group-hover:scale-105 transition-transform duration-500 md:aspect-auto'

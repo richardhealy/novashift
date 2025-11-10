@@ -10,7 +10,7 @@ export default function HeroSection() {
 						<TypographyH1 className='text-center leading-[1.4] md:text-left md:leading-[1.2]!'>
 							AI Strategy & Consulting
 						</TypographyH1>
-						<p className='mt-4 text-center text-xl text-blue-500 font-medium tracking-[0.2px] md:text-left'>
+						<p className='mt-4 text-center text-xl text-blue-500 font-bold tracking-[0.2px] md:text-left'>
 							Transformative Intelligence, Tailored to Your Business
 						</p>
 						<p className='leading-normal text-neutral-700 mt-8 text-center text-xl font-medium tracking-[0.2px] md:text-left'>
@@ -19,7 +19,7 @@ export default function HeroSection() {
 						</p>
 					</div>
 
-					<div className='absolute shrink-0 max-w-[484px] mx-auto bottom-[-50px] left-[-50px] right-[-50px] md:left-[unset] md:-right-[200px] md:max-w-[450px] mx:m-0 lg:max-w-[700px] lg:-right-20 lg:bottom-[-200px] lg:h-auto xl:-right-40 xl:max-w-[864px]'>
+					<div className='absolute shrink-0 max-w-[484px] mx-auto bottom-[-50px] left-[-50px] right-[-50px] md:left-[unset] md:-right-[200px] md:max-w-[450px] mx:m-0 lg:max-w-[864px] lg:-right-20 lg:bottom-[-180px] lg:h-auto xl:-right-40'>
 						<Image
 							className='aspect-square'
 							src={"/images/ai-strategy/hero-image.png"}

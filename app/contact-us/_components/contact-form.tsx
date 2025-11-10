@@ -27,13 +27,6 @@ const formSchema = z.object({
 	website_url: z.url({
 		message: "Please enter a valid website URL (e.g., https://example.com).",
 	}),
-	reason: z
-		.string()
-		.min(1, { message: "Please select an option from the dropdown." }),
-	// If you have specific options, refine with enum:
-	// .refine((val) => ["option1", "option2", ...].includes(val), {
-	//   message: "Please select a valid option."
-	// }),
 	message: z
 		.string()
 		.min(10, { message: "Message must be at least 10 characters long." })
@@ -58,7 +51,6 @@ export default function ContactForm() {
 			email: "",
 			company_name: "",
 			website_url: "",
-			reason: "",
 			message: "",
 		},
 	})
@@ -131,26 +123,6 @@ export default function ContactForm() {
 							placeholder='https://yourwebsite.com'
 						/>
 						<InputErrorMessage>{errors.website_url?.message}</InputErrorMessage>
-					</InputGroup>
-				</div>
-
-				<div>
-					<InputGroup key='reason' className={cn(errors.reason && "error")}>
-						<Label htmlFor='reason'>What can we help you with?</Label>
-						<Controller
-							name='reason'
-							control={control}
-							render={({ field: { onChange, value } }) => (
-								<Select
-									value={value}
-									onChange={onChange}
-									options={CONTACT_FORM_SELECT_OPTIONS}
-									placeholder='Select an option'
-									hasError={!!errors.reason}
-								/>
-							)}
-						/>
-						<InputErrorMessage>{errors.reason?.message}</InputErrorMessage>
 					</InputGroup>
 				</div>
 

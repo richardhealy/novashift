@@ -8,7 +8,7 @@ export default function HeroSection() {
 				<div className='relative flex flex-col pt-[130px] pb-[364px] md:flex-row md:pt-[200px] md:pb-40 xl:pt-[262px] xl:pb-[200px]'>
 					<div className='md:max-w-[570px]'>
 						<TypographyH1 className='text-center leading-[1.4] md:text-left md:leading-[1.2]!'>
-							Dedicated Development Team
+							We’re builders. Problem-Solvers. And AI explorers.
 						</TypographyH1>
 					</div>
 

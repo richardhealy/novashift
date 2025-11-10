@@ -102,7 +102,7 @@ export default function OfferSection() {
 								<div className='flex items-center gap-4 mt-4 md:mt-6'>
 									<Link
 										href={ROUTES.CONTACT_US}
-										className='btn btn-md btn-primary-dark with-icon icon-sm text-sm pl-6'
+										className='btn btn-md btn-outline-lightblue with-icon icon-sm text-sm pl-6'
 									>
 										Start now
 										<ButtonIcon iconColor='#1F2937' />
@@ -121,7 +121,7 @@ export default function OfferSection() {
 					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6  overflow-hidden relative'>
 						{/* Badge */}
 						<div className='py-[11px] px-5 font-bold text-blue-800 leading-[1.6] tracking-[0.16px] bg-blue-100 rounded-full max-w-fit ml-auto'>
-							Free
+							Paid
 						</div>
 
 						<div className='grid -mt-7 md:-mt-12 z-0'>
@@ -142,11 +142,12 @@ export default function OfferSection() {
 										Turn business potential into scalable solutions
 									</p>
 									<p className='mt-4'>
-										Our complimentary AI & Automation Audit helps you assess
-										where AI and automation can unlock value. —whether by
-										streamlining internal workflows, enhancing customer
-										experience, or improving decision-making. It's a practical
-										first step toward smarter, leaner operations.
+										This paid audit is for teams ready to take the next step. We
+										run discovery sessions, interviews, and collaborative
+										workshops with your stakeholders to uncover where AI and
+										automation can make a measurable difference. With our
+										consulting partners, we map opportunities and deliver a
+										transformation roadmap tailored to your business.
 									</p>
 								</div>
 
@@ -189,7 +190,7 @@ export default function OfferSection() {
 								<div className='flex items-center gap-4 mt-4 md:mt-6'>
 									<Link
 										href={ROUTES.CONTACT_US}
-										className='btn btn-md btn-primary-dark with-icon icon-sm text-sm pl-6'
+										className='btn btn-md btn-outline-lightblue with-icon icon-sm text-sm pl-6'
 									>
 										Start now
 										<ButtonIcon iconColor='#1F2937' />

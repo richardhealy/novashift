@@ -30,7 +30,7 @@ export default function CaseAccordion({
 	return (
 		<div
 			className={cn(
-				"flex flex-col gap-[60px] md:flex-row md:items-center",
+				"flex flex-col gap-[60px] md:flex-row",
 				reverse && "md:flex-row-reverse",
 			)}
 		>
