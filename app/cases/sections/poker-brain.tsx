@@ -7,7 +7,7 @@ const data: CaseAccordionProps = {
 		{
 			id: "01",
 			title: "The Challenge",
-			text: "A marketing professional came to us with a bold goal: automate the creation of short-form marketing videos for social media—without compromising on quality. The existing process relied on freelancers, was slow, inconsistent, and couldn’t support rapid A/B testing or scaling across multiple products. They needed a fully automated, AI-driven system that could streamline video production while remaining flexible to future technologies.",
+			text: " An entrepreneur set out to create a smart poker training system powered by AI. The vision was clear, but the technical path was not. They needed a partner to help define the concept, structure the system, and turn it into a concrete, buildable development plan.",
 		},
 		{
 			id: "02",
@@ -21,12 +21,12 @@ const data: CaseAccordionProps = {
 		},
 		{
 			id: "04",
-			title: "Why Our Discovery Process Works",
-			text: "Our client received a complete product blueprint: a 10-page technical specification, a scalable architecture, and a 5-phase roadmap with projected costs ranging from $103,000 to $148,500. The outcome provided full development clarity—ready for implementation and confident stakeholder alignment.",
+			title: "Why Our Approach Works",
+			text: "Our process bridges the gap between ambitious ideas and technical execution. It brings clarity to the unknown, uncovers risks early, and delivers tangible outputs that engineering teams can act on immediately. The result is a smarter, faster path to product development—designed for long-term success.",
 		},
 	],
 	imageUrl: "/images/cases/accordion-1.png",
-	imageClass: "",
+	imageClass: "aspect-square",
 }
 export default function PokerBrainSection() {
 	return (

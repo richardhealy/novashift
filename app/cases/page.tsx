@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Cta from "@/components/cta"
+import DevelopmentAutomationSection from "./sections/development-automation"
 import HeroSection from "./sections/hero"
 import MarketingVideoSection from "./sections/marketing-video"
 import PokerBrainSection from "./sections/poker-brain"
+import SocialMediaSection from "./sections/social-media"
 
 export const metadata: Metadata = {
 	title: "Case Studies — AI Automation Success Stories | NovaShift",
@@ -23,7 +25,9 @@ export default function CasesPage() {
 		<>
 			<HeroSection />
 			<PokerBrainSection />
+			<DevelopmentAutomationSection />
 			<MarketingVideoSection />
+			<SocialMediaSection />
 			<Cta title='Interested in a chat?' firstBtnText='Book A Call' />
 		</>
 	)

@@ -7,43 +7,26 @@ const data: CaseAccordionProps = {
 		{
 			id: "01",
 			title: "The Challenge",
-			text: "A marketing professional came to us with a bold goal: automate the creation of short-form marketing videos for social media—without compromising on quality. The existing process relied on freelancers, was slow, inconsistent, and couldn’t support rapid A/B testing or scaling across multiple products. They needed a fully automated, AI-driven system that could streamline video production while remaining flexible to future technologies.",
+			text: "A marketing professional needed a scalable way to produce short-form product videos for social media while maintaining creative quality. The manual process relied on freelancers and lacked consistency, speed, and flexibility for A/B testing. They needed a fully automated system that could generate, test, and deploy videos efficiently while staying adaptable to new AI tools and workflows.",
 		},
 		{
 			id: "02",
 			title: "Our Solution",
-			text: [
-				{
-					content:
-						"We began with our AI Readiness framework to understand the client's workflows, content requirements, and quality standards. From there, we designed a modular automation system using self-hosted N8n pipelines and integrated leading AI tools such as Runway ML, Stability AI, ShotStack, and ElevenLabs.",
-					key: "key-1",
-				},
-				{
-					content:
-						"We transformed their scattered production process into a centralized Airtable-powered system, engineered intelligent automation flows with human verification points, and built a robust A/B testing framework that enabled rapid iteration. Our architecture supported continuous tech upgrades, allowed for flexible cost strategies, and was built to scale to tens of thousands of videos.",
-					key: "key-2",
-				},
-				{
-					content:
-						"The development was executed in agile cycles with bi-daily client check-ins, low-fidelity MVP delivery, and iterative refinement. We emphasized automation resilience, script and tone improvement, and streamlined data delivery pipelines.",
-					key: "key-3",
-				},
-			],
+			text: "We used our AI Readiness framework to analyze the client’s workflow and design a modular automation system using self-hosted N8n pipelines. The solution integrated advanced AI tools such as Runway ML, ShotStack, Stability AI, and ElevenLabs, supported by centralized data management in Airtable. Intelligent automation flows with human verification points ensured quality control, while a dynamic A/B testing framework enabled rapid iteration. Built in agile sprints, the system evolved from MVP to a robust, production-ready automation platform.",
 		},
 		{
 			id: "03",
 			title: "Results",
-			text: "Our client received a complete product blueprint: a 10-page technical specification, a scalable architecture, and a 5-phase roadmap with projected costs ranging from $103,000 to $148,500. The outcome provided full development clarity—ready for implementation and confident stakeholder alignment.",
+			text: "The finished system automated every phase of video production—from script generation to rendering and delivery—cutting production time from days to hours. It empowered the client to produce multiple content variations across product lines simultaneously and at scale. With built-in quality checks and flexible architecture, the platform balanced automation with creative control, reducing costs while boosting content output.",
 		},
 		{
 			id: "04",
-			title: "Why Our Discovery Process Works",
-			text: "Our client received a complete product blueprint: a 10-page technical specification, a scalable architecture, and a 5-phase roadmap with projected costs ranging from $103,000 to $148,500. The outcome provided full development clarity—ready for implementation and confident stakeholder alignment.",
+			title: "Why Our Approach Works",
+			text: "Our framework combines strategic planning with technical execution. By aligning AI capabilities with business objectives, we designed a system that grows with new technologies and marketing needs. This adaptive approach ensures long-term value—transforming content production from a manual process into a scalable, intelligent workflow.",
 		},
 	],
 	imageUrl: "/images/cases/accordion-2.png",
-	imageClass: "aspect-square md:aspect-auto",
-	reverse: true,
+	imageClass: "aspect-square ",
 }
 
 export default function MarketingVideoSection() {

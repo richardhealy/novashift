@@ -25,6 +25,11 @@ export interface Tag {
 	slug: string
 	postsCount?: number
 }
+export interface ShareLink {
+	social: string
+	link: string
+	iconUrl: string
+}
 
 export interface Author {
 	id: string
@@ -62,6 +67,7 @@ export interface Post {
 	commentsCount: number
 	readTime: number
 	seo: Seo
+	shareLinks: ShareLink[]
 }
 
 export interface BlogData {

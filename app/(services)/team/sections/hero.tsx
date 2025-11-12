@@ -15,6 +15,17 @@ export default function HeroSection() {
 						</p>
 					</div>
 
+					{/* <div className='absolute bottom-[-90px] shrink-0 max-w-[471px] mx-auto -left-20 -right-20 md:left-[unset] mx:m-0 md:max-w-[400px] lg:max-w-[600px] md:-right-6 md:-bottom-10 lg:h-auto xl:top-0 xl:-right-[124px]  xl:max-w-[847px] 2xl:max-w-[700px]'>
+						<Image
+							className='aspect-471/424'
+							src={"/images/team/hero-image-new.png"}
+							alt='hero image'
+							width={847}
+							height={762}
+						/>
+					</div> */}
+
+					{/* Old */}
 					<div className='absolute bottom-[-90px] shrink-0 max-w-[471px] mx-auto -left-20 -right-20 md:left-[unset] mx:m-0 md:max-w-[400px] lg:max-w-[600px] md:-right-6 md:-bottom-10 lg:h-auto xl:-top-10 xl:-right-[124px] xl:bottom-[unset] xl:max-w-[847px] 2xl:max-w-[846px]'>
 						<Image
 							className='aspect-471/424'

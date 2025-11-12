@@ -1,7 +1,6 @@
 "use client"
 
 import { useMemo } from "react"
-import LargePost from "@/components/large-post"
 import LargePostCard from "@/components/large-post"
 import PostCard from "@/components/post-card"
 import { TypographyH5 } from "@/components/ui/typography"
