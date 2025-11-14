@@ -39,14 +39,14 @@ export default function OfferSection() {
 
 						<div className='grid -mt-14 md:-mt-12 z-0'>
 							<Image
-								className='max-w-[230px] block mx-auto md:max-w-[477px] md:h-[509px] md:absolute md:right-[-230px] md:top-0 md:-z-10'
+								className='max-w-[230px] block mx-auto md:max-w-[377px] md:h-[409px] xl:max-w-[477px] xl:h-[509px] md:absolute md:right-[-230px] md:top-20 xl:top-0 md:-z-10'
 								src={"/images/ai-strategy/strategy-1.png"}
 								alt='strategy image'
 								width={464}
 								height={488}
 							/>
 
-							<div className='md:max-w-[360px]'>
+							<div className='md:max-w-[75%] xl:max-w-[360px]'>
 								<div className='mt-4 md:mt-0'>
 									<TypographyH6 className='text-2xl text-balance'>
 										AI & Automation Opportunity Mapping
@@ -104,7 +104,7 @@ export default function OfferSection() {
 								<div className='flex items-center gap-4 mt-4 md:mt-6'>
 									<Link
 										href={ROUTES.CONTACT_US}
-										className='btn btn-md btn-outline-lightblue with-icon icon-sm text-sm pl-6'
+										className='btn btn-md btn-secondary with-icon icon-sm text-sm pl-6'
 									>
 										Start now
 										<ButtonIcon iconColor='#1F2937' />
@@ -127,15 +127,17 @@ export default function OfferSection() {
 						</div>
 
 						<div className='grid -mt-7 md:-mt-12 z-0'>
+							{/* max-w-[212px] block mx-auto md:max-w-[464px] md:h-[488px] md:absolute md:right-[-206px] md:top-[100px] md:-z-10 */}
 							<Image
-								className='max-w-[212px] block mx-auto md:max-w-[464px] md:h-[488px] md:absolute md:right-[-206px] md:top-[100px] md:-z-10'
+								className='max-w-[212px] block mx-auto md:max-w-[464px] md:h-[488px] md:absolute md:right-[-306px] xl:right-[-206px] md:top-[100px] md:-z-10'
 								src={"/images/ai-strategy/strategy-2.png"}
 								alt='strategy image'
 								width={464}
 								height={488}
 							/>
 
-							<div className='md:max-w-[360px]'>
+							{/* md:max-w-[360px] */}
+							<div className='md:max-w-[75%] xl:max-w-[360px]'>
 								<div className='mt-4 md:mt-0'>
 									<TypographyH6 className='text-2xl text-balance'>
 										AI & Automation Opportunity Mapping
@@ -194,7 +196,7 @@ export default function OfferSection() {
 								<div className='flex items-center gap-4 mt-4 md:mt-6'>
 									<Link
 										href={ROUTES.CONTACT_US}
-										className='btn btn-md btn-outline-lightblue with-icon icon-sm text-sm pl-6'
+										className='btn btn-md  btn-secondary with-icon icon-sm text-sm pl-6'
 									>
 										Start now
 										<ButtonIcon iconColor='#1F2937' />

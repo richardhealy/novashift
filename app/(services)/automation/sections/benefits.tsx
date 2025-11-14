@@ -1,18 +1,12 @@
-"use client"
-
 import Image from "next/image"
-import { useState } from "react"
 import { TypographyH6 } from "@/components/ui/typography"
-import { cn } from "@/lib/utils"
 
 export default function BenefitsSection() {
-	const [isExpanded, setIsExpanded] = useState(false)
-
 	return (
 		<section className='py-11 md:py-[100px]'>
 			<div className='container'>
-				<div className='grid md:grid-cols-2 gap-6 items-start'>
-					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6 lg:pb-[68px] pt-[262px] overflow-hidden relative lg:pt-6'>
+				<div className='grid md:grid-cols-2 gap-6'>
+					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6 lg:pb-[44px] pt-[262px] overflow-hidden relative lg:pt-6'>
 						<div className='grid z-0'>
 							<div className='size-[450px] absolute -top-28 right-[-153px] after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:top-[50px] lg:right-[-103px]'>
 								<Image
@@ -34,35 +28,16 @@ export default function BenefitsSection() {
 										We design AI-powered workflows that eliminate busywork and
 										reduce manual error—boosting efficiency across every
 										department. From lead routing to document processing, our
-										automations keep your operations running smoothly, 24/7.{" "}
-										{!isExpanded && (
-											<button
-												className='text-blue-500 font-semibold hover:text-blue-800'
-												type='button'
-												onClick={() => setIsExpanded(!isExpanded)}
-											>
-												Read More
-											</button>
-										)}
+										automations keep your operations running smoothly, 24/7.
 									</p>
-								</div>
-
-								<div
-									className={cn(
-										"grid grid-rows-[0fr] transition-all duration-500 ",
-										isExpanded && "grid-rows-[1fr]",
-									)}
-								>
-									<div className='overflow-hidden'>
-										<p>
-											Today's low-code and no-code platforms offer unprecedented
-											opportunities to transform operations—but only when
-											implemented with strategic foresight. Our automation
-											architects leverage Zapier, Make.com, and n8n to create
-											intelligent workflows that integrate seamlessly with
-											leading AI models and your essential SaaS tools.
-										</p>
-									</div>
+									<p className='mt-4'>
+										Today's low-code and no-code platforms offer unprecedented
+										opportunities to transform operations—but only when
+										implemented with strategic foresight. Our automation
+										architects leverage Zapier, Make.com, and n8n to create
+										intelligent workflows that integrate seamlessly with leading
+										AI models and your essential SaaS tools.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -93,6 +68,16 @@ export default function BenefitsSection() {
 										systems. The result is a unified, efficient tech stack that
 										evolves with your business and continues to deliver value
 										over time.
+									</p>
+									<p className='mt-4'>
+										Today’s digital ecosystems depend on seamless connectivity
+										between tools, platforms, and data sources. Our engineers
+										design integration frameworks using APIs, webhooks, and
+										automation platforms like Make.com, Zapier, and custom
+										Python scripts. Whether connecting CRMs, ERPs, or AI-driven
+										analytics, we ensure every component communicates
+										effortlessly—creating a foundation that supports innovation,
+										scale, and long-term growth
 									</p>
 								</div>
 							</div>

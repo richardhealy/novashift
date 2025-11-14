@@ -17,7 +17,13 @@ export default function CaseAccordion({
 	)
 
 	const toggleItem = (id: string) => {
-		setExpandedItemId((prev) => (prev === id ? null : id))
+		setExpandedItemId((prev) => {
+			if (prev === id) {
+				return prev
+			} else {
+				return id
+			}
+		})
 	}
 
 	const accordionRef = useRef<HTMLDivElement>(null)
