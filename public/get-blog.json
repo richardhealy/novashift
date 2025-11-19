@@ -66,29 +66,7 @@
 					"chatbot implementation",
 					"automated support"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		},
 		{
 			"id": "post-002",
@@ -161,29 +139,7 @@
 					"legal tech",
 					"automation roi"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		},
 		{
 			"id": "post-003",
@@ -256,29 +212,7 @@
 					"predictive analytics",
 					"sales automation"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		},
 		{
 			"id": "post-004",
@@ -351,29 +285,7 @@
 					"ocr",
 					"document ai"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		},
 		{
 			"id": "post-005",
@@ -441,29 +353,7 @@
 					"build vs buy",
 					"machine learning"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		},
 		{
 			"id": "post-006",
@@ -531,29 +421,7 @@
 					"ai implementation",
 					"automation roi"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		},
 		{
 			"id": "post-007",
@@ -621,29 +489,7 @@
 					"ai budget",
 					"ai project costs"
 				]
-			},
-			"shareLinks": [
-				{
-					"social": "facebook",
-					"link": "facebook/share",
-					"iconUrl": "/images/icons/facebook.svg"
-				},
-				{
-					"social": "x",
-					"link": "x/share",
-					"iconUrl": "/images/icons/twitter.svg"
-				},
-				{
-					"social": "linkedin",
-					"link": "linkedin/share",
-					"iconUrl": "/images/icons/linkedin.svg"
-				},
-				{
-					"social": "mail",
-					"link": "mail/share",
-					"iconUrl": "/images/icons/email.svg"
-				}
-			]
+			}
 		}
 	],
 	"authors": [

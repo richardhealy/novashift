@@ -67,7 +67,6 @@ export interface Post {
 	commentsCount: number
 	readTime: number
 	seo: Seo
-	shareLinks: ShareLink[]
 }
 
 export interface BlogData {

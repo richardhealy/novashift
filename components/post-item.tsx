@@ -190,7 +190,7 @@ export default function PostItem({ post }: PostItemProps) {
 				</div>
 
 				<div className='mt-[52px]'>
-					<SharePost links={post.shareLinks} />
+					<SharePost />
 				</div>
 			</div>
 		</section>

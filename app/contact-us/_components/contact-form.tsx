@@ -7,9 +7,7 @@ import { Input } from "@/components/ui/inputs/input"
 import { InputErrorMessage } from "@/components/ui/inputs/input-error-message"
 import { InputGroup } from "@/components/ui/inputs/input-group"
 import { Label } from "@/components/ui/inputs/label"
-import { Select } from "@/components/ui/inputs/select"
 import { Textarea } from "@/components/ui/inputs/textarea"
-import { CONTACT_FORM_SELECT_OPTIONS } from "@/config/form-options"
 import { cn } from "@/lib/utils"
 
 const formSchema = z.object({
@@ -24,9 +22,12 @@ const formSchema = z.object({
 		.string()
 		.min(1, { message: "Company name is required." })
 		.max(200, { message: "Company name must be 200 characters or less." }),
-	website_url: z.url({
-		message: "Please enter a valid website URL (e.g., https://example.com).",
-	}),
+	website_url: z
+		.url({
+			message: "Please enter a valid website URL (e.g., https://example.com).",
+		})
+		.optional()
+		.or(z.literal("")),
 	message: z
 		.string()
 		.min(10, { message: "Message must be at least 10 characters long." })
@@ -54,6 +55,18 @@ export default function ContactForm() {
 			message: "",
 		},
 	})
+
+	const handleWebsiteUrlChange = (
+		e: React.ChangeEvent<HTMLInputElement>,
+		originalOnChange: (e: any) => void,
+	) => {
+		let value = e.target.value
+		// Добавляем https://, если нет протокола (http/https)
+		if (value && !value.match(/^https?:\/\//i)) {
+			value = "https://" + value
+		}
+		originalOnChange({ target: { value } })
+	}
 
 	const onSubmit = async (data: FormData) => {
 		await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -115,12 +128,32 @@ export default function ContactForm() {
 						key='website_url'
 						className={cn(errors.website_url && "error")}
 					>
-						<Label htmlFor='website_url'>Website</Label>
-						<Input
-							{...register("website_url")}
-							id='website_url'
-							type='text'
-							placeholder='https://yourwebsite.com'
+						<Label htmlFor='website_url'>Website (optional)</Label>
+						<Controller
+							name='website_url'
+							control={control}
+							render={({ field }) => {
+								const handleChange = (
+									e: React.ChangeEvent<HTMLInputElement>,
+								) => {
+									let value = e.target.value
+									// Добавляем https://, если нет протокола (http/https)
+									if (value && !value.match(/^https?:\/\//i)) {
+										value = "https://" + value
+									}
+									field.onChange(value)
+								}
+
+								return (
+									<Input
+										{...field}
+										id='website_url'
+										type='text'
+										placeholder='https://yourwebsite.com'
+										onChange={handleChange}
+									/>
+								)
+							}}
 						/>
 						<InputErrorMessage>{errors.website_url?.message}</InputErrorMessage>
 					</InputGroup>
