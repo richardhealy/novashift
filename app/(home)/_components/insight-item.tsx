@@ -10,7 +10,7 @@ interface InsightItemProps {
 
 export default function InsightItem({ post }: InsightItemProps) {
 	return (
-		<Link href={`${ROUTES.POST}/${post.id}`} className='group'>
+		<Link href={`${ROUTES.POST}/${post.slug}`} className='group'>
 			<article className='flex gap-10 w-full justify-between md:flex-col-reverse md:gap-6 md:justify-end md:h-full'>
 				<div className='flex flex-col md:flex-1 '>
 					<TypographyH6 className='group-hover:text-blue-500'>
