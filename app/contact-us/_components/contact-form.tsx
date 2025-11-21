@@ -9,6 +9,8 @@ import { InputGroup } from "@/components/ui/inputs/input-group"
 import { Label } from "@/components/ui/inputs/label"
 import { Textarea } from "@/components/ui/inputs/textarea"
 import { cn } from "@/lib/utils"
+import { submitContactForm } from "@/actions/contact"
+import { useState } from "react"
 
 const formSchema = z.object({
 	full_name: z
@@ -38,6 +40,11 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>
 
 export default function ContactForm() {
+	const [submitStatus, setSubmitStatus] = useState<{
+		type: "success" | "error" | null
+		message: string
+	}>({ type: null, message: "" })
+
 	const {
 		register,
 		handleSubmit,
@@ -69,10 +76,26 @@ export default function ContactForm() {
 	}
 
 	const onSubmit = async (data: FormData) => {
-		await new Promise((resolve) => setTimeout(resolve, 1000))
-		console.log(data)
-		alert("Form submitted successfully!")
-		reset()
+		setSubmitStatus({ type: null, message: "" })
+
+		const result = await submitContactForm(data)
+
+		if (result.success) {
+			setSubmitStatus({
+				type: "success",
+				message: result.message || "Form submitted successfully!",
+			})
+			reset()
+			// Clear success message after 5 seconds
+			setTimeout(() => {
+				setSubmitStatus({ type: null, message: "" })
+			}, 5000)
+		} else {
+			setSubmitStatus({
+				type: "error",
+				message: result.error || "Failed to submit form. Please try again.",
+			})
+		}
 	}
 
 	return (
@@ -81,6 +104,20 @@ export default function ContactForm() {
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<div className='space-y-5'>
+				{/* Status Messages */}
+				{submitStatus.type && (
+					<div
+						className={cn(
+							"p-4 rounded-lg text-sm",
+							submitStatus.type === "success"
+								? "bg-green-50 text-green-800 border border-green-200"
+								: "bg-red-50 text-red-800 border border-red-200",
+						)}
+					>
+						{submitStatus.message}
+					</div>
+				)}
+
 				<div className='grid lg:grid-cols-2 gap-x-2.5 gap-y-5'>
 					{/* Full Name Field */}
 					<InputGroup
