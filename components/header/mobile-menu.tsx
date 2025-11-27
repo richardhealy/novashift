@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import { useTranslations } from "next-intl"
+import NextLink from "next/link"
 import { Link } from "@/i18n/routing"
 import type { MenuItem } from "@/config/navigation"
 import { ROUTES } from "@/config/routes"
@@ -128,6 +129,15 @@ export default function MobileMenu({
 												</div>
 											</div>
 										</div>
+									) : item.href === ROUTES.AI ? (
+										// Regular mobile menu item (no submenu) - use NextLink for /ai
+										<NextLink
+											href={item.href}
+											className='mobile-menu-link'
+											onClick={() => handleLinkClick(item.href)}
+										>
+											{t(item.labelKey as any)}
+										</NextLink>
 									) : (
 										// Regular mobile menu item (no submenu)
 										<Link

@@ -1,7 +1,9 @@
 "use client"
 import { useTranslations } from "next-intl"
+import NextLink from "next/link"
 import { Link, usePathname } from "@/i18n/routing"
 import type { MenuItem } from "@/config/navigation"
+import { ROUTES } from "@/config/routes"
 import { cn } from "@/lib/utils"
 import DesktopSubmenu from "./desktop-submenu"
 
@@ -63,6 +65,13 @@ export default function DesktopMenu({ items }: DesktopMenuProps) {
 									</button>
 									<DesktopSubmenu submenu={item.submenu} />
 								</div>
+							) : item.href === ROUTES.AI ? (
+								<NextLink
+									href={item.href}
+									className={cn("menu-link", isCurrent && "current")}
+								>
+									{t(item.labelKey as any)}
+								</NextLink>
 							) : (
 								<Link
 									href={item.href as any}

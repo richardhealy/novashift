@@ -1,5 +1,6 @@
 "use client"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH2 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
@@ -26,10 +27,10 @@ export default function LatestInsightsSection({
 							{t("description")}
 						</p>
 					</div>
-					<a href={ROUTES.AI} className='btn btn-md btn-primary with-icon mt-8'>
+					<Link href={ROUTES.AI} className='btn btn-md btn-primary with-icon mt-8'>
 						{tCommon("viewAll")}
 						<ButtonIcon iconColor={"white"} />
-					</a>
+					</Link>
 				</div>
 
 				<div className='grid gap-6 mt-[60px] md:grid-cols-2 lg:grid-cols-3'>
