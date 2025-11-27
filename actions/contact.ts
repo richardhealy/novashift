@@ -1,6 +1,6 @@
 "use server"
 
-import { createServerClient } from "@/lib/supabase"
+import { createServiceRoleClient } from "@/lib/supabase"
 
 export type ContactFormData = {
 	full_name: string
@@ -33,7 +33,8 @@ export async function submitContactForm(
 	data: ContactFormData,
 ): Promise<ContactFormResponse> {
 	try {
-		const supabase = createServerClient()
+		// Use service role client to bypass RLS
+		const supabase = createServiceRoleClient()
 		
 		const { error, data: insertedData } = await supabase
 			.from("contact_submissions")
