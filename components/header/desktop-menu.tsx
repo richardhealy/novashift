@@ -14,7 +14,6 @@ const SERVICE_ROUTES = ["/ai-strategy", "/team", "/automation"]
 export default function DesktopMenu({ items }: DesktopMenuProps) {
 	const pathname = usePathname()
 	const t = useTranslations("Navigation")
-	const tServices = useTranslations("ServicesMenu")
 
 	return (
 		<nav aria-label='Main menu' className='menu z-10 hidden md:flex'>
