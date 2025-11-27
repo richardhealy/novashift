@@ -1,10 +1,10 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH4 } from "@/components/ui/typography"
 import type { CaseAccordionProps } from "@/types/case-studies.type"
 import CaseAccordion from "../_components/case-accordion"
 
-export default function MarketingVideoSection() {
-	const t = useTranslations("CasesPage.marketingVideo")
+export default async function MarketingVideoSection() {
+	const t = await getTranslations("CasesPage.marketingVideo")
 	
 	const data: CaseAccordionProps = {
 		accordionData: [

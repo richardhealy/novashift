@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH3 } from "@/components/ui/typography"
 
-export default function TeamSection() {
-	const t = useTranslations("TeamPage.team")
+export default async function TeamSection() {
+	const t = await getTranslations("TeamPage.team")
 	return (
 		<section>
 			<div className='bg-blue-500 grid md:grid-cols-2 md:items-center'>

@@ -1,10 +1,9 @@
-"use client"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH1 } from "@/components/ui/typography"
 import ContactForm from "../_components/contact-form"
 
-export default function ContactsSection() {
-	const t = useTranslations("ContactPage.hero")
+export default async function ContactsSection() {
+	const t = await getTranslations("ContactPage.hero")
 
 	return (
 		<section className='pb-11 pt-[105px] md:pb-20 md:pt-[65px]'>

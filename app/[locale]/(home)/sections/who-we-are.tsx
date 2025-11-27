@@ -1,9 +1,8 @@
-"use client"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH3 } from "@/components/ui/typography"
 
-export default function WhoWeAreSection() {
-	const t = useTranslations("HomePage.whoWeAre")
+export default async function WhoWeAreSection() {
+	const t = await getTranslations("HomePage.whoWeAre")
 
 	return (
 		<section className='bg-blue-500 py-20 md:py-[100px]'>

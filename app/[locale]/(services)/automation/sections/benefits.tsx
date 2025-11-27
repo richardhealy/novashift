@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH6 } from "@/components/ui/typography"
 
-export default function BenefitsSection() {
-	const t = useTranslations("AutomationPage.benefits")
+export default async function BenefitsSection() {
+	const t = await getTranslations("AutomationPage.benefits")
 	return (
 		<section className='py-11 md:py-[100px]'>
 			<div className='container'>

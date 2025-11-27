@@ -1,6 +1,5 @@
-"use client"
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/routing"
 import { ROUTES } from "@/config/routes"
 import ButtonIcon from "./ui/button-icon"
@@ -11,8 +10,8 @@ type CtaProps = {
 	firstBtnText?: string
 	secondBtnText?: string
 }
-export default function Cta({ title, firstBtnText, secondBtnText }: CtaProps) {
-	const t = useTranslations("CTA")
+export default async function Cta({ title, firstBtnText, secondBtnText }: CtaProps) {
+	const t = await getTranslations("CTA")
 
 	return (
 		<section className='py-11 md:py-8 relative after:absolute after:w-full after:h-1/2 after:bg-blue-800 after:left-0 after:bottom-0 after:-z-10 '>

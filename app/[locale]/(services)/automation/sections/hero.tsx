@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH1 } from "@/components/ui/typography"
 
-export default function HeroSection() {
-	const t = useTranslations("AutomationPage.hero")
+export default async function HeroSection() {
+	const t = await getTranslations("AutomationPage.hero")
 	return (
 		<section className='bg-neutral-50 -mt-[58px] overflow-hidden md:mt-[-92px]'>
 			<div className='container'>

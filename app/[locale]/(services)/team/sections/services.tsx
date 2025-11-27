@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH5 } from "@/components/ui/typography"
 
 interface ServiceItem {
@@ -45,8 +45,8 @@ const serviceItemsConfig: ServiceItem[] = [
 	},
 ]
 
-export default function ServicesSection() {
-	const t = useTranslations("TeamPage.services")
+export default async function ServicesSection() {
+	const t = await getTranslations("TeamPage.services")
 	return (
 		<section className='py-10 md:py-[100px]'>
 			<div className='container max-w-[1368px]'>

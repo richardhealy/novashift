@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH3 } from "@/components/ui/typography"
 
-export default function SupportSection() {
-	const t = useTranslations("AutomationPage.support")
+export default async function SupportSection() {
+	const t = await getTranslations("AutomationPage.support")
 	return (
 		<section>
 			<div className='grid md:grid-cols-2 md:items-center'>

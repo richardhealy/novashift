@@ -1,8 +1,8 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH3 } from "@/components/ui/typography"
 
-export default function AutomateSection() {
-	const t = useTranslations("AutomationPage.automate")
+export default async function AutomateSection() {
+	const t = await getTranslations("AutomationPage.automate")
 	return (
 		<section className='bg-blue-500 py-20 md:py-[100px]'>
 			<div className='container'>

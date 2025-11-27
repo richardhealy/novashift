@@ -1,8 +1,8 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH3 } from "@/components/ui/typography"
 
-export default function SpecializeSection() {
-	const t = useTranslations("AboutUsPage.specialize")
+export default async function SpecializeSection() {
+	const t = await getTranslations("AboutUsPage.specialize")
 	return (
 		<section className='bg-blue-500 py-20 md:py-[100px]'>
 			<div className='container'>

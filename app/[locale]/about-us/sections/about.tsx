@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 
-export default function AboutSection() {
-	const t = useTranslations("AboutUsPage.about")
+export default async function AboutSection() {
+	const t = await getTranslations("AboutUsPage.about")
 	return (
 		<section className='py-20 md:py-[100px]'>
 			<div className='container'>

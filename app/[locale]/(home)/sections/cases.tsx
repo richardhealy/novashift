@@ -1,13 +1,12 @@
-"use client"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH2 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
 import type { CaseStudiesItem } from "@/types/case-studies.type"
 import LargeCaseItem from "../_components/large-case-item"
 import SmallCaseItem from "../_components/small-case-item"
 
-export default function CasesSection() {
-	const t = useTranslations("HomePage.cases")
+export default async function CasesSection() {
+	const t = await getTranslations("HomePage.cases")
 
 	const largeCasePost: CaseStudiesItem = {
 		id: "235623623626",

@@ -1,11 +1,11 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import Breadcrumbs from "@/components/breadcrumbs"
 import { TypographyH1 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
 import type { BreadcrumbItem } from "@/types/breadcrumbs"
 
-export default function HeroSection() {
-	const t = useTranslations("TermsPage.hero")
+export default async function HeroSection() {
+	const t = await getTranslations("TermsPage.hero")
 	
 	const TERMS_BREADCRUMBS_ITEMS: BreadcrumbItem[] = [
 		{

@@ -1,13 +1,12 @@
-"use client"
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/routing"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH3 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
 
-export default function TransformSection() {
-	const t = useTranslations("HomePage.transform")
+export default async function TransformSection() {
+	const t = await getTranslations("HomePage.transform")
 
 	return (
 		<section className='relative z-0 overflow-hidden bg-blue-500 py-[60px] md:py-[100px]'>

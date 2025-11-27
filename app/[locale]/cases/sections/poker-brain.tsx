@@ -1,10 +1,10 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH4 } from "@/components/ui/typography"
 import type { CaseAccordionProps } from "@/types/case-studies.type"
 import CaseAccordion from "../_components/case-accordion"
 
-export default function PokerBrainSection() {
-	const t = useTranslations("CasesPage.pokerBrain")
+export default async function PokerBrainSection() {
+	const t = await getTranslations("CasesPage.pokerBrain")
 	
 	const data: CaseAccordionProps = {
 		accordionData: [

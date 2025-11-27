@@ -1,5 +1,4 @@
-"use client"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import Link from "next/link"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH2 } from "@/components/ui/typography"
@@ -11,11 +10,11 @@ interface LatestInsightsSectionProps {
 	posts: Post[]
 }
 
-export default function LatestInsightsSection({
+export default async function LatestInsightsSection({
 	posts,
 }: LatestInsightsSectionProps) {
-	const t = useTranslations("HomePage.insights")
-	const tCommon = useTranslations("Common")
+	const t = await getTranslations("HomePage.insights")
+	const tCommon = await getTranslations("Common")
 
 	return (
 		<section className='py-20 md:py-[100px]' dir='ltr'>

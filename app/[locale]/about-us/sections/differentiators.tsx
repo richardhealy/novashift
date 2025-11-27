@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { TypographyH3, TypographyH5 } from "@/components/ui/typography"
 
 interface DifferentiatorsItem {
@@ -37,8 +37,8 @@ const differentiatorItemsConfig: DifferentiatorsItem[] = [
 	},
 ]
 
-export default function DifferentiatorsSection() {
-	const t = useTranslations("AboutUsPage.differentiators")
+export default async function DifferentiatorsSection() {
+	const t = await getTranslations("AboutUsPage.differentiators")
 	return (
 		<section className='py-20 md:py-[100px]'>
 			<div className='container'>

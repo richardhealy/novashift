@@ -1,13 +1,12 @@
-"use client"
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/routing"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH1 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
 
-export default function HeroSection() {
-	const t = useTranslations("HomePage.hero")
+export default async function HeroSection() {
+	const t = await getTranslations("HomePage.hero")
 
 	return (
 		<section className='relative z-0 bg-[#F9F9FB] -mt-[58px] overflow-hidden md:mt-[-92px]'>

@@ -1,12 +1,12 @@
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/routing"
 import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH3 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
 
-export default function PlanningSection() {
-	const t = useTranslations("AIStrategyPage.planning")
+export default async function PlanningSection() {
+	const t = await getTranslations("AIStrategyPage.planning")
 	return (
 		<section className='pt-10 pb-20 md:py-[100px] bg-[#0D63EC]'>
 			<div className='container max-w-[1000px]'>

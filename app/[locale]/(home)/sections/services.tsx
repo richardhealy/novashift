@@ -1,6 +1,5 @@
-"use client"
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/routing"
 import { TypographyH3, TypographyH5 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
@@ -13,9 +12,9 @@ interface ServiceItem {
 	imageClasses: string
 }
 
-export default function ServicesSection() {
-	const t = useTranslations("HomePage.services")
-	const tCommon = useTranslations("Common")
+export default async function ServicesSection() {
+	const t = await getTranslations("HomePage.services")
+	const tCommon = await getTranslations("Common")
 
 	const serviceItems: ServiceItem[] = [
 		{
