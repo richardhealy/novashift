@@ -77,6 +77,9 @@ export default function OfferSection() {
 											<li className='relative pl-[13px] rtl:pr-[13px] rtl:pl-0 not-last:mb-4 before:absolute before:top-2.5 before:left-0 rtl:before:right-0 rtl:before:left-auto before:size-1 before:rounded-full before:bg-neutral-900'>
 												<b className='text-neutral-900'>{t("free.timeEffort")}:</b> {t("free.timeEffortText")}
 											</li>
+											<li className='relative pl-[13px] rtl:pr-[13px] rtl:pl-0 not-last:mb-4 before:absolute before:top-2.5 before:left-0 rtl:before:right-0 rtl:before:left-auto before:size-1 before:rounded-full before:bg-neutral-900'>
+												<b className='text-neutral-900'>{t("free.outcome")}:</b> {t("free.outcomeText")}
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -149,7 +152,7 @@ export default function OfferSection() {
 												<b className='text-neutral-900'>{t("paid.timeEffort")}:</b> {t("paid.timeEffortText")}
 											</li>
 											<li className='relative pl-[13px] rtl:pr-[13px] rtl:pl-0 not-last:mb-4 before:absolute before:top-2.5 before:left-0 rtl:before:right-0 rtl:before:left-auto before:size-1 before:rounded-full before:bg-neutral-900'>
-												<b className='text-neutral-900'>{t("paid.bestFor")}:</b> {t("paid.bestForText")}
+												<b className='text-neutral-900'>{t("paid.outcome")}:</b> {t("paid.outcomeText")}
 											</li>
 										</ul>
 									</div>
