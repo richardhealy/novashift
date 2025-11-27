@@ -145,8 +145,8 @@
 			"close": "Close"
 		},
 		"cta": {
-			"title": "Prefer to skip the form and book time directly?",
-			"button": "Get Free Consultation"
+			"title": "Let's turn your AI potential into practical outcomes",
+			"button": "Start The Free Audit"
 		},
 		"meta": {
 			"title": "Contact NovaShift — Let's Build AI Solutions Together",
@@ -265,20 +265,20 @@
 			"description": "Successful AI initiatives begin with strategic insight. Our AI Readiness Audit assesses your current operations and identifies where AI can deliver meaningful results—aligned with your priorities, not just what's trending. The outcome is a roadmap built for action and impact.",
 			"free": {
 				"badge": "Free",
-				"title": "AI & Automation Opportunity Mapping",
+				"title": "AI & Automation Audit",
 				"subtitle": "Discover your readiness in minutes",
-				"description": "We design AI-powered workflows that eliminate busywork and reduce manual error—boosting efficiency across every department. From lead routing to document processing, our automations keep your operations running smoothly, 24/7. Today's low-code and no-code platforms offer unprecedented opportunities to transform operations—but only when implemented with strategic foresight. Our automation architects leverage Zapier, Make.com, and n8n to create intelligent workflows that integrate seamlessly with leading AI models and your essential SaaS tools.",
+				"description": "Our complimentary AI & Automation Audit gives you a clear view of where automation and AI can unlock value—highlighting opportunities to streamline workflows, elevate customer experience, and improve decision-making. It’s a practical, low-effort first step toward smarter and more efficient operations.",
 				"scope": "Scope",
-				"scopeText": "This assessment evaluates your organization's readiness for AI and automation by examining current processes, tools, and challenges.",
+				"scopeText": "This assessment evaluates your organization's readiness for AI and automation by examining current processes, tools, and challenges. A high-level review of your current processes, systems, and challenges to gauge where AI and automation may deliver meaningful impact.",
 				"activities": "Activities",
-				"activitiesText": "You will complete a structured set of role- and industry-specific questions designed to identify opportunities for intelligent solutions.",
+				"activitiesText": "You will complete a structured set of role- and industry-specific questions designed to identify opportunities for intelligent solutionsA structured set of adaptive, role-specific questions designed to surface potential opportunities quickly and objectively.",
 				"whatYouReceive": "What you receive",
-				"whatYouReceiveText": "A readiness report accompanied by tailored recommendations highlighting both AI and automation opportunities relevant to your business.",
+				"whatYouReceiveText": "A personalized readiness score with tailored recommendations outlining where AI and automation could strengthen your operations.",
 				"timeEffort": "Time & effort",
-				"timeEffortText": "The assessment requires approximately 6–10 minutes and consists primarily of AI adapted multiple-choice questions.",
+				"timeEffortText": "The assessment requires approximately 6–10 minutes and consists primarily of AI adapted multiple-choice questionsApproximately 6–10 minutes; simple multiple-choice inputs with no preparation required.",
 				"bestFor": "Best for",
-				"bestForText": "Teams exploring AI but unsure where to begin, or businesses seeking a clearer roadmap before investing in technology.",
-				"button": "Start Free Assessment",
+				"bestForText": "A clear snapshot of your AI readiness and the most promising areas to explore next.",
+				"button": "Start the free audit",
 				"readMore": "Read More",
 				"readLess": "Read Less"
 			},
@@ -297,7 +297,7 @@
 				"timeEffortText": "Typical duration 2–4 weeks; access to key stakeholders and representative workflows.",
 				"bestFor": "Outcome",
 				"bestForText": "A clear, execution-ready plan aligned to your priorities.",
-				"button": "Schedule a Call",
+				"button": "Talk to an expert",
 				"readMore": "Read More",
 				"readLess": "Read Less"
 			}
