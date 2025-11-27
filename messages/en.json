@@ -1,0 +1,459 @@
+{
+	"Navigation": {
+		"home": "Home",
+		"services": "Services",
+		"caseStudies": "Case Studies",
+		"ai": "AI",
+		"aboutUs": "About Us",
+		"contactUs": "Contact Us"
+	},
+	"ServicesMenu": {
+		"aiStrategy": "AI Strategy & Consulting",
+		"developmentTeam": "Dedicated Development Team",
+		"automation": "Workflow Automations"
+	},
+	"Footer": {
+		"description": "AI transformation specialists helping businesses unlock the potential of artificial intelligence through strategic consultings and custom development.",
+		"services": "Services",
+		"company": "Company",
+		"copyright": "Copyright© 2025. Novashift. All Right Reserved.",
+		"termsOfService": "Terms of Service",
+		"privacyPolicy": "Privacy Policy",
+		"email": "hello@novashift.ai"
+	},
+	"Common": {
+		"learnMore": "Learn More",
+		"viewAll": "View All",
+		"bookACall": "Book a call",
+		"getInTouch": "GET IN TOUCH",
+		"readMore": "Read More"
+	},
+	"HomePage": {
+		"hero": {
+			"title": "AI Automation That Transforms How Business Works",
+			"subtitle": "Build Smarter. Move Faster.",
+			"bookCall": "Book a call",
+			"aiAudit": "AI Readiness Audit"
+		},
+		"stats": {
+			"projects": "AI Projects Delivered",
+			"countries": "Countries Served",
+			"industries": "industries served",
+			"integrations": "Custom Integrations Built"
+		},
+		"whoWeAre": {
+			"label": "Who we are",
+			"title": "We help businesses unlock AI's potential—through",
+			"titleBold": " tailored strategy, development, and automation that drive measurable results"
+		},
+		"services": {
+			"title": "Explore Our AI Services",
+			"description": "As AI continues to revolutionize industries, it's imperative for businesses to leverage its power.",
+			"items": {
+				"strategy": {
+					"title": "AI Strategy & Consulting",
+					"list": ["AI-readiness Audit", "AI Opportunity Mapping"]
+				},
+				"team": {
+					"title": "Dedicated Development Team",
+					"list": ["Custom AI Development", "MVP Builds"]
+				},
+				"automation": {
+					"title": "Workflow Automations",
+					"list": ["AI-powered automations", "SaaS stack integrations"]
+				}
+			}
+		},
+		"transform": {
+			"title": "Transform Your Business with AI",
+			"description": "Ready to unlock the potential of artificial intelligence for your organization? Let's discuss how our AI solutions can drive growth, efficiency, and innovation in your business.",
+			"cta": "Get Free Consultation"
+		},
+		"cases": {
+			"title": "Case Studies",
+			"subtitle": "Success Stories",
+			"pokerBrain": {
+				"title": "Poker Brain – AI-Powered Poker Training System",
+				"description": "An AI-driven poker coach designed from concept to roadmap, turning strategy insights into a build-ready product plan."
+			},
+			"videoAutomation": {
+				"title": "AI Video Automation System",
+				"description": "A fully automated video production system that creates ready-to-publish marketing videos in hours using integrated AI tools."
+			},
+			"devAutomation": {
+				"title": "Development Automation Platform",
+				"description": "An intelligent automation system that connects Asana and GitHub, enabling AI-driven code generation, task management, and end-to-end development workflows."
+			},
+			"socialMedia": {
+				"title": "AI-Powered Social Media Platform",
+				"description": "A full-stack platform that transforms brand assets into AI-generated, scheduled social posts—automating content creation, design, and publishing across Instagram and Facebook."
+			}
+		},
+		"insights": {
+			"title": "Latest AI Insights",
+			"description": "Stay updated with the latest trends, strategies, and insights in artificial intelligence"
+		},
+		"partners": {
+			"title": "Trusted by Leading Companies"
+		}
+	},
+	"AboutPage": {
+		"hero": {
+			"title": "We're builders. Problem-Solvers. And AI explorers."
+		},
+		"meta": {
+			"title": "About NovaShift — Custom AI Solutions & Automation Strategies",
+			"description": "NovaShift helps future-focused businesses turn AI from concept into execution. Design custom AI solutions that streamline operations and drive value."
+		}
+	},
+	"ContactPage": {
+		"hero": {
+			"title": "Let's Build the Future of Your Business With AI",
+			"subtitle": "We're here to help you explore, build, and scale with AI.",
+			"description": "We help startups, agencies, and lean businesses build practical, scalable AI—from strategy to custom development. Have a project or idea? Let's talk."
+		},
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"phone": "Phone Number",
+			"company": "Company Name",
+			"website": "Website (optional)",
+			"message": "Message",
+			"submit": "Send Message",
+			"submitting": "Submitting",
+			"namePlaceholder": "Your name",
+			"emailPlaceholder": "your.email@example.com",
+			"phonePlaceholder": "+1 (555) 000-0000",
+			"companyPlaceholder": "Your company",
+			"websitePlaceholder": "https://yourwebsite.com",
+			"messagePlaceholder": "Tell us about your project",
+			"success": "Thank you! We'll get back to you soon.",
+			"error": "Something went wrong. Please try again.",
+			"validation": {
+				"nameRequired": "Full name is required.",
+				"nameMaxLength": "Full name must be 100 characters or less.",
+				"emailRequired": "Email address is required.",
+				"emailInvalid": "Please enter a valid email address.",
+				"companyRequired": "Company name is required.",
+				"companyMaxLength": "Company name must be 200 characters or less.",
+				"websiteInvalid": "Please enter a valid website URL (e.g., https://example.com).",
+				"messageMinLength": "Message must be at least 10 characters long.",
+				"messageMaxLength": "Message must be 2000 characters or less."
+			}
+		},
+		"cta": {
+			"title": "Prefer to skip the form and book time directly?",
+			"button": "Get Free Consultation"
+		},
+		"meta": {
+			"title": "Contact NovaShift — Let's Build AI Solutions Together",
+			"description": "Ready to transform your business with AI? Get in touch with NovaShift for custom AI development, strategy consulting, and automation solutions."
+		}
+	},
+	"CasesPage": {
+		"hero": {
+			"title": "Case Studies",
+			"description": "Explore how we help startups and businesses transform ideas into scalable, AI-powered solutions. Each case study showcases our process—from discovery to delivery."
+		},
+		"pokerBrain": {
+			"title": "Poker Brain – AI-Powered Poker Training System",
+			"subtitle": "How we transformed a poker enthusiast's idea into a build-ready AI training system for competitive players.",
+			"challenge": {
+				"title": "The Challenge",
+				"text": " An entrepreneur set out to create a smart poker training system powered by AI. The vision was clear, but the technical path was not. They needed a partner to help define the concept, structure the system, and turn it into a concrete, buildable development plan."
+			},
+			"solution": {
+				"title": "Our Solution",
+				"text": "We led a structured discovery process to shape the product, define the technical architecture, and plan a phased development roadmap. Through a collaborative workshop, we clarified the vision and user needs. We then designed a modular system architecture tailored to the AI engine, outlined buildable features, and mapped the path to an MVP. A detailed specification document captured system components, workflows, data flow, and user experience flows. We also assessed key risks and proposed mitigation strategies to reduce uncertainty and control future development costs."
+			},
+			"results": {
+				"title": "Results",
+				"text": "Our client received a complete product blueprint: a 10-page technical specification, a scalable architecture, and a 5-phase roadmap with projected costs ranging from $103,000 to $148,500. The outcome provided full development clarity—ready for implementation and confident stakeholder alignment."
+			},
+			"whyWorks": {
+				"title": "Why Our Approach Works",
+				"text": "Our process bridges the gap between ambitious ideas and technical execution. It brings clarity to the unknown, uncovers risks early, and delivers tangible outputs that engineering teams can act on immediately. The result is a smarter, faster path to product development—designed for long-term success."
+			}
+		},
+		"devAutomation": {
+			"title": "Autobot – AI-Powered Development Automation Platform",
+			"subtitle": "How we created an intelligent AI assistant that automates software development workflows from Asana to GitHub.",
+			"challenge": {
+				"title": "The Challenge",
+				"text": "A development team needed to automate their entire software workflow—from task creation in Asana to code implementation in GitHub. Their goal was to build an AI assistant capable of converting project tasks into working code, managing PR feedback, and coordinating complex development operations with minimal manual input. The system needed to be secure, scalable, and reliable enough to support multiple concurrent projects without disruption."
+			},
+			"solution": {
+				"title": "Our Solution",
+				"text": "We built a full AI-powered development automation platform integrating Claude AI, Asana, and GitHub. The system featured a central orchestrator that managed workflow logic and multiple specialized services for project management, repository handling, and code generation. Each task ran in isolated AI-managed workspaces to ensure security and stability. Deployed with Docker and fortified with webhook verification and non-root execution, the platform delivered seamless automation—from task creation to pull request submission—with real-time feedback and error handling."
+			},
+			"results": {
+				"title": "Results",
+				"text": "The client received a production-ready system that streamlined every step of their development workflow. It eliminated manual coordination, reduced delivery times, and provided a secure foundation for large-scale automation. With Claude AI orchestrating code generation and workflow management, the platform gave developers an intelligent system that handled complex operations with precision and reliability."
+			},
+			"whyWorks": {
+				"title": "Why Our Approach Works",
+				"text": "Autobot showcases how advanced AI can enhance real-world engineering operations. By combining technical depth with thoughtful automation design, we created a platform that scales efficiently while maintaining security and control. Our structured, modular approach empowers development teams to move faster, collaborate more effectively, and rely on AI as a true extension of their workflow."
+			}
+		},
+		"marketingVideo": {
+			"title": "AI-Powered Marketing Video Automation System",
+			"subtitle": "How we built an end-to-end automation platform that creates high-quality marketing videos in hours, not days.",
+			"challenge": {
+				"title": "The Challenge",
+				"text": "A marketing professional needed a scalable way to produce short-form product videos for social media while maintaining creative quality. The manual process relied on freelancers and lacked consistency, speed, and flexibility for A/B testing. They needed a fully automated system that could generate, test, and deploy videos efficiently while staying adaptable to new AI tools and workflows."
+			},
+			"solution": {
+				"title": "Our Solution",
+				"text": "We used our AI Readiness framework to analyze the client's workflow and design a modular automation system using self-hosted N8n pipelines. The solution integrated advanced AI tools such as Runway ML, ShotStack, Stability AI, and ElevenLabs, supported by centralized data management in Airtable. Intelligent automation flows with human verification points ensured quality control, while a dynamic A/B testing framework enabled rapid iteration. Built in agile sprints, the system evolved from MVP to a robust, production-ready automation platform."
+			},
+			"results": {
+				"title": "Results",
+				"text": "The finished system automated every phase of video production—from script generation to rendering and delivery—cutting production time from days to hours. It empowered the client to produce multiple content variations across product lines simultaneously and at scale. With built-in quality checks and flexible architecture, the platform balanced automation with creative control, reducing costs while boosting content output."
+			},
+			"whyWorks": {
+				"title": "Why Our Approach Works",
+				"text": "Our framework combines strategic planning with technical execution. By aligning AI capabilities with business objectives, we designed a system that grows with new technologies and marketing needs. This adaptive approach ensures long-term value—transforming content production from a manual process into a scalable, intelligent workflow."
+			}
+		},
+		"socialMedia": {
+			"title": "GlamGrid AI Social Spark – AI-Powered Social Media Platform",
+			"subtitle": "How we built a full-stack AI platform that turns brand assets into ready-to-publish social media content.",
+			"challenge": {
+				"title": "The Challenge",
+				"text": "An entrepreneur envisioned a platform that could automatically generate and schedule branded social media posts by analyzing existing brand assets. The goal was simple but technically demanding—upload a website or Instagram profile and let AI produce stunning, on-brand content ready for publication. Delivering that required advanced integrations across AI content generation, social APIs, and payment systems—all in a user-friendly, scalable environment."
+			},
+			"solution": {
+				"title": "Our Solution",
+				"text": "We developed a comprehensive full-stack social automation platform combining modern web technologies and AI. The frontend, built with Next.js, React, and Tailwind CSS, delivered a polished and responsive experience. The backend integrated Supabase, Stripe, and Meta's Graph API for secure authentication, subscription handling, and automated posting. Using AI models for content generation, brand voice detection, and scheduling, users could generate and preview content, then publish it directly—turning a once-manual process into a seamless, intelligent workflow."
+			},
+			"results": {
+				"title": "Results",
+				"text": "The final product was a production-ready platform that automated every stage of social content creation and delivery. With secure backend operations, multi-tier subscriptions, and direct posting to Instagram and Facebook, GlamGrid drastically reduced manual effort. It enabled brands to generate and schedule consistent, high-quality posts within minutes—maintaining creative control while saving time and cost at scale."
+			},
+			"whyWorks": {
+				"title": "Why Our Approach Works",
+				"text": "Our method focused on building for scalability, performance, and long-term stability. By isolating sensitive operations to the backend and using modular architecture, the system can evolve without disruption. GlamGrid demonstrates how AI and intelligent design can bring efficiency, consistency, and creativity together—making high-quality digital marketing both automated and accessible."
+			}
+		},
+		"cta": {
+			"title": "Interested in a chat?",
+			"button": "Book A Call"
+		},
+		"meta": {
+			"title": "Case Studies — AI Automation Success Stories | NovaShift",
+			"description": "Real results from AI strategy implementations, workflow automations, and dedicated teams. See how NovaShift transforms businesses."
+		}
+	},
+	"CTA": {
+		"getInTouch": "GET IN TOUCH",
+		"title": "Transform Your Business with AI",
+		"bookCall": "Book A Call",
+		"aiAudit": "AI Readiness Audit"
+	},
+	"AIStrategyPage": {
+		"hero": {
+			"title": "AI Strategy & Consulting",
+			"subtitle": "Transformative Intelligence, Tailored to Your Business",
+			"description": "Transform your business with strategic AI implementation that drives measurable results"
+		},
+		"offer": {
+			"title": "What We Offer",
+			"subtitle": "Gain clarity before you commit",
+			"description": "Successful AI initiatives begin with strategic insight. Our AI Readiness Audit assesses your current operations and identifies where AI can deliver meaningful results—aligned with your priorities, not just what's trending. The outcome is a roadmap built for action and impact.",
+			"free": {
+				"badge": "Free",
+				"title": "AI & Automation Opportunity Mapping",
+				"subtitle": "Discover your readiness in minutes",
+				"description": "We design AI-powered workflows that eliminate busywork and reduce manual error—boosting efficiency across every department. From lead routing to document processing, our automations keep your operations running smoothly, 24/7. Today's low-code and no-code platforms offer unprecedented opportunities to transform operations—but only when implemented with strategic foresight. Our automation architects leverage Zapier, Make.com, and n8n to create intelligent workflows that integrate seamlessly with leading AI models and your essential SaaS tools.",
+				"scope": "Scope",
+				"scopeText": "This assessment evaluates your organization's readiness for AI and automation by examining current processes, tools, and challenges.",
+				"activities": "Activities",
+				"activitiesText": "You will complete a structured set of role- and industry-specific questions designed to identify opportunities for intelligent solutions.",
+				"whatYouReceive": "What you receive",
+				"whatYouReceiveText": "A readiness report accompanied by tailored recommendations highlighting both AI and automation opportunities relevant to your business.",
+				"timeEffort": "Time & effort",
+				"timeEffortText": "The assessment requires approximately 6–10 minutes and consists primarily of AI adapted multiple-choice questions—ideal for busy professionals.",
+				"bestFor": "Best for",
+				"bestForText": "Teams exploring AI but unsure where to begin, or businesses seeking a clearer roadmap before investing in technology.",
+				"button": "Start Free Assessment",
+				"readMore": "Read More",
+				"readLess": "Read Less"
+			},
+			"paid": {
+				"badge": "Paid",
+				"title": "AI Readiness Audit",
+				"subtitle": "Comprehensive, Consultant-Led Strategic Review",
+				"description": "The AI Readiness Audit is a comprehensive, consultant-led engagement designed for teams ready to invest in tailored strategic guidance. Through structured interviews, process reviews, and collaborative workshops, we dig deep into your operations to uncover high-impact opportunities and design a clear, executable AI roadmap—aligned with your business objectives and optimized for sustainable growth.",
+				"scope": "Scope",
+				"scopeText": "We conduct a thorough evaluation of your processes, team capabilities, existing tech stack, data maturity, and strategic objectives to reveal where AI can unlock the most value.",
+				"activities": "Activities",
+				"activitiesText": "Stakeholder interviews, operational reviews, data & infrastructure assessments, hands-on workshops with your team, and opportunity identification sessions.",
+				"whatYouReceive": "What you receive",
+				"whatYouReceiveText": "A detailed strategic roadmap with clearly prioritized initiatives, technical specifications, budget estimates, timelines, risk assessments, and step-by-step implementation plans.",
+				"timeEffort": "Time & effort",
+				"timeEffortText": "Typically 1–3 weeks. The specific timeline and structure depend on the size and complexity of your organization.",
+				"bestFor": "Best for",
+				"bestForText": "Businesses and teams prepared to act on strategic recommendations, looking for a comprehensive, roadmap-driven approach to AI transformation—delivered by experienced strategists who understand both technology and business execution.",
+				"button": "Schedule a Call",
+				"readMore": "Read More",
+				"readLess": "Read Less"
+			}
+		},
+		"planning": {
+			"title": "AI Solution Design & Planning",
+			"subtitle": "Already have something in mind? Let's shape it.",
+			"description": "For businesses that already have a solution or direction in mind. We help validate, shape, and scope your idea—ensuring it's technically feasible, strategically sound, and ready for implementation. You'll walk away with a clear plan, roadmap, and budget.",
+			"scope": "Scope",
+			"scopeText": "Targeted engagements focused on a defined use case or solution area.",
+			"activities": "Activities",
+			"activitiesText": "Discovery calls, deep-dive sessions, solution validation, technical planning, and cross-team workshops.",
+			"whatYouReceive": "What you receive",
+			"whatYouReceiveText": "A clear solution brief with roadmap, cost estimate, feasibility analysis, and implementation plan.",
+			"timeEffort": "Time & effort",
+			"timeEffortText": "Typically 1–3 weeks depending on project size and scope.",
+			"button": "Schedule a Scoping Call"
+		},
+		"cta": {
+			"title": "Let's turn your AI potential into practical outcomes",
+			"firstBtn": "Talk to an expert",
+			"secondBtn": "Start The Free Audit"
+		},
+		"meta": {
+			"title": "AI Strategy & Consulting — Transformative Intelligence | NovaShift",
+			"description": "Transform your business with strategic AI implementation that drives measurable results. Tailored AI consulting by NovaShift specialists for transformative intelligence."
+		}
+	},
+	"AutomationPage": {
+		"hero": {
+			"title": "Workflow Automations",
+			"description": "Scalable Solutions Built by AI Specialists"
+		},
+		"benefits": {
+			"item1": {
+				"title": "AI Automations That Remove Busywork",
+				"description1": "We design AI-powered workflows that eliminate busywork and reduce manual error—boosting efficiency across every department. From lead routing to document processing, our automations keep your operations running smoothly, 24/7.",
+				"description2": "Today's low-code and no-code platforms offer unprecedented opportunities to transform operations—but only when implemented with strategic foresight. Our automation architects leverage Zapier, Make.com, and n8n to create intelligent workflows that integrate seamlessly with leading AI models and your essential SaaS tools."
+			},
+			"item2": {
+				"title": "Seamless SaaS Stack Integrations",
+				"description1": "We architect intelligent, future-ready integrations across your SaaS ecosystem—removing data silos, reducing manual effort, and enabling secure, reliable data exchange across systems. The outcome is a unified, high-performing tech stack that evolves with your business and delivers measurable, ongoing value.",
+				"description2": "Today's connected landscape demands seamless interoperability between apps, APIs, and platforms. Our engineers build integration frameworks using Zapier, Make.com, webhooks, and custom Python logic to ensure your tools communicate flawlessly—creating a scalable foundation for innovation and long-term growth."
+			}
+		},
+		"automate": {
+			"textBold": "Automate operations",
+			"textAfter": " and eliminate busywork with AI-powered workflows tailored for scale and efficiency."
+		},
+		"support": {
+			"title": "Strategic Support for Long-Term Success",
+			"description": "We provide ongoing support through proactive monitoring, performance optimization, and tailored training—ensuring your systems continue to evolve in alignment with your business objectives. While you focus on strategic growth, we safeguard and strengthen the technological infrastructure that supports it."
+		},
+		"cta": {
+			"title": "Ready to Automate Your Workflows?",
+			"button": "Get Free Consultation"
+		},
+		"meta": {
+			"title": "AI Workflow Automations — Scalable Solutions | NovaShift",
+			"description": "Build scalable workflow automations with AI specialists at NovaShift. Streamline operations, reduce costs, and scale your business efficiently."
+		}
+	},
+	"TeamPage": {
+		"hero": {
+			"title": "Dedicated Development Team",
+			"description": "Scalable Solutions Built by AI Specialists"
+		},
+		"team": {
+			"title": "Plug & Play Development Team",
+			"description": "With decades of experience across over 30 companies, our team delivers AI-powered tools and systems that drive transformation. Whether you're validating a new idea or upgrading existing infrastructure, we design and build solutions with long-term growth in mind."
+		},
+		"services": {
+			"service1": {
+				"title": "MVPs Built for Validation and Scalability",
+				"description": "Our rapid AI MVP development doesn't just prove concepts—it creates compelling, market-ready products that win customer enthusiasm and investor confidence. We architect with scalability built-in, using technologies that support seamless transitions from startup to scale-up."
+			},
+			"service2": {
+				"title": "AI Integrations That Enhance Core Systems",
+				"description": "Turn your current digital infrastructure into a competitive advantage with our targeted AI enhancements. We seamlessly integrate customer-converting chatbots, implement intelligence around your knowledge repository, and deploy machine learning pipelines that multiply team productivity without disrupting your operations."
+			},
+			"service3": {
+				"title": "APIs Designed to Deliver Intelligent Functions",
+				"description": "We build custom APIs around your data and tools, making them accessible to LLMs in powerful, secure, and flexible ways. This turns siloed systems into dynamic, AI-ready resources—enabling smarter decisions, richer experiences, and unexpected value across your business."
+			},
+			"service4": {
+				"title": "Chatbots and Assistants Powered by Advanced AI",
+				"description": "Revolutionize how customers and employees interact with your business through natural language interfaces that seemed impossible just years ago. Our AI-powered conversational interfaces don't just answer questions—they solve problems, guide decisions, and create exceptional experiences that build trust and drive efficiency."
+			}
+		},
+		"cta": {
+			"title": "Ready to Build Your Custom AI Solution?",
+			"button": "Start Your Project"
+		},
+		"meta": {
+			"title": "Dedicated AI Development Team — Scalable Solutions | NovaShift",
+			"description": "Hire a dedicated AI development team from NovaShift for scalable solutions. Expert specialists building custom AI tools tailored to your business needs."
+		}
+	},
+	"AboutUsPage": {
+		"about": {
+			"title": "ABOUT NOVASHIFT",
+			"paragraph1": "NovaShift helps future-focused businesses turn AI from concept into execution. We design custom AI solutions and automation strategies that streamline operations, boost performance, and drive long-term value.",
+			"paragraph2": "Our team works closely with founders and teams to uncover high-impact opportunities—then builds intelligent tools, assistants, and workflows that make AI practical, scalable, and results-driven.",
+			"paragraph3": "AI isn't the future. It's now. We're here to help you make the shift."
+		},
+		"specialize": {
+			"text": "We specialize in ",
+			"textBold": "AI transformation",
+			"textAfter": " for startups and growing businesses."
+		},
+		"differentiators": {
+			"title": "Core Differentiators",
+			"items": {
+				"collaboration": {
+					"title": "Deep collaboration",
+					"description": "We work as an extension of your team, understanding your unique challenges and goals."
+				},
+				"prototyping": {
+					"title": "Fast prototyping",
+					"description": "Rapid iteration and testing to validate concepts before full-scale implementation."
+				},
+				"support": {
+					"title": "End-to-end support",
+					"description": "From strategy and development to deployment and ongoing optimization."
+				}
+			}
+		}
+	},
+	"PrivacyPage": {
+		"hero": {
+			"title": "Privacy Policy",
+			"description": "By using NovaShift, you agree to the practices described in this policy.",
+			"breadcrumbHome": "Home",
+			"breadcrumbCurrent": "Privacy Policy"
+		},
+		"cta": {
+			"title": "Interested in a chat?",
+			"button": "Book A Call"
+		},
+		"meta": {
+			"title": "Privacy Policy | NovaShift",
+			"description": "NovaShift Privacy Policy: How we handle your data in AI automation services."
+		}
+	},
+	"TermsPage": {
+		"hero": {
+			"title": "Terms & Conditions",
+			"description": "Welcome to NovaShift, an AI Automation Platform designed to help individuals and businesses streamline workflows through artificial intelligence.",
+			"breadcrumbHome": "Home",
+			"breadcrumbCurrent": "Terms & Conditions"
+		},
+		"cta": {
+			"title": "Interested in a chat?",
+			"button": "Book A Call"
+		},
+		"meta": {
+			"title": "Terms of Service | NovaShift",
+			"description": "NovaShift Terms of Service for AI consulting and automation solutions."
+		}
+	}
+}
+

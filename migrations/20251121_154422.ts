@@ -1,7 +1,7 @@
-import { sql } from '@payloadcms/db-postgres'
+import { sql } from "@payloadcms/db-postgres"
 
 export async function up({ payload }: any): Promise<void> {
-  await payload.db.drizzle.execute(sql`
+	await payload.db.drizzle.execute(sql`
    CREATE TYPE "public"."enum_posts_status" AS ENUM('draft', 'published');
   CREATE TABLE "users_sessions" (
   	"_order" integer NOT NULL,
@@ -211,7 +211,7 @@ export async function up({ payload }: any): Promise<void> {
 }
 
 export async function down({ payload }: any): Promise<void> {
-  await payload.db.drizzle.execute(sql`
+	await payload.db.drizzle.execute(sql`
    DROP TABLE "users_sessions" CASCADE;
   DROP TABLE "users" CASCADE;
   DROP TABLE "posts_seo_keywords" CASCADE;

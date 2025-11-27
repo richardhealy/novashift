@@ -13,489 +13,494 @@
  * via the `definition` "supportedTimezones".
  */
 export type SupportedTimezones =
-  | 'Pacific/Midway'
-  | 'Pacific/Niue'
-  | 'Pacific/Honolulu'
-  | 'Pacific/Rarotonga'
-  | 'America/Anchorage'
-  | 'Pacific/Gambier'
-  | 'America/Los_Angeles'
-  | 'America/Tijuana'
-  | 'America/Denver'
-  | 'America/Phoenix'
-  | 'America/Chicago'
-  | 'America/Guatemala'
-  | 'America/New_York'
-  | 'America/Bogota'
-  | 'America/Caracas'
-  | 'America/Santiago'
-  | 'America/Buenos_Aires'
-  | 'America/Sao_Paulo'
-  | 'Atlantic/South_Georgia'
-  | 'Atlantic/Azores'
-  | 'Atlantic/Cape_Verde'
-  | 'Europe/London'
-  | 'Europe/Berlin'
-  | 'Africa/Lagos'
-  | 'Europe/Athens'
-  | 'Africa/Cairo'
-  | 'Europe/Moscow'
-  | 'Asia/Riyadh'
-  | 'Asia/Dubai'
-  | 'Asia/Baku'
-  | 'Asia/Karachi'
-  | 'Asia/Tashkent'
-  | 'Asia/Calcutta'
-  | 'Asia/Dhaka'
-  | 'Asia/Almaty'
-  | 'Asia/Jakarta'
-  | 'Asia/Bangkok'
-  | 'Asia/Shanghai'
-  | 'Asia/Singapore'
-  | 'Asia/Tokyo'
-  | 'Asia/Seoul'
-  | 'Australia/Brisbane'
-  | 'Australia/Sydney'
-  | 'Pacific/Guam'
-  | 'Pacific/Noumea'
-  | 'Pacific/Auckland'
-  | 'Pacific/Fiji';
+	| "Pacific/Midway"
+	| "Pacific/Niue"
+	| "Pacific/Honolulu"
+	| "Pacific/Rarotonga"
+	| "America/Anchorage"
+	| "Pacific/Gambier"
+	| "America/Los_Angeles"
+	| "America/Tijuana"
+	| "America/Denver"
+	| "America/Phoenix"
+	| "America/Chicago"
+	| "America/Guatemala"
+	| "America/New_York"
+	| "America/Bogota"
+	| "America/Caracas"
+	| "America/Santiago"
+	| "America/Buenos_Aires"
+	| "America/Sao_Paulo"
+	| "Atlantic/South_Georgia"
+	| "Atlantic/Azores"
+	| "Atlantic/Cape_Verde"
+	| "Europe/London"
+	| "Europe/Berlin"
+	| "Africa/Lagos"
+	| "Europe/Athens"
+	| "Africa/Cairo"
+	| "Europe/Moscow"
+	| "Asia/Riyadh"
+	| "Asia/Dubai"
+	| "Asia/Baku"
+	| "Asia/Karachi"
+	| "Asia/Tashkent"
+	| "Asia/Calcutta"
+	| "Asia/Dhaka"
+	| "Asia/Almaty"
+	| "Asia/Jakarta"
+	| "Asia/Bangkok"
+	| "Asia/Shanghai"
+	| "Asia/Singapore"
+	| "Asia/Tokyo"
+	| "Asia/Seoul"
+	| "Australia/Brisbane"
+	| "Australia/Sydney"
+	| "Pacific/Guam"
+	| "Pacific/Noumea"
+	| "Pacific/Auckland"
+	| "Pacific/Fiji"
 
 export interface Config {
-  auth: {
-    users: UserAuthOperations;
-  };
-  blocks: {};
-  collections: {
-    users: User;
-    posts: Post;
-    authors: Author;
-    categories: Category;
-    tags: Tag;
-    'payload-kv': PayloadKv;
-    'payload-locked-documents': PayloadLockedDocument;
-    'payload-preferences': PayloadPreference;
-    'payload-migrations': PayloadMigration;
-  };
-  collectionsJoins: {};
-  collectionsSelect: {
-    users: UsersSelect<false> | UsersSelect<true>;
-    posts: PostsSelect<false> | PostsSelect<true>;
-    authors: AuthorsSelect<false> | AuthorsSelect<true>;
-    categories: CategoriesSelect<false> | CategoriesSelect<true>;
-    tags: TagsSelect<false> | TagsSelect<true>;
-    'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
-    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
-    'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
-    'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
-  };
-  db: {
-    defaultIDType: number;
-  };
-  globals: {};
-  globalsSelect: {};
-  locale: null;
-  user: User & {
-    collection: 'users';
-  };
-  jobs: {
-    tasks: unknown;
-    workflows: unknown;
-  };
+	auth: {
+		users: UserAuthOperations
+	}
+	blocks: {}
+	collections: {
+		users: User
+		posts: Post
+		authors: Author
+		categories: Category
+		tags: Tag
+		"payload-kv": PayloadKv
+		"payload-locked-documents": PayloadLockedDocument
+		"payload-preferences": PayloadPreference
+		"payload-migrations": PayloadMigration
+	}
+	collectionsJoins: {}
+	collectionsSelect: {
+		users: UsersSelect<false> | UsersSelect<true>
+		posts: PostsSelect<false> | PostsSelect<true>
+		authors: AuthorsSelect<false> | AuthorsSelect<true>
+		categories: CategoriesSelect<false> | CategoriesSelect<true>
+		tags: TagsSelect<false> | TagsSelect<true>
+		"payload-kv": PayloadKvSelect<false> | PayloadKvSelect<true>
+		"payload-locked-documents":
+			| PayloadLockedDocumentsSelect<false>
+			| PayloadLockedDocumentsSelect<true>
+		"payload-preferences":
+			| PayloadPreferencesSelect<false>
+			| PayloadPreferencesSelect<true>
+		"payload-migrations":
+			| PayloadMigrationsSelect<false>
+			| PayloadMigrationsSelect<true>
+	}
+	db: {
+		defaultIDType: number
+	}
+	globals: {}
+	globalsSelect: {}
+	locale: null
+	user: User & {
+		collection: "users"
+	}
+	jobs: {
+		tasks: unknown
+		workflows: unknown
+	}
 }
 export interface UserAuthOperations {
-  forgotPassword: {
-    email: string;
-    password: string;
-  };
-  login: {
-    email: string;
-    password: string;
-  };
-  registerFirstUser: {
-    email: string;
-    password: string;
-  };
-  unlock: {
-    email: string;
-    password: string;
-  };
+	forgotPassword: {
+		email: string
+		password: string
+	}
+	login: {
+		email: string
+		password: string
+	}
+	registerFirstUser: {
+		email: string
+		password: string
+	}
+	unlock: {
+		email: string
+		password: string
+	}
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
  */
 export interface User {
-  id: number;
-  name: string;
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  sessions?:
-    | {
-        id: string;
-        createdAt?: string | null;
-        expiresAt: string;
-      }[]
-    | null;
-  password?: string | null;
+	id: number
+	name: string
+	updatedAt: string
+	createdAt: string
+	email: string
+	resetPasswordToken?: string | null
+	resetPasswordExpiration?: string | null
+	salt?: string | null
+	hash?: string | null
+	loginAttempts?: number | null
+	lockUntil?: string | null
+	sessions?:
+		| {
+				id: string
+				createdAt?: string | null
+				expiresAt: string
+		  }[]
+		| null
+	password?: string | null
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "posts".
  */
 export interface Post {
-  id: number;
-  title: string;
-  /**
-   * URL-friendly version of the title
-   */
-  slug: string;
-  excerpt: string;
-  content: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
-  featuredImage: {
-    url: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-  author: number | Author;
-  categories?: (number | Category)[] | null;
-  tags?: (number | Tag)[] | null;
-  status: 'draft' | 'published';
-  publishedAt?: string | null;
-  views?: number | null;
-  likes?: number | null;
-  commentsCount?: number | null;
-  /**
-   * Estimated reading time in minutes
-   */
-  readTime: number;
-  seo: {
-    metaTitle: string;
-    metaDescription: string;
-    keywords?:
-      | {
-          keyword?: string | null;
-          id?: string | null;
-        }[]
-      | null;
-  };
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	title: string
+	/**
+	 * URL-friendly version of the title
+	 */
+	slug: string
+	excerpt: string
+	content: {
+		root: {
+			type: string
+			children: {
+				type: any
+				version: number
+				[k: string]: unknown
+			}[]
+			direction: ("ltr" | "rtl") | null
+			format: "left" | "start" | "center" | "right" | "end" | "justify" | ""
+			indent: number
+			version: number
+		}
+		[k: string]: unknown
+	}
+	featuredImage: {
+		url: string
+		alt: string
+		width: number
+		height: number
+	}
+	author: number | Author
+	categories?: (number | Category)[] | null
+	tags?: (number | Tag)[] | null
+	status: "draft" | "published"
+	publishedAt?: string | null
+	views?: number | null
+	likes?: number | null
+	commentsCount?: number | null
+	/**
+	 * Estimated reading time in minutes
+	 */
+	readTime: number
+	seo: {
+		metaTitle: string
+		metaDescription: string
+		keywords?:
+			| {
+					keyword?: string | null
+					id?: string | null
+			  }[]
+			| null
+	}
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "authors".
  */
 export interface Author {
-  id: number;
-  name: string;
-  email: string;
-  username?: string | null;
-  avatar: string;
-  bio: string;
-  role?: string | null;
-  social?: {
-    twitter?: string | null;
-    github?: string | null;
-    linkedin?: string | null;
-  };
-  postsCount?: number | null;
-  joinedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	name: string
+	email: string
+	username?: string | null
+	avatar: string
+	bio: string
+	role?: string | null
+	social?: {
+		twitter?: string | null
+		github?: string | null
+		linkedin?: string | null
+	}
+	postsCount?: number | null
+	joinedAt?: string | null
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "categories".
  */
 export interface Category {
-  id: number;
-  name: string;
-  slug: string;
-  description?: string | null;
-  postsCount?: number | null;
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	name: string
+	slug: string
+	description?: string | null
+	postsCount?: number | null
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "tags".
  */
 export interface Tag {
-  id: number;
-  name: string;
-  slug: string;
-  postsCount?: number | null;
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	name: string
+	slug: string
+	postsCount?: number | null
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
-  id: number;
-  key: string;
-  data:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
+	id: number
+	key: string
+	data:
+		| {
+				[k: string]: unknown
+		  }
+		| unknown[]
+		| string
+		| number
+		| boolean
+		| null
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: number;
-  document?:
-    | ({
-        relationTo: 'users';
-        value: number | User;
-      } | null)
-    | ({
-        relationTo: 'posts';
-        value: number | Post;
-      } | null)
-    | ({
-        relationTo: 'authors';
-        value: number | Author;
-      } | null)
-    | ({
-        relationTo: 'categories';
-        value: number | Category;
-      } | null)
-    | ({
-        relationTo: 'tags';
-        value: number | Tag;
-      } | null);
-  globalSlug?: string | null;
-  user: {
-    relationTo: 'users';
-    value: number | User;
-  };
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	document?:
+		| ({
+				relationTo: "users"
+				value: number | User
+		  } | null)
+		| ({
+				relationTo: "posts"
+				value: number | Post
+		  } | null)
+		| ({
+				relationTo: "authors"
+				value: number | Author
+		  } | null)
+		| ({
+				relationTo: "categories"
+				value: number | Category
+		  } | null)
+		| ({
+				relationTo: "tags"
+				value: number | Tag
+		  } | null)
+	globalSlug?: string | null
+	user: {
+		relationTo: "users"
+		value: number | User
+	}
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: number;
-  user: {
-    relationTo: 'users';
-    value: number | User;
-  };
-  key?: string | null;
-  value?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	user: {
+		relationTo: "users"
+		value: number | User
+	}
+	key?: string | null
+	value?:
+		| {
+				[k: string]: unknown
+		  }
+		| unknown[]
+		| string
+		| number
+		| boolean
+		| null
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: number;
-  name?: string | null;
-  batch?: number | null;
-  updatedAt: string;
-  createdAt: string;
+	id: number
+	name?: string | null
+	batch?: number | null
+	updatedAt: string
+	createdAt: string
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
-  name?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
-  sessions?:
-    | T
-    | {
-        id?: T;
-        createdAt?: T;
-        expiresAt?: T;
-      };
+	name?: T
+	updatedAt?: T
+	createdAt?: T
+	email?: T
+	resetPasswordToken?: T
+	resetPasswordExpiration?: T
+	salt?: T
+	hash?: T
+	loginAttempts?: T
+	lockUntil?: T
+	sessions?:
+		| T
+		| {
+				id?: T
+				createdAt?: T
+				expiresAt?: T
+		  }
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "posts_select".
  */
 export interface PostsSelect<T extends boolean = true> {
-  title?: T;
-  slug?: T;
-  excerpt?: T;
-  content?: T;
-  featuredImage?:
-    | T
-    | {
-        url?: T;
-        alt?: T;
-        width?: T;
-        height?: T;
-      };
-  author?: T;
-  categories?: T;
-  tags?: T;
-  status?: T;
-  publishedAt?: T;
-  views?: T;
-  likes?: T;
-  commentsCount?: T;
-  readTime?: T;
-  seo?:
-    | T
-    | {
-        metaTitle?: T;
-        metaDescription?: T;
-        keywords?:
-          | T
-          | {
-              keyword?: T;
-              id?: T;
-            };
-      };
-  updatedAt?: T;
-  createdAt?: T;
+	title?: T
+	slug?: T
+	excerpt?: T
+	content?: T
+	featuredImage?:
+		| T
+		| {
+				url?: T
+				alt?: T
+				width?: T
+				height?: T
+		  }
+	author?: T
+	categories?: T
+	tags?: T
+	status?: T
+	publishedAt?: T
+	views?: T
+	likes?: T
+	commentsCount?: T
+	readTime?: T
+	seo?:
+		| T
+		| {
+				metaTitle?: T
+				metaDescription?: T
+				keywords?:
+					| T
+					| {
+							keyword?: T
+							id?: T
+					  }
+		  }
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "authors_select".
  */
 export interface AuthorsSelect<T extends boolean = true> {
-  name?: T;
-  email?: T;
-  username?: T;
-  avatar?: T;
-  bio?: T;
-  role?: T;
-  social?:
-    | T
-    | {
-        twitter?: T;
-        github?: T;
-        linkedin?: T;
-      };
-  postsCount?: T;
-  joinedAt?: T;
-  updatedAt?: T;
-  createdAt?: T;
+	name?: T
+	email?: T
+	username?: T
+	avatar?: T
+	bio?: T
+	role?: T
+	social?:
+		| T
+		| {
+				twitter?: T
+				github?: T
+				linkedin?: T
+		  }
+	postsCount?: T
+	joinedAt?: T
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "categories_select".
  */
 export interface CategoriesSelect<T extends boolean = true> {
-  name?: T;
-  slug?: T;
-  description?: T;
-  postsCount?: T;
-  updatedAt?: T;
-  createdAt?: T;
+	name?: T
+	slug?: T
+	description?: T
+	postsCount?: T
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "tags_select".
  */
 export interface TagsSelect<T extends boolean = true> {
-  name?: T;
-  slug?: T;
-  postsCount?: T;
-  updatedAt?: T;
-  createdAt?: T;
+	name?: T
+	slug?: T
+	postsCount?: T
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv_select".
  */
 export interface PayloadKvSelect<T extends boolean = true> {
-  key?: T;
-  data?: T;
+	key?: T
+	data?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents_select".
  */
 export interface PayloadLockedDocumentsSelect<T extends boolean = true> {
-  document?: T;
-  globalSlug?: T;
-  user?: T;
-  updatedAt?: T;
-  createdAt?: T;
+	document?: T
+	globalSlug?: T
+	user?: T
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-preferences_select".
  */
 export interface PayloadPreferencesSelect<T extends boolean = true> {
-  user?: T;
-  key?: T;
-  value?: T;
-  updatedAt?: T;
-  createdAt?: T;
+	user?: T
+	key?: T
+	value?: T
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-migrations_select".
  */
 export interface PayloadMigrationsSelect<T extends boolean = true> {
-  name?: T;
-  batch?: T;
-  updatedAt?: T;
-  createdAt?: T;
+	name?: T
+	batch?: T
+	updatedAt?: T
+	createdAt?: T
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "auth".
  */
 export interface Auth {
-  [k: string]: unknown;
+	[k: string]: unknown
 }
 
-
-declare module 'payload' {
-  export interface GeneratedTypes extends Config {}
+declare module "payload" {
+	export interface GeneratedTypes extends Config {}
 }

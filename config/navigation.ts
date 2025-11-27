@@ -1,69 +1,69 @@
 import { ROUTES } from "./routes"
 
 export type MenuItem = {
-	label: string
+	labelKey: string
 	href: string
 	submenu?: SubmenuItem[]
 }
 export type SubmenuItem = {
-	label: string
+	labelKey: string
 	href: string
 }
 
 export const SERVICES_SUBMENU_ITEMS: SubmenuItem[] = [
 	{
-		label: "AI Strategy & Consulting",
+		labelKey: "aiStrategy",
 		href: ROUTES.AI_STRATEGY,
 	},
 	{
-		label: "Dedicated Development Team",
+		labelKey: "developmentTeam",
 		href: ROUTES.TEAM,
 	},
 	{
-		label: "Workflow Automations",
+		labelKey: "automation",
 		href: ROUTES.AUTOMATION,
 	},
 ] as const
 
 export const MENU_LINKS: MenuItem[] = [
 	{
-		label: "Home",
+		labelKey: "home",
 		href: ROUTES.HOME,
 	},
 	{
-		label: "Services",
+		labelKey: "services",
 		href: "#",
 		submenu: SERVICES_SUBMENU_ITEMS,
 	},
 	{
-		label: "Case Studies",
+		labelKey: "caseStudies",
 		href: ROUTES.CASES,
 	},
 	{
-		label: "AI",
+		labelKey: "ai",
 		href: ROUTES.AI,
 	},
 	{
-		label: "About Us",
+		labelKey: "aboutUs",
 		href: ROUTES.ABOUT_US,
 	},
 	{
-		label: "Contact Us",
+		labelKey: "contactUs",
 		href: ROUTES.CONTACT_US,
 	},
 ] as const
 
 export const FOOTER_COMPANY_MENU_LINKS: MenuItem[] = [
 	{
-		label: "About Us",
+		labelKey: "aboutUs",
 		href: ROUTES.ABOUT_US,
 	},
 	{
-		label: "Case Studies",
+		labelKey: "caseStudies",
 		href: ROUTES.CASES,
 	},
 	{
-		label: "Contact Us",
+		labelKey: "contactUs",
 		href: ROUTES.CONTACT_US,
 	},
 ] as const

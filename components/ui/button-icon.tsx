@@ -10,6 +10,7 @@ export default function ButtonIcon({ iconColor = "white" }: ButtonIconProps) {
 			height='20'
 			viewBox='0 0 20 20'
 			fill='none'
+			className='rtl:scale-x-[-1]'
 		>
 			<title>Button Icon</title>
 			<path

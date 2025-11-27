@@ -144,6 +144,11 @@
 	.btn {
 		@apply flex max-w-fit items-center rounded-full font-bold transition-colors disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-100 disabled:text-gray-400 disabled:after:bg-gray-200 [&_svg]:ml-4 shrink-0;
 	}
+	
+	/* RTL Button - icon on the left */
+	[dir="rtl"] .btn {
+		@apply [&_svg]:mr-4 [&_svg]:ml-0;
+	}
 	.btn-primary {
 		@apply border border-blue-800 bg-blue-800 text-white not-disabled:hover:bg-blue-600 [.with-icon]:not-disabled:after:bg-blue-600 [.with-icon]:not-disabled:hover:bg-blue-800;
 	}
@@ -284,6 +289,20 @@
 	/* Icon Button */
 	.with-icon {
 		@apply relative z-0 after:absolute after:top-0.5 after:right-0.5 after:-z-10 after:h-10 after:w-10 after:origin-right after:rounded-full after:transition-all not-disabled:hover:after:w-[calc(100%-4px)] disabled:[&_path]:fill-gray-500 [.icon-sm]:after:h-9 [.icon-sm]:after:w-9;
+	}
+	
+	/* RTL Icon Button - flip position and animation direction */
+	[dir="rtl"] .with-icon {
+		@apply after:left-0.5 after:right-auto after:origin-left;
+	}
+
+	/* RTL Image Flip Utilities */
+	.rtl-flip-x {
+		transform: scaleX(-1);
+	}
+
+	[dir="rtl"] .rtl-flip-x {
+		transform: scaleX(-1);
 	}
 }
 

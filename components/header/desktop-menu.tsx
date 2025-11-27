@@ -1,6 +1,6 @@
 "use client"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { useTranslations } from "next-intl"
+import { Link, usePathname } from "@/i18n/routing"
 import type { MenuItem } from "@/config/navigation"
 import { cn } from "@/lib/utils"
 import DesktopSubmenu from "./desktop-submenu"
@@ -13,20 +13,21 @@ const SERVICE_ROUTES = ["/ai-strategy", "/team", "/automation"]
 
 export default function DesktopMenu({ items }: DesktopMenuProps) {
 	const pathname = usePathname()
+	const t = useTranslations("Navigation")
+	const tServices = useTranslations("ServicesMenu")
 
 	return (
 		<nav aria-label='Main menu' className='menu z-10 hidden md:flex'>
 			<ul className='flex items-center gap-8'>
 				{items.map((item) => {
-					const isServiceItem =
-						item.label === "Services" || item.label === "services"
+					const isServiceItem = item.labelKey === "services"
 					const isCurrent =
 						pathname === item.href ||
 						(isServiceItem && SERVICE_ROUTES.includes(pathname))
 
 					return (
 						<li
-							key={item.href || item.label}
+							key={item.href || item.labelKey}
 							className={cn(
 								"menu-item",
 								item.submenu && "group/submenu relative",
@@ -41,7 +42,7 @@ export default function DesktopMenu({ items }: DesktopMenuProps) {
 										aria-haspopup='true'
 										aria-expanded='false'
 									>
-										<span>{item.label}</span>
+										<span>{t(item.labelKey as any)}</span>
 
 										<svg
 											aria-hidden='true'
@@ -65,10 +66,10 @@ export default function DesktopMenu({ items }: DesktopMenuProps) {
 								</div>
 							) : (
 								<Link
-									href={item.href}
+									href={item.href as any}
 									className={cn("menu-link", isCurrent && "current")}
 								>
-									{item.label}
+									{t(item.labelKey as any)}
 								</Link>
 							)}
 						</li>

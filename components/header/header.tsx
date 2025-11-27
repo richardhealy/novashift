@@ -1,16 +1,19 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import { useEffect, useState } from "react"
+import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/routing"
 import { MENU_LINKS } from "@/config/navigation"
 import { ROUTES } from "@/config/routes"
 import BurgerButton from "./burger-button"
 import DesktopMenu from "./desktop-menu"
 import MobileMenu from "./mobile-menu"
+import LanguageSwitcher from "./language-switcher"
 
 export default function Header() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
+	const t = useTranslations("Navigation")
 
 	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -35,7 +38,7 @@ export default function Header() {
 	return (
 		<header className='py-4 relative z-10'>
 			<div className='container'>
-				<div className='flex items-center justify-between'>
+				<div className='flex items-center justify-between gap-4'>
 					<Link href={ROUTES.HOME}>
 						<Image
 							className='w-[120px] md:w-[194px]'
@@ -47,7 +50,10 @@ export default function Header() {
 						/>
 					</Link>
 
-					<DesktopMenu items={MENU_LINKS} />
+					<div className='flex items-center gap-4'>
+						<DesktopMenu items={MENU_LINKS} />
+						<LanguageSwitcher />
+					</div>
 
 					<MobileMenu
 						items={MENU_LINKS}

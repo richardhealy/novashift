@@ -1,0 +1,52 @@
+"use client"
+import { useTranslations } from "next-intl"
+import useMediaQuery from "@/hooks/useMediaQuery"
+import type { StatisticItem } from "@/types/statistic"
+import DesktopAccordion from "../_components/desktop-accordion"
+import MobileAccordion from "../_components/mobile-accordion"
+
+export default function StatisticSection() {
+	const isDesktop = useMediaQuery("(min-width: 1024px)")
+	const t = useTranslations("HomePage.stats")
+
+	const statsItems: StatisticItem[] = [
+		{
+			title: "50+",
+			text: t("projects"),
+			imageURL: "/images/home/stats-1.png",
+			imageClasses:
+				"object-cover shrink-0 flex w-[371px] h-[371px] absolute top-[-69px] right-[-114px] lg:w-[422px] lg:h-[422px] lg:-top-1 lg:right-[-87px]",
+		},
+		{
+			title: "12",
+			text: t("countries"),
+			imageURL: "/images/home/stats-2.png",
+			imageClasses:
+				"object-cover shrink-0 flex w-[464px] h-[696px] absolute top-[-203px] right-[-189px] lg:-top-16 lg:right-[-122px]",
+		},
+		{
+			title: "11+",
+			text: t("industries"),
+			imageURL: "/images/home/stats-3.png",
+			imageClasses:
+				"object-cover shrink-0 flex w-[532px] h-[534px]  absolute top-[-122px] right-[-202px] lg:top-0 lg:right-[-175px]",
+		},
+		{
+			title: "100+",
+			text: t("integrations"),
+			imageURL: "/images/home/stats-4.png",
+			imageClasses:
+				"object-cover shrink-0 flex w-[404px] h-[606px] absolute top-[-148px] right-[-187px] lg:-top-[18px] lg:-right-22",
+		},
+	]
+
+	return (
+		<section className='p-0'>
+			{isDesktop ? (
+				<DesktopAccordion items={statsItems} />
+			) : (
+				<MobileAccordion items={statsItems} />
+			)}
+		</section>
+	)
+}

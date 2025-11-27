@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image"
-import Link from "next/link"
+import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/routing"
 import {
 	FOOTER_COMPANY_MENU_LINKS,
 	SERVICES_SUBMENU_ITEMS,
@@ -7,6 +9,10 @@ import {
 import { ROUTES } from "@/config/routes"
 
 export default function Footer() {
+	const t = useTranslations("Footer")
+	const tNav = useTranslations("Navigation")
+	const tServices = useTranslations("ServicesMenu")
+
 	return (
 		<footer className='border-t border-t-black/10 bg-blue-800 pt-16'>
 			<div className='container'>
@@ -21,13 +27,11 @@ export default function Footer() {
 							/>
 						</Link>
 
-						<p className='mt-6 text-center leading-[1.6] tracking-[0.16px] text-white md:text-left'>
-							AI transformation specialists helping businesses unlock the
-							potential of artificial intelligence through strategic consultings
-							and custom development.
+						<p className='mt-6 text-center leading-[1.6] tracking-[0.16px] text-white md:text-left rtl:text-right'>
+							{t("description")}
 						</p>
 
-						<Link
+						<a
 							href='mailto:hello@novashift.ai'
 							className='mt-6 flex items-center gap-2 font-medium text-white underline-offset-4 hover:underline'
 						>
@@ -46,35 +50,35 @@ export default function Footer() {
 									/>
 								</svg>
 							</div>
-							hello@novashift.ai
-						</Link>
+							{t("email")}
+						</a>
 					</div>
 					<div className='flex flex-col gap-8 md:w-full lg:max-w-[549px] lg:flex-row'>
 						<nav className='md:w-full md:max-w-[260px]'>
-							<p className='text-xl font-bold text-white'>Services</p>
+							<p className='text-xl font-bold text-white'>{t("services")}</p>
 							<ul className='mt-4 w-full space-y-4'>
 								{SERVICES_SUBMENU_ITEMS.map((link) => (
 									<li key={link.href}>
 										<Link
 											className='leading-[1.4] tracking-[0.16px] text-blue-100 hover:text-white'
-											href={link.href}
+											href={link.href as any}
 										>
-											{link.label}
+											{tServices(link.labelKey as any)}
 										</Link>
 									</li>
 								))}
 							</ul>
 						</nav>
 						<nav className='md:w-full md:max-w-[260px]'>
-							<p className='text-xl font-bold text-white'>Company</p>
+							<p className='text-xl font-bold text-white'>{t("company")}</p>
 							<ul className='mt-4 w-full space-y-4'>
 								{FOOTER_COMPANY_MENU_LINKS.map((link) => (
 									<li key={link.href}>
 										<Link
 											className='leading-[1.4] tracking-[0.16px] text-blue-100 hover:text-white'
-											href={link.href}
+											href={link.href as any}
 										>
-											{link.label}
+											{tNav(link.labelKey as any)}
 										</Link>
 									</li>
 								))}
@@ -88,7 +92,7 @@ export default function Footer() {
 				<div className='container'>
 					<div className='flex flex-col items-center gap-6 md:flex-row md:justify-between'>
 						<p className='text-center text-sm tracking-[0.2px] text-blue-100/70 md:text-left'>
-							Copyright© 2025. Novashift. All Right Reserved.
+							{t("copyright")}
 						</p>
 
 						<nav>
@@ -98,7 +102,7 @@ export default function Footer() {
 										className='text-sm leading-[1.6] text-blue-100/70 hover:text-white'
 										href={ROUTES.TERMS}
 									>
-										Terms of Service
+										{t("termsOfService")}
 									</Link>
 								</li>
 								<li>
@@ -106,7 +110,7 @@ export default function Footer() {
 										className='text-sm leading-[1.6] text-blue-100/70 hover:text-white'
 										href={ROUTES.PRIVACY}
 									>
-										Privacy Policy
+										{t("privacyPolicy")}
 									</Link>
 								</li>
 							</ul>

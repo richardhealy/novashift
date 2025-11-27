@@ -19,7 +19,7 @@ export type ContactFormResponse = {
 /**
  * Submits contact form data to Supabase
  * Table name: contact_submissions
- * 
+ *
  * Required Supabase table schema:
  * - id: uuid (primary key, default: gen_random_uuid())
  * - full_name: text
@@ -63,4 +63,3 @@ export async function submitContactForm(
 		}
 	}
 }
-

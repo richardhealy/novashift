@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image"
-import Link from "next/link"
 import { useState } from "react"
+import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/routing"
 import type { MenuItem } from "@/config/navigation"
 import { ROUTES } from "@/config/routes"
 
@@ -18,6 +19,8 @@ export default function MobileMenu({
 }: MobileMenuProps) {
 	// Track which submenu is currently expanded
 	const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null)
+	const t = useTranslations("Navigation")
+	const tServices = useTranslations("ServicesMenu")
 
 	/**
 	 * Toggle submenu expansion state
@@ -78,7 +81,7 @@ export default function MobileMenu({
 												aria-expanded={activeSubmenu === index}
 												onClick={() => toggleSubmenu(index)}
 											>
-												<span>{item.label}</span>
+												<span>{t(item.labelKey as any)}</span>
 												<svg
 													aria-hidden='true'
 													width='24'
@@ -113,11 +116,11 @@ export default function MobileMenu({
 														{item.submenu.map((subItem) => (
 															<li key={subItem.href}>
 																<Link
-																	href={subItem.href}
+																	href={subItem.href as any}
 																	className='mobile-submenu-link'
 																	onClick={() => handleLinkClick(subItem.href)}
 																>
-																	{subItem.label}
+																	{tServices(subItem.labelKey as any)}
 																</Link>
 															</li>
 														))}
@@ -128,11 +131,11 @@ export default function MobileMenu({
 									) : (
 										// Regular mobile menu item (no submenu)
 										<Link
-											href={item.href}
+											href={item.href as any}
 											className='mobile-menu-link'
 											onClick={() => handleLinkClick(item.href)}
 										>
-											{item.label}
+											{t(item.labelKey as any)}
 										</Link>
 									)}
 								</li>

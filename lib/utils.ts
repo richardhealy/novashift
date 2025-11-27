@@ -13,3 +13,9 @@ export const formatDate = (dateString: string): string => {
 		year: "numeric",
 	}).format(date)
 }
+
+// Convert Western numerals to Arabic numerals
+export const toArabicNumerals = (text: string): string => {
+	const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩']
+	return text.replace(/\d/g, (digit) => arabicNumerals[Number.parseInt(digit)])
+}
