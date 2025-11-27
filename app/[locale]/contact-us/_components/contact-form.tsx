@@ -12,6 +12,8 @@ import { Textarea } from "@/components/ui/inputs/textarea"
 import { cn } from "@/lib/utils"
 import { submitContactForm } from "@/actions/contact"
 import { useState, useMemo } from "react"
+import { Dialog } from "@/components/ui/dialog"
+import { TypographyH3 } from "@/components/ui/typography"
 
 // Optional: Export inferred TypeScript type for form data
 type FormData = {
@@ -28,6 +30,7 @@ export default function ContactForm() {
 		type: "success" | "error" | null
 		message: string
 	}>({ type: null, message: "" })
+	const [isSuccessOpen, setIsSuccessOpen] = useState(false)
 
 	const formSchema = useMemo(
 		() =>
@@ -94,15 +97,8 @@ export default function ContactForm() {
 		const result = await submitContactForm(data)
 
 		if (result.success) {
-			setSubmitStatus({
-				type: "success",
-				message: result.message || t("success"),
-			})
+			setIsSuccessOpen(true)
 			reset()
-			// Clear success message after 5 seconds
-			setTimeout(() => {
-				setSubmitStatus({ type: null, message: "" })
-			}, 5000)
 		} else {
 			setSubmitStatus({
 				type: "error",
@@ -112,26 +108,20 @@ export default function ContactForm() {
 	}
 
 	return (
-		<form
-			className='p-6 border border-neutral-300 bg-white shadow-contact-form rounded-2xl'
-			onSubmit={handleSubmit(onSubmit)}
-		>
-			<div className='space-y-5'>
-				{/* Status Messages */}
-				{submitStatus.type && (
-					<div
-						className={cn(
-							"p-4 rounded-lg text-sm",
-							submitStatus.type === "success"
-								? "bg-green-50 text-green-800 border border-green-200"
-								: "bg-red-50 text-red-800 border border-red-200",
-						)}
-					>
-						{submitStatus.message}
-					</div>
-				)}
+		<>
+			<form
+				className='p-6 border border-neutral-300 bg-white shadow-contact-form rounded-2xl'
+				onSubmit={handleSubmit(onSubmit)}
+			>
+				<div className='space-y-5'>
+					{/* Status Messages */}
+					{submitStatus.type === "error" && (
+						<div className='p-4 rounded-lg text-sm bg-red-50 text-red-800 border border-red-200'>
+							{submitStatus.message}
+						</div>
+					)}
 
-				<div className='grid lg:grid-cols-2 gap-x-2.5 gap-y-5'>
+					<div className='grid lg:grid-cols-2 gap-x-2.5 gap-y-5'>
 					{/* Full Name Field */}
 					<InputGroup
 						key='full_name'
@@ -223,10 +213,46 @@ export default function ContactForm() {
 					</InputGroup>
 				</div>
 
-				<Button type='submit' disabled={isSubmitting} withIcon>
-					{isSubmitting ? t("submitting") : t("submit")}
-				</Button>
-			</div>
-		</form>
+					<Button type='submit' disabled={isSubmitting} withIcon>
+						{isSubmitting ? t("submitting") : t("submit")}
+					</Button>
+				</div>
+			</form>
+
+			<Dialog
+				isOpen={isSuccessOpen}
+				onClose={() => setIsSuccessOpen(false)}
+				className='text-center'
+			>
+				<div className='flex flex-col items-center justify-center py-6'>
+					<div className='w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600'>
+						<svg
+							width='32'
+							height='32'
+							viewBox='0 0 24 24'
+							fill='none'
+							xmlns='http://www.w3.org/2000/svg'
+						>
+							<path
+								d='M20 6L9 17L4 12'
+								stroke='currentColor'
+								strokeWidth='3'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							/>
+						</svg>
+					</div>
+					<TypographyH3 className='mb-2 text-2xl'>
+						{t("successTitle") || "Thank You!"}
+					</TypographyH3>
+					<p className='text-neutral-600 mb-8'>
+						{t("success") || "We have received your message and will get back to you soon."}
+					</p>
+					<Button onClick={() => setIsSuccessOpen(false)} className='w-full'>
+						{t("close") || "Close"}
+					</Button>
+				</div>
+			</Dialog>
+		</>
 	)
 }
