@@ -11,8 +11,8 @@ export default function LanguageSwitcher() {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const languages = [
-		{ code: "en", name: "English", flag: "🇺🇸" },
-		{ code: "ar", name: "العربية", flag: "🇸🇦" },
+		{ code: "en", name: "EN" },
+		{ code: "ar", name: "AR" },
 	]
 
 	const currentLanguage =
@@ -33,8 +33,7 @@ export default function LanguageSwitcher() {
 				aria-label='Switch language'
 				disabled={isPending}
 			>
-				<span className='text-lg'>{currentLanguage.flag}</span>
-				<span className='hidden md:inline'>{currentLanguage.name}</span>
+				<span>{currentLanguage.name}</span>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='16'
@@ -70,7 +69,6 @@ export default function LanguageSwitcher() {
 								}`}
 								disabled={isPending}
 							>
-								<span className='text-lg'>{lang.flag}</span>
 								<span>{lang.name}</span>
 								{locale === lang.code && (
 									<svg
