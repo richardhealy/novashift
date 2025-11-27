@@ -139,7 +139,10 @@
 				"websiteInvalid": "Please enter a valid website URL (e.g., https://example.com).",
 				"messageMinLength": "Message must be at least 10 characters long.",
 				"messageMaxLength": "Message must be 2000 characters or less."
-			}
+			},
+			"successTitle": "Thank You!",
+			"successMessage": "We have received your message and will get back to you soon.",
+			"close": "Close"
 		},
 		"cta": {
 			"title": "Prefer to skip the form and book time directly?",

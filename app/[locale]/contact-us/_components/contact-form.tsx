@@ -243,13 +243,13 @@ export default function ContactForm() {
 						</svg>
 					</div>
 					<TypographyH3 className='mb-2 text-2xl'>
-						{t("successTitle") || "Thank You!"}
+						{t("successTitle")}
 					</TypographyH3>
 					<p className='text-neutral-600 mb-8'>
-						{t("success") || "We have received your message and will get back to you soon."}
+						{t("successMessage")}
 					</p>
 					<Button onClick={() => setIsSuccessOpen(false)} className='w-full'>
-						{t("close") || "Close"}
+						{t("close")}
 					</Button>
 				</div>
 			</Dialog>
