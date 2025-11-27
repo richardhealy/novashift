@@ -1,6 +1,6 @@
 "use server"
 
-import { supabase } from "@/lib/supabase"
+import { createServerClient } from "@/lib/supabase"
 
 export type ContactFormData = {
 	full_name: string
@@ -33,21 +33,26 @@ export async function submitContactForm(
 	data: ContactFormData,
 ): Promise<ContactFormResponse> {
 	try {
-		const { error } = await supabase.from("contact_submissions").insert([
-			{
-				full_name: data.full_name,
-				email: data.email,
-				company_name: data.company_name,
-				website_url: data.website_url || null,
-				message: data.message,
-			},
-		])
+		const supabase = createServerClient()
+		
+		const { error, data: insertedData } = await supabase
+			.from("contact_submissions")
+			.insert([
+				{
+					full_name: data.full_name,
+					email: data.email,
+					company_name: data.company_name,
+					website_url: data.website_url || null,
+					message: data.message,
+				},
+			])
+			.select()
 
 		if (error) {
-			console.error("Supabase error:", error)
+			console.error("Supabase error:", JSON.stringify(error, null, 2))
 			return {
 				success: false,
-				error: "Failed to submit form. Please try again later.",
+				error: error.message || "Failed to submit form. Please try again later.",
 			}
 		}
 
@@ -57,9 +62,11 @@ export async function submitContactForm(
 		}
 	} catch (error) {
 		console.error("Unexpected error:", error)
+		const errorMessage =
+			error instanceof Error ? error.message : "An unexpected error occurred."
 		return {
 			success: false,
-			error: "An unexpected error occurred. Please try again later.",
+			error: errorMessage || "An unexpected error occurred. Please try again later.",
 		}
 	}
 }
