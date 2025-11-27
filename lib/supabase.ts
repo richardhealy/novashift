@@ -31,11 +31,18 @@ export function createServiceRoleClient() {
 	const url = process.env.NEXT_PUBLIC_SUPABASE_URL
 	const key = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-	if (!url || !key) {
+	if (!url) {
+		throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL environment variable")
+	}
+
+	if (!key) {
 		// Fallback to anon key if service key is missing, but log warning
 		console.warn("Missing SUPABASE_SERVICE_ROLE_KEY, falling back to ANON_KEY. RLS policies may block writes.")
 		const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-		if (!anonKey) throw new Error("Missing Supabase environment variables")
+		
+		if (!anonKey) {
+			throw new Error("Missing NEXT_PUBLIC_SUPABASE_ANON_KEY environment variable")
+		}
 		
 		return createClient(url, anonKey, {
 			auth: { persistSession: false }
