@@ -5,6 +5,7 @@ import { notFound } from "next/navigation"
 import { routing } from "@/i18n/routing"
 import Footer from "@/components/footer"
 import Header from "@/components/header/header"
+import ConditionalFooter from "./_components/conditional-footer"
 
 const manrope = Manrope({
 	variable: "--font-manrope",
@@ -46,7 +47,7 @@ export default async function LocaleLayout({
 				<NextIntlClientProvider messages={messages}>
 					<Header />
 					<main className='flex-1'>{children}</main>
-					<Footer />
+					<ConditionalFooter />
 				</NextIntlClientProvider>
 			</body>
 		</html>

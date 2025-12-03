@@ -38,3 +38,9 @@ CREATE INDEX IF NOT EXISTS idx_contact_submissions_created_at ON contact_submiss
 CREATE INDEX IF NOT EXISTS idx_contact_submissions_email ON contact_submissions(email);
 
 
+
+
+
+
+
+

@@ -457,6 +457,17 @@
 			"title": "Terms of Service | NovaShift",
 			"description": "NovaShift Terms of Service for AI consulting and automation solutions."
 		}
+	},
+	"AuditPage": {
+		"hero": {
+			"title": "AI & Automation Readiness Audit",
+			"description": "Discover how prepared your business is for AI and automation. Get a personalized report with actionable insights tailored to your industry and challenges.",
+			"beginButton": "Begin Assessment"
+		},
+		"cta": {
+			"title": "Ready to transform your business with AI?",
+			"button": "Book a Free Strategy Session"
+		}
 	}
 }
 

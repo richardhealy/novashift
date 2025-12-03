@@ -5,6 +5,7 @@ export const ROUTES = {
 	AI: "/ai",
 	ABOUT_US: "/about-us",
 	CONTACT_US: "/contact-us",
+	AUDIT: "/audit",
 	AI_STRATEGY: "/ai-strategy",
 	TEAM: "/team",
 	AUTOMATION: "/automation",
