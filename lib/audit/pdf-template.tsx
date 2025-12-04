@@ -130,26 +130,11 @@ const styles = StyleSheet.create({
 	},
 })
 
+import type { ReportData, ScoringResult } from "@/types/audit"
+
 interface PDFTemplateProps {
-	reportData: {
-		readinessScore: number
-		scoreExplanation: string
-		businessSummary?: string
-		industryLandscape: string
-		aiOpportunities: Array<{ title: string; description: string }>
-		quickWins: Array<{ title: string; description: string; timeframe: string }>
-		longTermProjects: Array<{
-			title: string
-			description: string
-			timeframe: string
-		}>
-		roiSnapshot?: { estimatedSavings: string; hoursSaved: number }
-		cta: string
-	}
-	scores: {
-		totalScore: number
-		tier: string
-	}
+	reportData: ReportData
+	scores: ScoringResult
 }
 
 export function PDFTemplate({ reportData, scores }: PDFTemplateProps) {
