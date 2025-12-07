@@ -499,6 +499,7 @@ export default function AuditWizard({ locale }: AuditWizardProps) {
 			if (nextStep < buildStepSequence.length) {
 				setCurrentStep(nextStep)
 				updateStepInUrl(nextStep)
+				window.scrollTo({ top: 0, behavior: "smooth" })
 			} else {
 				console.log("✅ [HANDLE NEXT] Past all steps, submitting...")
 				// All steps complete, trigger submission
@@ -525,6 +526,7 @@ export default function AuditWizard({ locale }: AuditWizardProps) {
 			if (nextStep < buildStepSequence.length) {
 				setCurrentStep(nextStep)
 				updateStepInUrl(nextStep)
+				window.scrollTo({ top: 0, behavior: "smooth" })
 			} else {
 				console.log("✅ [HANDLE NEXT] Past all steps from follow-up, submitting...")
 				const formData = formValues as FormData
@@ -548,6 +550,7 @@ export default function AuditWizard({ locale }: AuditWizardProps) {
 			if (nextStep < buildStepSequence.length) {
 				setCurrentStep(nextStep)
 				updateStepInUrl(nextStep)
+				window.scrollTo({ top: 0, behavior: "smooth" })
 			} else {
 				console.log("✅ [HANDLE NEXT] Past all steps, submitting...")
 				// All steps complete, trigger submission
