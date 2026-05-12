@@ -14,6 +14,7 @@ import LanguageSwitcher from "./language-switcher"
 export default function Header() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
 	const t = useTranslations("Navigation")
+	const tHero = useTranslations("HomePage.hero")
 
 	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -52,6 +53,12 @@ export default function Header() {
 
 					<div className='flex items-center gap-4'>
 						<DesktopMenu items={MENU_LINKS} />
+						<Link
+							href={ROUTES.AUDIT}
+							className='hidden lg:inline-flex btn btn-sm btn-primary with-icon'
+						>
+							{tHero("aiAudit")}
+						</Link>
 						<LanguageSwitcher />
 					</div>
 

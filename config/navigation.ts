@@ -23,6 +23,10 @@ export const SERVICES_SUBMENU_ITEMS: SubmenuItem[] = [
 		labelKey: "automation",
 		href: ROUTES.AUTOMATION,
 	},
+	{
+		labelKey: "aiAudit",
+		href: ROUTES.AUDIT,
+	},
 ] as const
 
 export const MENU_LINKS: MenuItem[] = [

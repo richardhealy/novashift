@@ -26,7 +26,7 @@ export default async function HeroSection() {
 							</Link>
 
 							<Link
-								href={`${ROUTES.AI_STRATEGY}#offer-section` as any}
+								href={ROUTES.AUDIT}
 								className='btn btn-md btn-primary with-icon'
 							>
 								{t("aiAudit")}

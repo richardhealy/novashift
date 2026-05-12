@@ -10,7 +10,8 @@
 	"ServicesMenu": {
 		"aiStrategy": "AI Strategy & Consulting",
 		"developmentTeam": "Dedicated Development Team",
-		"automation": "Workflow Automations"
+		"automation": "Workflow Automations",
+		"aiAudit": "AI Readiness Audit"
 	},
 	"Footer": {
 		"description": "AI transformation specialists helping businesses unlock the potential of artificial intelligence through strategic consultings and custom development.",
