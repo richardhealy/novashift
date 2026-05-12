@@ -1,6 +1,6 @@
 "use server"
 
-import { createServiceRoleClient } from "@/lib/supabase"
+import { sendContactEmail } from "@/lib/contact/send-email"
 
 export type ContactFormData = {
 	full_name: string
@@ -17,57 +17,37 @@ export type ContactFormResponse = {
 }
 
 /**
- * Submits contact form data to Supabase
- * Table name: contact_submissions
- *
- * Required Supabase table schema:
- * - id: uuid (primary key, default: gen_random_uuid())
- * - full_name: text
- * - email: text
- * - company_name: text
- * - website_url: text (nullable)
- * - message: text
- * - created_at: timestamp with time zone (default: now())
+ * Submits contact form data by sending a notification email via Resend (no database dependency)
  */
 export async function submitContactForm(
 	data: ContactFormData,
 ): Promise<ContactFormResponse> {
 	try {
-		// Use service role client to bypass RLS
-		const supabase = createServiceRoleClient()
-		
-		const { error, data: insertedData } = await supabase
-			.from("contact_submissions")
-			.insert([
-				{
-					full_name: data.full_name,
-					email: data.email,
-					company_name: data.company_name,
-					website_url: data.website_url || null,
-					message: data.message,
-				},
-			])
-			.select()
+		console.log("📧 [CONTACT] Sending contact inquiry from:", data.email)
 
-		if (error) {
-			console.error("Supabase error:", JSON.stringify(error, null, 2))
+		const result = await sendContactEmail(data)
+
+		if (!result.success) {
+			console.error("📧 [CONTACT] Email send failed:", result.error)
 			return {
 				success: false,
-				error: error.message || "Failed to submit form. Please try again later.",
+				error: result.error || "Failed to submit form. Please try again later.",
 			}
 		}
 
+		console.log("📧 [CONTACT] Email sent successfully, message ID:", result.messageId)
 		return {
 			success: true,
 			message: "Thank you! Your message has been sent successfully.",
 		}
 	} catch (error) {
-		console.error("Unexpected error:", error)
-		const errorMessage =
-			error instanceof Error ? error.message : "An unexpected error occurred."
+		console.error("📧 [CONTACT] Unexpected error:", error)
 		return {
 			success: false,
-			error: errorMessage || "An unexpected error occurred. Please try again later.",
+			error:
+				error instanceof Error
+					? error.message
+					: "An unexpected error occurred. Please try again later.",
 		}
 	}
 }
